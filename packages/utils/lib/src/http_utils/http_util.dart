@@ -19,9 +19,9 @@ class HttpUtil {
   HttpUtil._internal() {
     _dio ??= Dio(
       BaseOptions(
-          connectTimeout: const Duration(milliseconds: _kConnectTimeout),
-          sendTimeout: const Duration(milliseconds: _kSendTimeout),
-          receiveTimeout: const Duration(milliseconds: _kReceiveTimeout)),
+          connectTimeout:  _kConnectTimeout,
+          sendTimeout: _kSendTimeout,
+          receiveTimeout: _kReceiveTimeout),
     );
     // _dio!.interceptors.add(LogsInterceptors());
     // _dio.interceptors.add(ResponseInterceptors());
