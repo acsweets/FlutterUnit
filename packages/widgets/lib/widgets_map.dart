@@ -37,7 +37,8 @@ class WidgetsMap {
       case "Badge":
         return [
           const BadgeDemo(),
-          const BadgeVisibleDemo(),
+          const BadgeLabelDemo(),
+          const BadgeAlignOffsetDemo(),
         ];
       case "DateRangePickerDialog":
         return [
@@ -1397,6 +1398,50 @@ class WidgetsMap {
         return [
           const MagnifierCircleShape(),
           const MagnifierStarShape(),
+        ];
+      case "DecoratedSliver":
+        return [
+          const DecorationSliverDemo(),
+        ];
+      case "SliverConstrainedCrossAxis":
+        return [
+          const SliverConstrainedCrossAxisDemo(),
+        ];
+      case "SliverCrossAxisExpanded":
+        return [
+          const SliverCrossAxisExpandedDemo(),
+        ];
+      case "SliverCrossAxisGroup":
+        return [
+          const SliverCrossAxisGroupDemo(),
+        ];
+      case "SliverMainAxisGroup":
+        return [
+          const SliverMainAxisGroupDemo(),
+        ];
+      case "BackButtonIcon":
+        return [
+          const BackButtonIconDemo(),
+        ];
+      case "DrawerButtonIcon":
+        return [
+          const DrawerButtonIconDemo(),
+        ];
+      case "CloseButtonIcon":
+        return [
+          const CloseButtonIconDemo(),
+        ];
+      case "EndDrawerButtonIcon":
+        return [
+          const EndDrawerButtonIconDemo(),
+        ];
+      case "EndDrawerButton":
+        return [
+          const EndDrawerButtonDemo(),
+        ];
+      case "DrawerButton":
+        return [
+          const DrawerButtonDemo(),
         ];
       default:
         return [];

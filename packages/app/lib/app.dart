@@ -9,8 +9,12 @@ export 'app/cons/global_value.dart';
 export 'app/cons/path_unit.dart';
 export 'app/cons/sp.dart';
 export 'app/cons/str_unit.dart';
-export 'app/router/router_utils.dart';
 export 'app/router/unit_router.dart';
+
+export 'app/router/slide_page_route.dart';
+export 'app/router/fade_page_route.dart';
+export 'app/router/zero_page_route.dart';
+
 export 'app/res/toly_icon.dart';
 export 'app/theme/size_unit.dart';
 export 'app/theme/app_theme.dart';
@@ -20,3 +24,6 @@ export 'app/style/gap.dart';
 export 'app/style/shape/coupon_shape_border.dart';
 export 'app/style/shape/techno_shape.dart';
 export 'app/style/behavior/no_scroll_behavior.dart';
+
+export 'package:app/platform_adapter/window/windows_adapter.dart';
+export 'package:app/platform_adapter/views/window_buttons.dart';

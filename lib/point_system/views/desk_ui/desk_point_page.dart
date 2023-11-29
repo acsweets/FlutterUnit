@@ -1,11 +1,10 @@
+import 'package:app/app.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_unit/point_system/github_model/github_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../app/plateform_adapter/window/windows_adapter.dart';
-import '../../../widget_ui/desk_ui/widget_panel/window_buttons.dart';
 import '../../blocs/point_bloc/point_bloc.dart';
 import '../../blocs/point_bloc/point_event.dart';
 import '../../github_model/repository.dart';
@@ -115,8 +114,10 @@ class IssuesTip extends StatelessWidget {
 
 class SimpleDeskTopBar extends StatelessWidget {
   final Widget? leading;
+  final Widget? tail;
+  final double height;
 
-  const SimpleDeskTopBar({super.key, this.leading});
+  const SimpleDeskTopBar({super.key, this.leading,this.tail,this.height=64});
 
   @override
   Widget build(BuildContext context) {
@@ -126,8 +127,8 @@ class SimpleDeskTopBar extends StatelessWidget {
     return DragToMoveAreaNoDouble(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20),
-        height: 64,
-        color: isDark?Color(0xff2C3036):Colors.white,
+        height: height,
+        color: isDark? Color(0xff2C3036):Colors.white,
         child: Row(
           children: [
             if (leading != null) leading!,
@@ -135,6 +136,7 @@ class SimpleDeskTopBar extends StatelessWidget {
             const SizedBox(
               width: 20,
             ),
+            if(tail!=null) tail!,
             const WindowButtons(),
           ],
         ),
