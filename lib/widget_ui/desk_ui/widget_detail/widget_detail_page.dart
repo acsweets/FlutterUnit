@@ -52,8 +52,8 @@ class DeskWidgetDetailPage extends StatelessWidget {
     );
   }
 
-  Widget get linkText => Row(
-        children: const [
+  Widget get linkText => const Row(
+        children: [
           Padding(
             padding: EdgeInsets.only(left: 15, right: 5),
             child: Icon(Icons.link, color: Colors.blue),

@@ -17,7 +17,7 @@ class SettingPage extends StatelessWidget {
     const Widget divider =  Divider(height: 1);
 
     return Scaffold(
-      appBar: AppBar(title:Text('应用设置')),
+      appBar: AppBar(title:const Text('应用设置')),
       body: ListView(
         children: <Widget>[
           Container( height: 15),
@@ -35,7 +35,7 @@ class SettingPage extends StatelessWidget {
             ),
             trailing: _nextIcon(context),
             onTap: (){
-              Navigator.of(context).push(Right2LeftRouter(child: ThemeModelSetting()));
+              Navigator.of(context).push(Right2LeftRouter(child: const ThemeModelSetting()));
             },
           ),
           divider,

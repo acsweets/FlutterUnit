@@ -57,6 +57,7 @@ class WidgetDao {
     }
     // _表示 name 任意
     String name = arguments.name == '*' ? '' : arguments.name;
+    String info = arguments.name;
     bool hasFamily = arguments.family != null;
     String familySql = hasFamily ? ' AND family = ?' : '';
     List<int> familyArg = hasFamily ? [arguments.family!.index] : [];
@@ -67,8 +68,8 @@ class WidgetDao {
     }
     return db.rawQuery(
         "SELECT * "
-        "FROM widget WHERE name like ?$familySql AND lever IN(?,?,?,?,?) ORDER BY lever DESC",
-        ["%$name%", ...familyArg, ...starArg]);
+        "FROM widget WHERE name like ? or info LIKE ? $familySql AND lever IN(?,?,?,?,?) ORDER BY lever DESC",
+        ["%$name%",'%$info%', ...familyArg, ...starArg]);
   }
 }
 

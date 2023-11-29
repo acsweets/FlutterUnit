@@ -23,9 +23,9 @@ class BadgeDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
+    return const Wrap(
       spacing: 20,
-      children: const [
+      children: [
         Badge(
           backgroundColor: Colors.redAccent,
           alignment: AlignmentDirectional(0,-2),

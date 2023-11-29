@@ -19,7 +19,6 @@ class BadgeVisibleDemo extends StatefulWidget {
 }
 
 class _BadgeVisibleDemoState extends State<BadgeVisibleDemo> {
-
   bool _visible = true;
 
   @override
@@ -29,11 +28,14 @@ class _BadgeVisibleDemoState extends State<BadgeVisibleDemo> {
       child: Badge(
         backgroundColor: Colors.red,
         label: Text('99+'),
-        alignment: AlignmentDirectional(36-16,-2),
+        alignment: AlignmentDirectional(36 - 16, -2),
         largeSize: 14,
         smallSize: 6,
         isLabelVisible: _visible,
-        child: Icon(Icons.supervised_user_circle,size: 36,),
+        child: Icon(
+          Icons.supervised_user_circle,
+          size: 36,
+        ),
       ),
     );
   }

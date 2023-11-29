@@ -18,16 +18,15 @@ class HttpUtil {
 
   ///通用全局单例，第一次使用时初始化
   HttpUtil._internal() {
-      _dio ??= Dio(
-        BaseOptions(
-            connectTimeout: _kConnectTimeout,
-            sendTimeout: _kSendTimeout,
-            receiveTimeout: _kReceiveTimeout),
-      );
-      // _dio!.interceptors.add(LogsInterceptors());
-      // _dio.interceptors.add(ResponseInterceptors());
+    _dio ??= Dio(
+      BaseOptions(
+          connectTimeout: const Duration(milliseconds: _kConnectTimeout),
+          sendTimeout: const Duration(milliseconds: _kSendTimeout),
+          receiveTimeout: const Duration(milliseconds: _kReceiveTimeout)),
+    );
+    // _dio!.interceptors.add(LogsInterceptors());
+    // _dio.interceptors.add(ResponseInterceptors());
   }
-
 
   Dio get client => _dio!;
 

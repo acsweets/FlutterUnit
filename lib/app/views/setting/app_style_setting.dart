@@ -12,7 +12,7 @@ void showAppStyleSelectDialog(BuildContext context) {
   // List<String> data = Cons.kAppStyleStringMap.values.toList();
   showCupertinoModalPopup(
       context: context,
-      builder: (context) => AppThemeSettingDialog(
+      builder: (context) => const AppThemeSettingDialog(
         data: [],
       ));
 }

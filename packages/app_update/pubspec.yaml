@@ -4,7 +4,7 @@ version: 0.0.1
 homepage:
 
 environment:
-  sdk: '>=2.18.6 <3.0.0'
+  sdk: '>=3.0.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
@@ -13,8 +13,8 @@ dependencies:
   equatable: ^2.0.3 # 相等辅助
   flutter_bloc: ^8.0.1 # 状态管理
   shared_preferences: ^2.0.13 # xml 固化
-  r_upgrade: ^0.3.8+2 # 应用升级
-  package_info_plus: ^4.0.1
+  package_info_plus: ^5.0.1 # 应用包信息
+  r_upgrade: ^0.4.2 # 应用升级
   utils:
     path: ../utils
   app:

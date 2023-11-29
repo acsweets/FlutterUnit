@@ -59,11 +59,11 @@ Icons.arrow_back
                           filled: true,
                           fillColor: isDark?Color(0xff292929):Color(0xffF3F6F9),
 
-                          prefixIcon: Icon(
+                          prefixIcon: const Icon(
                             Icons.search,
                             color: Colors.grey,
                           ),
-                          border: UnderlineInputBorder(
+                          border: const UnderlineInputBorder(
                             borderSide: BorderSide.none,
                             borderRadius: BorderRadius.all(Radius.circular(35 / 2)),
                           ),
@@ -73,12 +73,12 @@ Icons.arrow_back
                     ),
                   )),
             ),
-            Wrap(
+            const Wrap(
               spacing: 3,
               alignment: WrapAlignment.center,
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                const Icon(TolyIcon.icon_sound),
+                Icon(TolyIcon.icon_sound),
                 // Text('已签',style: TextStyle(color: Colors.grey),)
               ],
             ),

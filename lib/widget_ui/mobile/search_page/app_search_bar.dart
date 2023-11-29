@@ -33,8 +33,8 @@ class _AppSearchBarState extends State<AppSearchBar> {
                   filled: true,
                   fillColor: Colors.white,
                   contentPadding: EdgeInsets.only(top: isDesk?6:1),//调整文字边距
-                  prefixIcon: Icon(Icons.search),
-                  border: UnderlineInputBorder(
+                  prefixIcon: const Icon(Icons.search),
+                  border: const UnderlineInputBorder(
                     borderSide: BorderSide.none,
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),

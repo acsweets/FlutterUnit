@@ -34,7 +34,7 @@ class _MagnifierStarShapeState extends State<MagnifierStarShape> {
             onPanUpdate: _onPanUpdate,
             onPanCancel: _onPanCancel,
             child: Image.asset('assets/images/sabar_bar.webp')),
-        Text("张风捷特烈",style: TextStyle(color: Colors.white),),
+        const Text("张风捷特烈",style: TextStyle(color: Colors.white),),
         if(_show)
           Positioned(
               left: _dragGesturePosition.dx,

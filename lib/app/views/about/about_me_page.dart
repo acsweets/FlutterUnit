@@ -146,10 +146,10 @@ class AboutMePage extends StatelessWidget {
         FeedbackWidget(
             onPressed: () =>
                 _launchURL("https://juejin.im/user/5b42c0656fb9a04fe727eb37"),
-            child: Wrap(
+            child: const Wrap(
               direction: Axis.vertical,
               crossAxisAlignment: WrapCrossAlignment.center,
-              children:const [
+              children:[
                 Icon(
                   TolyIcon.icon_juejin,
                   size: 35,
@@ -161,10 +161,10 @@ class AboutMePage extends StatelessWidget {
         FeedbackWidget(
             onPressed: () =>
                 _launchURL("https://github.com/toly1994328"),
-            child: Wrap(
+            child: const Wrap(
               direction: Axis.vertical,
               crossAxisAlignment: WrapCrossAlignment.center,
-              children: const[
+              children: [
                 Icon(
                   TolyIcon.icon_github,
                   size: 35,

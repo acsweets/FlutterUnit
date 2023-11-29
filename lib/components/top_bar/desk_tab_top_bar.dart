@@ -44,7 +44,7 @@ class _DeskTabTopBarState extends State<DeskTabTopBar>  with TickerProviderState
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         height: 64,
-        color: isDark?Color(0xff2C3036):Colors.white,
+        color: isDark?const Color(0xff2C3036):Colors.white,
         child: Row(
           children: [
             SizedBox(

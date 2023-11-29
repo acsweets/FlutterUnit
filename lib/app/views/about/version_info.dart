@@ -54,11 +54,11 @@ class VersionInfo extends StatelessWidget {
   }
 
   Widget _buildTop() {
-    return Wrap(
+    return const Wrap(
       direction: Axis.vertical,
       crossAxisAlignment: WrapCrossAlignment.center,
       spacing: 10,
-      children: const [
+      children: [
         CircleImage(image: AssetImage("assets/images/icon_head.webp"),size: 80,),
         Text('Flutter Unit',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
         VersionShower(),

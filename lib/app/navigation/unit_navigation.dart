@@ -73,7 +73,7 @@ class _UnitPhoneNavigationState extends State<UnitPhoneNavigation> {
       body: PageView(
         physics: _neverScroll,
         controller: _controller,
-        children: [
+        children: const [
           StandardHomePage(),
           GalleryUnit(),
           CollectPageAdapter(),
@@ -95,7 +95,6 @@ class _UnitPhoneNavigationState extends State<UnitPhoneNavigation> {
         PureBottomBar(
           initPosition: position,
           onItemTap: _onTapBottomNav,
-          onItemLongTap: _onItemLongTap,
         ),
         const Positioned(right: 26, top: 8, child: UpdateRedPoint())
       ],

@@ -101,7 +101,7 @@ class _StandardUnitSplashState extends State<StandardUnitSplash>
                                 style: UnitTextStyle.splashShadows),
                             Text("· 2021 ·  @编程之王 ",
                                 style: UnitTextStyle.splashShadows),
-                          ],
+                          ]
                         )),
                   ],
                 ))

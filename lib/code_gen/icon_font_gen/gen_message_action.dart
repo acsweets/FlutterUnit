@@ -21,12 +21,12 @@ class GenMessageAction extends StatelessWidget {
                 elevation: 0,
                 shape: const StadiumBorder()
             ),
-            onPressed:onGen, child: Wrap(
+            onPressed:onGen, child: const Wrap(
           crossAxisAlignment: WrapCrossAlignment.center,
           spacing: 4,
               children: [
                 Icon(TolyIcon.icon_fast,size: 16,),
-                const Text('生成代码',style: TextStyle(height: 1,fontSize: 12),),
+                Text('生成代码',style: TextStyle(height: 1,fontSize: 12),),
               ],
             )),
       ],

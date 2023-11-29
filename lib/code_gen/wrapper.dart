@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 /// create by 张风捷特烈 on 2020/9/18
@@ -44,8 +43,8 @@ class Wrapper extends StatelessWidget {
   final Color shadowColor;
   final List<BoxShadow>? shadows;
 
-  Wrapper(
-      { this.spineHeight = 8.0,
+  const Wrapper(
+      {super.key,  this.spineHeight = 8.0,
         this.angle = 75,
         this.radius = 5.0,
         this.offset = 15,
@@ -60,7 +59,7 @@ class Wrapper extends StatelessWidget {
         this.padding = const EdgeInsets.all(8),
         this.spineType = SpineType.left});
 
-  Wrapper.just({
+  const Wrapper.just({super.key,
     this.radius = 5.0,
     this.strokeWidth,
     this.child,
@@ -154,7 +153,7 @@ class WrapperPainter extends CustomPainter {
     ..color = color
     ..style =
     strokeWidth == null ? PaintingStyle.fill : PaintingStyle.stroke
-    ..strokeWidth = strokeWidth == null ? 1 : strokeWidth;
+    ..strokeWidth = strokeWidth ?? 1;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -200,7 +199,7 @@ class WrapperPainter extends CustomPainter {
       //   canvas.drawShadow(path, shadowColor, elevation!, true);
       //   return;
       // }
-      canvas.drawPath(path, mPaint..color=Color(0xffe4e7ed));
+      canvas.drawPath(path, mPaint..color=const Color(0xffe4e7ed));
     }
 
   }
