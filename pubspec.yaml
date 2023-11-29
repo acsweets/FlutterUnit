@@ -20,7 +20,7 @@ dependencies:
   stream_transform: ^2.1.0
   archive: ^3.3.9 # 解压
   package_info_plus: ^4.1.0 # 应用包信息
-  r_upgrade: ^0.4.2 # 应用升级
+  r_upgrade: ^0.3.8 # 应用升级
   webview_flutter: ^4.2.4
   sqflite: ^2.3.0 # 数据库
   sqflite_common_ffi: ^2.3.0+2 # 数据库
