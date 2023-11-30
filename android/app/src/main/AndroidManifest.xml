@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.toly1994.flutter_unit">
+    package="com.cao.treasure">
     <uses-permission android:name="android.permission.INTERNET"/>
     <queries>
         <intent>
@@ -20,7 +20,7 @@
         </intent>
     </queries>
    <application
-        android:label="flutter_unit"
+        android:label="upright.宝藏"
         android:icon="@mipmap/logo">
         <activity
             android:name=".MainActivity"
