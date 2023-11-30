@@ -32,7 +32,7 @@ class PaperPainter extends CustomPainter {
   final double step = 6;
   final double min = -240;
   final double max = 240;
-  final List<Color> colors = const[
+  static const List<Color> colors = [
     Color(0xFFF60C0C),
     Color(0xFFF3B913),
     Color(0xFFE7F716),

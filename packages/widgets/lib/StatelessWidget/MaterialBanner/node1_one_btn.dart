@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 class MaterialBannerDemo extends StatelessWidget {
   const MaterialBannerDemo({super.key});
 
-  final String info = 'Welcome to Flutter Unit!';
+  static const String info = 'Welcome to Flutter Unit!';
 
   @override
   Widget build(BuildContext context) {

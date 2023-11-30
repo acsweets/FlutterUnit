@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class DefaultTabControllerDemo extends StatelessWidget {
-  final List<Tab> tabs = const [
+  static const List<Tab> tabs =  [
     Tab(text: '青眼白龙'),
     Tab(text: '黑魔术师'),
     Tab(text: '混沌战士'),

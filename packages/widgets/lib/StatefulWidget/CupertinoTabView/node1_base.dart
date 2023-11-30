@@ -77,7 +77,7 @@ class DetailPage extends StatelessWidget {
 
 class _HomePage extends StatelessWidget {
 
-  final String info = "CupertinoTabView 可以像 MaterialApp 一样维护一个路由栈。"
+  static const String info = "CupertinoTabView 可以像 MaterialApp 一样维护一个路由栈。"
       "通过 routes 、onGenerateRoute 来构建路由，可以通过 navigatorObservers 监听路由。"
       "在这个路由栈中可以进行指定名称跳转，如下通过 /test_detail 跳到详情页。";
 

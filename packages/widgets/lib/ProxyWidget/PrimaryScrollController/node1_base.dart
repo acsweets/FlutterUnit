@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 class PrimaryScrollControllerDemo extends StatelessWidget {
   const PrimaryScrollControllerDemo({super.key});
 
-  final String info =
+  static const String info =
       'PrimaryScrollController 是 InheritedWidget 子类，也就说明它可以为子树组件提供某些默认数据，'
       '子树可以通过 context 来获取上层该组件的提供 ScrollController 对象。\n'
       '对于一些可滑动组件 ScrollView、SingleChildScrollView、NestedScrollView 等，'

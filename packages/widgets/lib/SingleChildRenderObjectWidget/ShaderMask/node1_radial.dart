@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 class RadialShaderMask extends StatelessWidget {
   const RadialShaderMask({super.key});
 
-  final List<Color> colors = const [Colors.red, Colors.yellow, Colors.blue];
+  static const List<Color> colors =  [Colors.red, Colors.yellow, Colors.blue];
 
   @override
   Widget build(BuildContext context) {

@@ -20,7 +20,7 @@ class CustomCupertinoSwitch extends StatefulWidget {
 }
 
 class _CustomCupertinoSwitchState extends State<CustomCupertinoSwitch> {
-  final List<Color> colors = [
+  static const List<Color> colors = [
     Colors.red,
     Colors.yellow,
     Colors.blue,

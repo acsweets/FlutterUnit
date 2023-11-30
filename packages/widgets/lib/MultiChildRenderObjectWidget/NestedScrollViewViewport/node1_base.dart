@@ -22,7 +22,7 @@ import 'package:flutter/material.dart';
 class NestedScrollViewViewportDemo extends StatelessWidget {
   const NestedScrollViewViewportDemo({super.key});
 
-  final String info =
+  static const String info =
       'NestedScrollViewViewport 在源码中只有一处使用：'
       '_NestedScrollViewCustomScrollView 继承自 CustomScrollView，复写了 buildViewport 方法，返回 NestedScrollViewViewport 。'
       '而 NestedScrollView 构建时使用了 _NestedScrollViewCustomScrollView，也就是 NestedScrollView 的视口依赖于 NestedScrollViewViewport。'

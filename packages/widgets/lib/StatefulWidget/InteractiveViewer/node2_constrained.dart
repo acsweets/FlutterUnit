@@ -13,14 +13,14 @@ import 'package:flutter/material.dart';
 class InteractiveViewerDemo2 extends StatelessWidget {
   const InteractiveViewerDemo2({super.key});
 
-  final List<Color> colors = const [
+  static const List<Color> colors =  [
     Colors.red,
     Colors.yellow,
     Colors.blue,
     Colors.green
   ];
 
-  final List<Color> colors2 = const [
+  static const List<Color> colors2 =  [
     Colors.yellow,
     Colors.blue,
     Colors.green,

@@ -166,11 +166,11 @@ class TimeLineNode extends StatelessWidget {
 
   const TimeLineNode({Key? key, required this.timeNode}) : super(key: key);
 
-  final double dashLineWith = 20;
-  final double marginTop = 10;
-  final double offset = 20 + 10;
-  final double lineWidth = 2;
-  final double circleRadius = 5;
+  static const double dashLineWith = 20;
+  static const double marginTop = 10;
+  static const double offset = 20 + 10;
+  static const double lineWidth = 2;
+  static const double circleRadius = 5;
 
   @override
   Widget build(BuildContext context) {
@@ -208,7 +208,7 @@ class TimeLineNode extends StatelessWidget {
             lineColor: Colors.white,
             circleRadius: circleRadius,
             color: Colors.white,
-            circleOffset: const Offset(lineWidth / 2, offset + 10 / 2)),
+            circleOffset:  const Offset(lineWidth / 2, offset + 10 / 2)),
       );
 
   Widget _buildCenterWidget(Color themeColor) {

@@ -21,7 +21,7 @@ class ShrinkWrappingViewportDemo extends StatelessWidget {
 
   const ShrinkWrappingViewportDemo({super.key});
 
-  final String info =
+  static const String info =
       'ShrinkWrappingViewport 在源码中只有一处使用：'
       '在 ScrollView 中如果 shrinkWrap 为 true，会使用 ShrinkWrappingViewport，该属性在其子类 ListView、GridView、CustomScrollView 中可指定。'
       '如果 shrinkWrap 为 false，视口会使用 Viewport，此时，视图区域将会沿滑动方向尽可能延伸。在无边界约束的情况下，shrinkWrap 需要是 true。'

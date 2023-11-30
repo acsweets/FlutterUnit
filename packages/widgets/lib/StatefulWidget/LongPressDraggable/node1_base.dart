@@ -20,7 +20,7 @@ class CustomLongPressDraggable extends StatefulWidget {
   const CustomLongPressDraggable({super.key});
 
   @override
-  _CustomLongPressDraggableState createState() =>
+   createState() =>
       _CustomLongPressDraggableState();
 }
 
@@ -42,7 +42,7 @@ class _CustomLongPressDraggableState extends State<CustomLongPressDraggable> {
     );
   }
 
-  final List<Color> colors = const [
+  static const List<Color> colors =  [
     Colors.red,
     Colors.yellow,
     Colors.blue,

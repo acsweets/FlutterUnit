@@ -13,7 +13,7 @@ class AlertConformDialog extends StatelessWidget {
   final VoidCallback? onCancel;
   final Color? conformTextColor;
 
-  const AlertConformDialog(
+   const AlertConformDialog(
       {this.title = "title",
       this.content = "content",
       this.conformText = "确定",
@@ -24,12 +24,12 @@ class AlertConformDialog extends StatelessWidget {
       this.conformTextColor,
       super.key});
 
-  final TextStyle noticeStyle =
-      const TextStyle(color: Colors.grey, fontSize: 16);
-  final TextStyle cancelTextStyle = const TextStyle(
+  static const TextStyle noticeStyle =
+       TextStyle(color: Colors.grey, fontSize: 16);
+  static const TextStyle cancelTextStyle =   TextStyle(
       color: Colors.grey, fontSize: 18, fontWeight: FontWeight.bold);
 
-  final TextStyle subTextStyle = const TextStyle(
+  static const TextStyle subTextStyle =  TextStyle(
       color: Color(0xff929292), fontSize: 16, fontWeight: FontWeight.bold);
 
   @override
@@ -87,7 +87,7 @@ class AlertConformDialog extends StatelessWidget {
                                   width: 1 / window.devicePixelRatio))),
                       alignment: Alignment.center,
                       height: 50,
-                      child: const Text(
+                      child:  const Text(
                         '取消',
                         style: cancelTextStyle,
                       ),

@@ -33,7 +33,7 @@ class ScrollViewDemo extends StatelessWidget {
 class MyScrollView extends ScrollView {
   MyScrollView({super.key});
 
-  final String info =
+  static const String info =
       'ScrollView 其内部依靠 Viewport + Scrollable 实现滑动。它只有一个 buildSlivers 的抽象方法，返回 Sliver 家族 Widget 列表，'
       '其子类最简单的是 CustomScrollView，将 slivers 交由用户传递，自身打个酱油。'
       'ListView 和 GridView 在底层源码中也是使用 Sliver 家族相关组件实现的。';

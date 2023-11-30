@@ -24,7 +24,7 @@ class CustomSwitch extends StatefulWidget {
 }
 
 class _CustomSwitchState extends State<CustomSwitch> {
-  final List<Color> colors = const[
+  static const List<Color> colors = [
     Colors.red,
     Colors.yellow,
     Colors.blue,

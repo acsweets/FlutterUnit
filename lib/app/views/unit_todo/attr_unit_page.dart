@@ -2,7 +2,7 @@ import 'package:components/toly_ui/toly_ui.dart';
 import 'package:flutter/material.dart';
 
 class AttrUnitPage extends StatelessWidget {
-  final String info = '【Flutter属性集录】是Unit项目计划的第二阶段的功能之一。'
+  static const String info = '【Flutter属性集录】是Unit项目计划的第二阶段的功能之一。'
       '会对所有Widget的所有属性进行收录整理到数据库，进行数据分析和组件关联。'
       '并且对一些重要属性，进行全面讲解。';
 

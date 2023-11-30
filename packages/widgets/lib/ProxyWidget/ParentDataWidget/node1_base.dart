@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 class ParentDataWidgetDemo extends StatelessWidget {
   const ParentDataWidgetDemo({super.key});
 
-  final String info =
+  static const String info =
       'ParentDataWidget 是一个抽象类，不能直接使用，它拥有 ParentData 子类型的泛型，该泛型会限定该组件的适应场景。'
       '如 Positioned 组件继承自 ParentDataWidget<StackParentData>，就说明 Positioned 的上层组件必须使用 Stack 族组件。'
       '如 Flexible 组件继承自 ParentDataWidget<FlexParentData>，就说明 Flexible 的上层组件必须使用 Flex 族组件。';

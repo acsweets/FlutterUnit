@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 class CupertinoFullscreenDialogTransitionDemo extends StatelessWidget {
   const CupertinoFullscreenDialogTransitionDemo({super.key});
 
-  final String info =
+  static const String info =
       '和 CupertinoPageTransition 一样，该组件底层基于 SlideTransition 组件实现，'
       '主要用途是模仿 iOS 风格，用于唤出全屏对话框动画过渡效果。'
       '源码中唯一的使用处是 CupertinoPageRoute 处理路由跳转动画时，一般不会单独使用。'

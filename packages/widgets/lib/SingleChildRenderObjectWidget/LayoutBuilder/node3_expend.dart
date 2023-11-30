@@ -19,7 +19,7 @@ class SimpleExpandableText extends StatefulWidget {
 
 class _SimpleExpandableTextState extends State<SimpleExpandableText> {
 
-  final String text = '桃树、杏树、梨树，你不让我，我不让你，都开满了花赶趟儿。'
+  static const String text = '桃树、杏树、梨树，你不让我，我不让你，都开满了花赶趟儿。'
       '红的像火，粉的像霞，白的像雪。'
       '花里带着甜味儿；闭了眼，树上仿佛已经满是桃儿、杏儿、梨儿。'
       '花下成千成百的蜜蜂嗡嗡地闹着，大小的蝴蝶飞来飞去。'

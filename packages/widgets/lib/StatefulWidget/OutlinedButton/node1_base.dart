@@ -29,7 +29,7 @@ class OutlinedButtonDemo extends StatelessWidget {
               onLongPress: _onLongPress,
               child: const Text('OutlinedButton'),
             ),
-            const OutlinedButton(
+             const OutlinedButton(
               onPressed: null,
               onLongPress: null,
               child: Text('禁用按钮'),

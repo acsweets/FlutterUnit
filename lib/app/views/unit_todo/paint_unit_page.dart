@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 
 class PaintUnitPage extends StatelessWidget {
-  final String info = '【Flutter绘制集录】是Unit项目计划的第二阶段的功能之一。'
+   static const String info = '【Flutter绘制集录】是Unit项目计划的第二阶段的功能之一。'
       '将收录大量绘制作品，展现Flutter强大的绘制表现力,'
       '以供学习绘制技能。本集录将支持绘制征集，愿开发者共同集录。';
 

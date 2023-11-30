@@ -22,7 +22,7 @@ import 'package:flutter/material.dart';
 class BoxScrollViewDemo extends StatelessWidget {
   const BoxScrollViewDemo({super.key});
 
-  final String info =
+  static const String info =
       'BoxScrollView 是 ScrollView 的子类，实现了它的抽象方法，且暴露出另一个抽象方法 buildChildLayout，返回 Sliver 家族 Widget，'
       '其子类有 ListView 和 GridView，分别使用 Sliver 家族相关List、Gird列表组件实现的。';
 

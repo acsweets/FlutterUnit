@@ -19,7 +19,7 @@ class AlignSelectableText extends StatefulWidget {
 }
 
 class _AlignSelectableTextState extends State<AlignSelectableText> {
-  final String text =
+  static const String text =
       "The [SelectableText] widget displays a string of text with a single style."
       "The string might break across multiple lines or might all be displayed on"
       "the same line depending on the layout constraints.";

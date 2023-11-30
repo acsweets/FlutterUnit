@@ -22,7 +22,7 @@ class CustomDayPicker extends StatelessWidget{
 
   const CustomDayPicker({super.key});
 
-  final String info =
+  static const String info =
       'DayPicker 日期选择器于 Flutter3.0 退出历史舞台。取代者为 CalendarDatePicker 日历选择器。';
 
   @override

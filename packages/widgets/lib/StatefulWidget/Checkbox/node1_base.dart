@@ -23,7 +23,7 @@ class CustomCheckbox extends StatefulWidget {
 
 class _CustomCheckboxState extends State<CustomCheckbox> {
   bool _checked = false;
-  final List<Color> colors = [
+  static const List<Color> colors = [
     Colors.red,
     Colors.yellow,
     Colors.blue,

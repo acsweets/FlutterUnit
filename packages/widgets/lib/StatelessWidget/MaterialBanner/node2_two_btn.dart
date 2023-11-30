@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 class MaterialBannerDemoTwo extends StatelessWidget {
   const MaterialBannerDemoTwo({super.key});
 
-  final String info =
+  static const String info =
       'A banner displays an important, succinct message, and provides actions for users to address. '
       'A user action is required for itto be dismissed.';
 

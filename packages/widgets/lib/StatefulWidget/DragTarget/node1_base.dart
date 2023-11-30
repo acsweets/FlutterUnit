@@ -37,7 +37,7 @@ class _CustomDragTargetState extends State<CustomDragTarget> {
     );
   }
 
-  final List<Color> colors = const [
+  static const List<Color> colors =  [
     Colors.red,
     Colors.yellow,
     Colors.blue,
