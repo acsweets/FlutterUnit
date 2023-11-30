@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class Matrix4Shower extends StatelessWidget {
   final Matrix4 matrix4;
 
-   const Matrix4Shower(this.matrix4, {Key? key}) : super(key: key);
+   const Matrix4Shower(this.matrix4, {super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomAnimatedSize extends StatefulWidget {
-  const CustomAnimatedSize({Key? key}) : super(key: key);
+  const CustomAnimatedSize({super.key});
 
   @override
   _CustomAnimatedSizeState createState() => _CustomAnimatedSizeState();

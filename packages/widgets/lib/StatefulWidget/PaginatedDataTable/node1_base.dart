@@ -22,7 +22,7 @@ import 'package:flutter/material.dart';
 //          "【source】 : 数据源   【DataTableSource】",
 //    }
 class PaginatedDataTableDemo extends StatefulWidget {
-  const PaginatedDataTableDemo({Key? key}) : super(key: key);
+  const PaginatedDataTableDemo({super.key});
 
   @override
   State<StatefulWidget> createState() => _PaginatedDataTableDemoState();

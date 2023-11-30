@@ -11,12 +11,11 @@ import 'package:flutter/material.dart';
 //    }
 
 class TooltipThemeDemo extends StatelessWidget {
-  const TooltipThemeDemo({Key? key}) : super(key: key);
+  const TooltipThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
     return TooltipTheme(
-        child: const TempTooltip(),
         data: TooltipTheme.of(context).copyWith(
             preferBelow: false,
             padding: const EdgeInsets.all(5),
@@ -30,18 +29,19 @@ class TooltipThemeDemo extends StatelessWidget {
                   color: Colors.orangeAccent,
                   offset: Offset(1, 1),
                   blurRadius: 8)
-            ])));
+            ])),
+        child: const TempTooltip());
   }
 }
 
 class TempTooltip extends StatelessWidget {
-  const TempTooltip({Key? key}) : super(key: key);
+  const TempTooltip({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
+      children: [
         Tooltip(message: "天王盖地虎", child: Icon(Icons.info_outline)),
         Tooltip(message: "宝塔镇河妖", child: Icon(Icons.info_outline)),
       ],

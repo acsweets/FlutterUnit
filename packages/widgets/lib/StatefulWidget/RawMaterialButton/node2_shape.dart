@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【shape】 : 形状   【ShapeBorder】",
 //    }
 class ShapeRawMaterialButton extends StatelessWidget {
-  const ShapeRawMaterialButton({Key? key}) : super(key: key);
+  const ShapeRawMaterialButton({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,15 +2,12 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:app/model/global_state.dart';
-import 'package:app/model/app_style.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:storage/storage.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path/path.dart' as path;
 
-import '../app/cons/cons.dart';
 import '../app/cons/sp.dart';
 
 class AppStateRepository {

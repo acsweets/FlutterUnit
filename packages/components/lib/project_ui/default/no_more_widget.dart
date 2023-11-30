@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// 说明: 
 
 class NoMoreWidget extends StatelessWidget {
-  const NoMoreWidget({Key? key}) : super(key: key);
+  const NoMoreWidget({super.key});
 
 
 

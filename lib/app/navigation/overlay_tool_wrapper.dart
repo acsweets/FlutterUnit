@@ -234,7 +234,7 @@ class OverlayToolWrapperState extends State<OverlayToolWrapper>
 
   void showFloating() {
     if (!show&&entry!=null) {
-      Overlay.of(context)?.insert(entry!);
+      Overlay.of(context).insert(entry!);
       show = true;
     }
   }

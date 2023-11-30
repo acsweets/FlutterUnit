@@ -20,7 +20,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class NestedScrollViewViewportDemo extends StatelessWidget {
-  const NestedScrollViewViewportDemo({Key? key}) : super(key: key);
+  const NestedScrollViewViewportDemo({super.key});
 
   final String info =
       'NestedScrollViewViewport 在源码中只有一处使用：'
@@ -36,7 +36,7 @@ class NestedScrollViewViewportDemo extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 }

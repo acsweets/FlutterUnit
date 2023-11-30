@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          " onPressed为空会退出当前栈",
 //    }
 class CustomBackButton extends StatelessWidget {
-  CustomBackButton({Key? key}) : super(key: key);
+  CustomBackButton({super.key});
 
   final List<Color> data = [
     Colors.red,

@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class FlexibleSpaceBarDemo extends StatelessWidget {
-  FlexibleSpaceBarDemo({Key? key}) : super(key: key);
+  FlexibleSpaceBarDemo({super.key});
 
   final List<Color> data =[
     Colors.blue[50]!,

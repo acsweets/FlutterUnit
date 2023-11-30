@@ -19,7 +19,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ScrollViewDemo extends StatelessWidget {
-  const ScrollViewDemo({Key? key}) : super(key: key);
+  const ScrollViewDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class ScrollViewDemo extends StatelessWidget {
 }
 
 class MyScrollView extends ScrollView {
-  MyScrollView({Key? key}) : super(key: key);
+  MyScrollView({super.key});
 
   final String info =
       'ScrollView 其内部依靠 Viewport + Scrollable 实现滑动。它只有一个 buildSlivers 的抽象方法，返回 Sliver 家族 Widget 列表，'

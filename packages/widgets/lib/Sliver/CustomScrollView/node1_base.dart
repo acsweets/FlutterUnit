@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【controller】 : 控制器   【ScrollController】",
 //    }
 class CustomScrollViewDemo extends StatelessWidget {
-  CustomScrollViewDemo({Key? key}) : super(key: key);
+  CustomScrollViewDemo({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

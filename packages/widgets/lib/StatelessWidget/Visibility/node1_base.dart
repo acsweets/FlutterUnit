@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "默认孩子隐藏时会失去原来所在区域。",
 //    }
 class CustomVisibility extends StatelessWidget {
-  const CustomVisibility({Key? key}) : super(key: key);
+  const CustomVisibility({super.key});
 
   @override
   Widget build(BuildContext context) {

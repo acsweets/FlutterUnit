@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【delegate】 : 孩子代理   【SliverChildDelegate】",
 //    }
 class SliverFillViewportDemo extends StatefulWidget {
-  const SliverFillViewportDemo({Key? key}) : super(key: key);
+  const SliverFillViewportDemo({super.key});
 
   @override
   _SliverFillViewportDemoState createState() => _SliverFillViewportDemoState();

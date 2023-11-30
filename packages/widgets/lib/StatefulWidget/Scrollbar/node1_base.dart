@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【controller】 : 控制器  【ScrollController】",
 //    }
 class CustomScrollbar extends StatelessWidget {
-  CustomScrollbar({Key? key}) : super(key: key);
+  CustomScrollbar({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

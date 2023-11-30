@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【decorationStyle】: 装饰线样式   【TextDecorationStyle】",
 //    }
 class DecorationText extends StatelessWidget {
-  const DecorationText({Key? key}) : super(key: key);
+  const DecorationText({super.key});
 
   @override
   Widget build(BuildContext context) {

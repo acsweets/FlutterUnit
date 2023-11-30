@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【flex】 : 剩余空间分配占比   【int】",
 //    }
 class CustomFlexible extends StatefulWidget {
-  const CustomFlexible({Key? key}) : super(key: key);
+  const CustomFlexible({super.key});
 
   @override
   _CustomFlexibleState createState() => _CustomFlexibleState();

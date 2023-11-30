@@ -12,7 +12,7 @@ import 'package:flutter/cupertino.dart';
 //          "【previewBuilder】 : 动画构造器  【ContextMenuPreviewBuilder】",
 //    }
 class CustomCupertinoContextMenu extends StatelessWidget {
-  const CustomCupertinoContextMenu({Key? key}) : super(key: key);
+  const CustomCupertinoContextMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,17 +32,17 @@ class CustomCupertinoContextMenu extends StatelessWidget {
   final List<String> info = const ['保存图片', '立刻呼叫', '添加到收藏夹'];
 
   Widget _buildCupertinoContextMenu(context) => CupertinoContextMenu(
+      actions: info
+          .map((e) => CupertinoContextMenuAction(
+                child: Center(child: Text(e)),
+                onPressed: () => Navigator.pop(context),
+              ))
+          .toList(),
       child: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('assets/images/sabar_bar.webp'),
                 fit: BoxFit.cover),
             borderRadius: BorderRadius.all(Radius.circular(50))),
-      ),
-      actions: info
-          .map((e) => CupertinoContextMenuAction(
-                child: Center(child: Text(e)),
-                onPressed: () => Navigator.pop(context),
-              ))
-          .toList());
+      ));
 }

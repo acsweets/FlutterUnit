@@ -12,8 +12,7 @@ class AuthenticWidget extends StatelessWidget {
   final Widget noAuthentic;
 
    const AuthenticWidget(
-      {Key? key, required this.authentic, required this.noAuthentic})
-      : super(key: key);
+      {super.key, required this.authentic, required this.noAuthentic});
 
   @override
   Widget build(BuildContext context) {

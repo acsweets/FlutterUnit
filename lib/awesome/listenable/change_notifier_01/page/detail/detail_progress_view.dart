@@ -32,7 +32,7 @@ class _DetailProgressViewState extends State<DetailProgressView> {
             backgroundColor: Colors.grey,
           ),
         ),
-        Text(progress.valueStr,style: TextStyle(color: Colors.white),)
+        Text(progress.valueStr,style: const TextStyle(color: Colors.white),)
       ],
     );
   }

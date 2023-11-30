@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【image】 : 背景图片   【DecorationImage】\n",
 //    }
 class ShapeImageDemo extends StatelessWidget {
-  const ShapeImageDemo({Key? key}) : super(key: key);
+  const ShapeImageDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

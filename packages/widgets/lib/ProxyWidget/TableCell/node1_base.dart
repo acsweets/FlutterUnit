@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class TableCellDemo extends StatelessWidget {
-  const TableCellDemo({Key? key}) : super(key: key);
+  const TableCellDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

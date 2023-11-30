@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【onSelectedItemChanged】 : 选中回调  【ValueChanged<int> 】",
 //    }
 class CustomListWheelScrollView extends StatefulWidget {
-  const CustomListWheelScrollView({Key? key}) : super(key: key);
+  const CustomListWheelScrollView({super.key});
 
   @override
   _CustomListWheelScrollViewState createState() =>

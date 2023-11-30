@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomCupertinoTheme extends StatelessWidget {
-  const CustomCupertinoTheme({Key? key}) : super(key: key);
+  const CustomCupertinoTheme({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class CustomCupertinoTheme extends StatelessWidget {
 }
 
 class _ChildUseTheme extends StatelessWidget {
-  const _ChildUseTheme({Key? key}) : super(key: key);
+  const _ChildUseTheme();
 
   @override
   Widget build(BuildContext context) {

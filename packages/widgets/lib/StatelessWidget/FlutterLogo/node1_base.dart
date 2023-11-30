@@ -3,6 +3,7 @@
 /// create by 张风捷特烈 on 2020-03-26
 /// contact me by email 1981462002@qq.com
 /// 说明:
+library;
 //    {
 //      "widgetId": 4,
 //      "priority": 1,
@@ -13,7 +14,7 @@
 import 'package:flutter/material.dart';
 
 class CustomFlutterLogo extends StatelessWidget {
-  const CustomFlutterLogo({Key? key}) : super(key: key);
+  const CustomFlutterLogo({super.key});
 
   @override
   Widget build(BuildContext context) {

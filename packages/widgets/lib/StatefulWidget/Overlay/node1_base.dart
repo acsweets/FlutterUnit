@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomOverlay extends StatelessWidget {
-  const CustomOverlay({Key? key}) : super(key: key);
+  const CustomOverlay({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +42,8 @@ class CustomOverlay extends StatelessWidget {
             fillColor: Colors.red,
             splashColor: Colors.orange,
             textStyle: TextStyle(color: Colors.white),
-            child: Icon(Icons.remove),
             onPressed: hideFloating,
+            child: Icon(Icons.remove),
           ),
         ),
       ],
@@ -94,7 +94,7 @@ _buildFloating() => GestureDetector(
 
 showFloating(BuildContext context) {
   if (!show) {
-    Overlay.of(context)?.insert(entry);
+    Overlay.of(context).insert(entry);
     show = true;
   }
 }

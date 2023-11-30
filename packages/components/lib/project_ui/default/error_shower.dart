@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class ErrorShower extends StatelessWidget {
   final String error;
 
-  const ErrorShower({Key? key, this.error = "出现异常"}) : super(key: key);
+  const ErrorShower({super.key, this.error = "出现异常"});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class ErrorShower extends StatelessWidget {
               )),
           Text(
             error,
-            style:TextStyle(
+            style:const TextStyle(
               color: Colors.red, fontSize: 18,
             ),
             textAlign: TextAlign.center,

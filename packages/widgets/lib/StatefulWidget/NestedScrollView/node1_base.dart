@@ -21,7 +21,7 @@ import 'package:flutter/material.dart';
 class NestedScrollViewDemo extends StatelessWidget {
   final List<String> _tabs = const ['风神传', '封妖志', "幻将录", "永恒传说"];
 
-  const NestedScrollViewDemo({Key? key}) : super(key: key);
+  const NestedScrollViewDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

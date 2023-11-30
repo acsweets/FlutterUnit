@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomInkResponse extends StatefulWidget {
-  const CustomInkResponse({Key? key}) : super(key: key);
+  const CustomInkResponse({super.key});
 
   @override
   _CustomInkResponseState createState() => _CustomInkResponseState();

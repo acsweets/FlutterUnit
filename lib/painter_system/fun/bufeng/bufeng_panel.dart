@@ -27,7 +27,7 @@ class _BufengPanelState extends State<BufengPanel> {
       alignment: Alignment.topCenter,
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 10),
+          padding: const EdgeInsets.only(top: 10),
           child: CustomPaint(
             painter: PiPainter(config),
             size: config.size,

@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【padding】 : 内边距  【EdgeInsetsGeometry】",
 //    }
 class SliverPaddingDemo extends StatelessWidget {
-  SliverPaddingDemo({Key? key}) : super(key: key);
+  SliverPaddingDemo({super.key});
 
   final data = List.generate(128, (i) => Color(0xFF6600FF - 2 * i));
 

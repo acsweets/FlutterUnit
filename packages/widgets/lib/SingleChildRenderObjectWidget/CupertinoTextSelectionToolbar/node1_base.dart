@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CupertinoTextSelectionToolbarDemo extends StatelessWidget {
-  const CupertinoTextSelectionToolbarDemo({Key? key}) : super(key: key);
+  const CupertinoTextSelectionToolbarDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

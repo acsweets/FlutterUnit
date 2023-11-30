@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //              "会约束该区域的尺寸，不会小于指定的最小宽高，也不会大于指定的最大宽高。",
 //    }
 class ContainerConstraints extends StatelessWidget {
-  const ContainerConstraints({Key? key}) : super(key: key);
+  const ContainerConstraints({super.key});
 
   @override
   Widget build(BuildContext context) {

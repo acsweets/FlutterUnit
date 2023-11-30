@@ -20,7 +20,7 @@ import 'package:flutter/rendering.dart';
 //    }
 
 class ViewportDemo extends StatelessWidget {
-  ViewportDemo({Key? key}) : super(key: key);
+  ViewportDemo({super.key});
 
   final data = List.generate(128, (i) => Color(0xFF6600FF - 2 * i));
 
@@ -57,7 +57,7 @@ class ViewportDemo extends StatelessWidget {
 class ColorItem extends StatefulWidget {
   final Color color;
 
-  const ColorItem({Key? key, required this.color}) : super(key: key);
+  const ColorItem({super.key, required this.color});
 
   @override
   _ColorItemState createState() => _ColorItemState();

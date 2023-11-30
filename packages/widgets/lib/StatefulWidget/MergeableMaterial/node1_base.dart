@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class MergeableMaterialDemo extends StatefulWidget {
-  const MergeableMaterialDemo({Key? key}) : super(key: key);
+  const MergeableMaterialDemo({super.key});
 
   @override
   _MergeableMaterialDemoState createState() => _MergeableMaterialDemoState();

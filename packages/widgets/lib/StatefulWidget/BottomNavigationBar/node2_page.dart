@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //          "在onTap时进行使用控制器进行切页",
 //    }
 class BottomNavigationBarWithPageView extends StatefulWidget {
-  const BottomNavigationBarWithPageView({Key? key}) : super(key: key);
+  const BottomNavigationBarWithPageView({super.key});
 
   @override
   _BottomNavigationBarWithPageViewState createState() =>

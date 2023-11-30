@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// 说明: 
 
 class PlayFlex extends StatefulWidget {
-  const PlayFlex({Key? key}) : super(key: key);
+  const PlayFlex({super.key});
 
   @override
   _PlayFlexState createState() => _PlayFlexState();

@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //          "【onPressed】 : 点击事件  【Function()】",
 //    }
 class CustomRawMaterialButton extends StatelessWidget {
-  const CustomRawMaterialButton({Key? key}) : super(key: key);
+  const CustomRawMaterialButton({super.key});
 
   @override
   Widget build(BuildContext context) {

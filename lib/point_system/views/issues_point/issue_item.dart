@@ -37,7 +37,7 @@ class IssueItem extends StatelessWidget {
             child: Text(
               '${issue.title}',
               style:  TextStyle(fontSize: 15, color: Colors.grey, shadows: [
-                Shadow(color: isDark?Colors.black:Colors.white, offset: Offset(1, .5))
+                Shadow(color: isDark?Colors.black:Colors.white, offset: const Offset(1, .5))
               ]),
             ),
           ),

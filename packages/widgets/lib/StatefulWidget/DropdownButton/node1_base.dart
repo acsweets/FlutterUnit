@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "【backgroundColor】 : 背景色   【Color】",
 //    }
 class CustomDropDownButton extends StatefulWidget {
-  const CustomDropDownButton({Key? key}) : super(key: key);
+  const CustomDropDownButton({super.key});
 
   @override
   _CustomDropDownButtonState createState() => _CustomDropDownButtonState();

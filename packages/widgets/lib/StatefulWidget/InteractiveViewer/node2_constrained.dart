@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class InteractiveViewerDemo2 extends StatelessWidget {
-  const InteractiveViewerDemo2({Key? key}) : super(key: key);
+  const InteractiveViewerDemo2({super.key});
 
   final List<Color> colors = const [
     Colors.red,
@@ -29,8 +29,8 @@ class InteractiveViewerDemo2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int _rowCount = 20;
-    int _columnCount = 4;
+    int rowCount = 20;
+    int columnCount = 4;
 
     return SizedBox(
       width: 300,
@@ -40,10 +40,10 @@ class InteractiveViewerDemo2 extends StatelessWidget {
         scaleEnabled: false,
         child: Table(
           columnWidths: <int, TableColumnWidth>{
-            for (int column = 0; column < _columnCount; column += 1)
+            for (int column = 0; column < columnCount; column += 1)
               column: const FixedColumnWidth(150.0),
           },
-          children: buildRows(_rowCount, _columnCount),
+          children: buildRows(rowCount, columnCount),
         ),
       ),
     );

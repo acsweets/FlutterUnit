@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【borderColor】 : 边线色   【Color】",
 //    }
 class CupertinoSegmentedControlColor extends StatefulWidget {
-  const CupertinoSegmentedControlColor({Key? key}) : super(key: key);
+  const CupertinoSegmentedControlColor({super.key});
 
   @override
   _CupertinoSegmentedControlColorState createState() =>

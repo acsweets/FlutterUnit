@@ -16,13 +16,13 @@ import 'package:flutter/material.dart';
 //    }
 
 class TabPageSelectorIndicatorDemo extends StatelessWidget {
-  const TabPageSelectorIndicatorDemo({Key? key}) : super(key: key);
+  const TabPageSelectorIndicatorDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children:const [
+      children:[
         TabPageSelectorIndicator(
           backgroundColor: Colors.greenAccent,
           borderColor: Colors.deepPurpleAccent,

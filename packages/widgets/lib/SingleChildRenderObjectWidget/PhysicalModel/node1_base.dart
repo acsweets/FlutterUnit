@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【color】: 颜色    【Color】",
 //    }
 class PhysicalModelDemo extends StatelessWidget{
-  const PhysicalModelDemo({Key? key}) : super(key: key);
+  const PhysicalModelDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,13 +29,13 @@ class PhysicalModelDemo extends StatelessWidget{
           child: PhysicalModel(
               shadowColor: Colors.orange,
               elevation: 3,
+              clipBehavior: Clip.hardEdge,
+              shape: BoxShape.circle,
+              color: Colors.deepPurpleAccent,
               child: Image.asset(
                 'assets/images/caver.webp',
                 fit: BoxFit.cover,
-              ),
-              clipBehavior: Clip.hardEdge,
-              shape: BoxShape.circle,
-              color: Colors.deepPurpleAccent),
+              )),
         ),
 
         SizedBox(
@@ -44,14 +44,14 @@ class PhysicalModelDemo extends StatelessWidget{
           child: PhysicalModel(
               shadowColor: Colors.orange,
               elevation: 3,
-              child: Image.asset(
-                'assets/images/caver.webp',
-                fit: BoxFit.cover,
-              ),
               borderRadius: const BorderRadius.all(Radius.circular(20)),
               clipBehavior: Clip.hardEdge,
               shape: BoxShape.rectangle,
-              color: Colors.deepPurpleAccent),
+              color: Colors.deepPurpleAccent,
+              child: Image.asset(
+                'assets/images/caver.webp',
+                fit: BoxFit.cover,
+              )),
         ),
       ],
     );

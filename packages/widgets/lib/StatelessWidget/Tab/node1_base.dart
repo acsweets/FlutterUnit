@@ -16,13 +16,13 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomTab extends StatelessWidget {
-  const CustomTab({Key? key}) : super(key: key);
+  const CustomTab({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
+      children: [
         Tab(
           icon:Icon( Icons.add,color: Colors.blue,),
           child: Text('添加'),

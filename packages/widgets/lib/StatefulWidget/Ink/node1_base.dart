@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【color】 : 颜色   【Color】",
 //    }
 class CustomInk extends StatelessWidget {
-  const CustomInk({Key? key}) : super(key: key);
+  const CustomInk({super.key});
 
   @override
   Widget build(BuildContext context) {

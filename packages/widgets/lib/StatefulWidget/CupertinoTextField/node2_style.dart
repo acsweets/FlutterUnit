@@ -19,7 +19,7 @@ import 'package:flutter/material.dart';
 //          "【readOnly】: 是否只读    【bool】",
 //    }
 class CupertinoTextFieldStyle extends StatelessWidget {
-  const CupertinoTextFieldStyle({Key? key}) : super(key: key);
+  const CupertinoTextFieldStyle({super.key});
 
 
   @override

@@ -20,7 +20,7 @@ import 'package:flutter/material.dart';
 //          "【tabs】 : 标签组件   【List<Widget>】",
 //    }
 class CustomTabBar extends StatefulWidget {
-  const CustomTabBar({Key? key}) : super(key: key);
+  const CustomTabBar({super.key});
 
   @override
   _CustomTabBarState createState() => _CustomTabBarState();

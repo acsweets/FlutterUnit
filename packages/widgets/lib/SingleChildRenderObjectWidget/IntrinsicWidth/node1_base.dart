@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class IntrinsicWidthDemo extends StatefulWidget {
-  const IntrinsicWidthDemo({Key? key}) : super(key: key);
+  const IntrinsicWidthDemo({super.key});
 
   @override
   _IntrinsicWidthDemoState createState() => _IntrinsicWidthDemoState();

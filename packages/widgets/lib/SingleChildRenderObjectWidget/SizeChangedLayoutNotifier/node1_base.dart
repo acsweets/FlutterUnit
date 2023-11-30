@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class SizeChangedLayoutNotifierDemo extends StatefulWidget {
-  const SizeChangedLayoutNotifierDemo({Key? key}) : super(key: key);
+  const SizeChangedLayoutNotifierDemo({super.key});
 
   @override
   _SizeChangedLayoutNotifierDemoState createState() => _SizeChangedLayoutNotifierDemoState();
@@ -34,7 +34,7 @@ class _SizeChangedLayoutNotifierDemoState extends State<SizeChangedLayoutNotifie
 }
 
 class ChangeableBox extends StatefulWidget {
-  const ChangeableBox({Key? key}) : super(key: key);
+  const ChangeableBox({super.key});
 
   @override
   _ChangeableBoxState createState() => _ChangeableBoxState();

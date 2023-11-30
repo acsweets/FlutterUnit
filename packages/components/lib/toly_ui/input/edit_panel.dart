@@ -5,7 +5,7 @@ typedef ChangeCallback = void Function(String str);
 ///输入面板
 class EditPanel extends StatefulWidget {
   const EditPanel(
-      {Key? key,
+      {super.key,
       this.backgroundColor = Colors.white,
       this.color = Colors.lightBlue,
       this.minLines = 4,
@@ -14,8 +14,7 @@ class EditPanel extends StatefulWidget {
       this.submitClear = true,
       this.defaultText = "",
       this.onChange,
-      this.hint = "写点什么..."})
-      : super(key: key);
+      this.hint = "写点什么..."});
 
   final Color color; //字颜色
   final Color backgroundColor; //背景色颜色

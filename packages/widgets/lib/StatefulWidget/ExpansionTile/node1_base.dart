@@ -16,7 +16,7 @@ import '../../StatelessWidget/RadioListTile/node1_base.dart';
 //          "【initiallyExpanded】 : 是否初始时展开   【bool】",
 //    }
 class CustomExpansionTile extends StatefulWidget {
-  const CustomExpansionTile({Key? key}) : super(key: key);
+  const CustomExpansionTile({super.key});
 
   @override
   _CustomExpansionTileState createState() => _CustomExpansionTileState();

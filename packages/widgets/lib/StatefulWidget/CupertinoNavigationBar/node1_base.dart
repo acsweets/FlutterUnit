@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【border】 : 边线   【Border】",
 //    }
 class CustomCupertinoNavigationBar extends StatelessWidget {
-  const CustomCupertinoNavigationBar({Key? key}) : super(key: key);
+  const CustomCupertinoNavigationBar({super.key});
 
   @override
   Widget build(BuildContext context) {

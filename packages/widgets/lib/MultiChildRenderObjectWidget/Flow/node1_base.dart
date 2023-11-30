@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【delegate】 : 代理   【FlowDelegate】",
 //    }
 class CircleFlow extends StatelessWidget {
-  CircleFlow({Key? key}) : super(key: key);
+  CircleFlow({super.key});
 
   final List<String> data = List.generate(
       16,

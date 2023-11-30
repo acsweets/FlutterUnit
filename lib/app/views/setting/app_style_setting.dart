@@ -1,7 +1,5 @@
-import 'package:app/app.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 /// create by 张风捷特烈 on 2020-04-10
 /// contact me by email 1981462002@qq.com
@@ -55,6 +53,8 @@ class AppThemeSettingDialog extends StatelessWidget {
   }
 
   Widget? _buildItem(BuildContext context, int index) {
+    return null;
+  
     // AppStyle locale = Cons.kAppStyleStringMap.keys.toList()[index];
     // AppStyle style = BlocProvider.of<AppBloc>(context).state.appStyle;
     // bool checked = style == locale;

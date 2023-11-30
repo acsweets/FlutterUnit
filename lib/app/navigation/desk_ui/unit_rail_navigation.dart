@@ -93,16 +93,16 @@ class _UnitRailNavigationState extends State<UnitRailNavigation>
         alignment: Alignment.topCenter,
         margin: const EdgeInsets.only(right: 1),
         width: 130,
-        decoration:  BoxDecoration(color: Color(0xff2C3036), boxShadow: [
-          BoxShadow(color: divColor!, offset: Offset(1, 0), blurRadius: 2)
+        decoration:  BoxDecoration(color: const Color(0xff2C3036), boxShadow: [
+          BoxShadow(color: divColor!, offset: const Offset(1, 0), blurRadius: 2)
         ]),
         child: Column(
           children: [
-            Wrap(
+            const Wrap(
               direction: Axis.vertical,
               spacing: 10,
               crossAxisAlignment: WrapCrossAlignment.center,
-              children: const [
+              children: [
                 CircleImage(
                   image: AssetImage('assets/images/icon_head.webp'),
                   size: 60,
@@ -177,7 +177,6 @@ class _UnitRailNavigationState extends State<UnitRailNavigation>
         ),
       ),
     );
-    ;
   }
 
   Widget buildIcons() {
@@ -234,7 +233,7 @@ class _UnitRailMenu extends StatefulWidget {
   final String label;
   final Animation<double> animation;
 
-   _UnitRailMenu({
+   const _UnitRailMenu({
     Key? key,
     required this.onTap,
     required this.selected,

@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【scale】 : 动画   【Animation<double>】",
 //    }
 class CustomScaleTransition extends StatefulWidget {
-  const CustomScaleTransition({Key? key}) : super(key: key);
+  const CustomScaleTransition({super.key});
 
   @override
   _CustomScaleTransitionState createState() => _CustomScaleTransitionState();

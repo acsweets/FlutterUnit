@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //      "subtitle":  "    Flutter也支持贝塞尔曲线等复杂绘制。",
 //    }
 class PlayBezier3Page extends StatefulWidget {
-  const PlayBezier3Page({Key? key}) : super(key: key);
+  const PlayBezier3Page({super.key});
 
   @override
   _PlayBezier3PageState createState() => _PlayBezier3PageState();

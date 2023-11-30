@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "通过ShapeDecoration对象可指定边线形状\n",
 //    }
 class ShapeDecorationDemo extends StatelessWidget {
-  const ShapeDecorationDemo({Key? key}) : super(key: key);
+  const ShapeDecorationDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ColorInkWell extends StatefulWidget {
-  const ColorInkWell({Key? key}) : super(key: key);
+  const ColorInkWell({super.key});
 
   @override
   _ColorInkWellState createState() => _ColorInkWellState();

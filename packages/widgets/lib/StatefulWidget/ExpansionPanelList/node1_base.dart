@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【onPressed】 : 点击事件  【Function()】",
 //    }
 class CustomExpansionPanelList extends StatefulWidget {
-  const CustomExpansionPanelList({Key? key}) : super(key: key);
+  const CustomExpansionPanelList({super.key});
 
   @override
   _CustomExpansionPanelListState createState() =>

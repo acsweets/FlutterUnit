@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class NotificationListenerUpdate extends StatefulWidget {
-  const NotificationListenerUpdate({Key? key}) : super(key: key);
+  const NotificationListenerUpdate({super.key});
 
   @override
   _NotificationListenerUpdateState createState() =>

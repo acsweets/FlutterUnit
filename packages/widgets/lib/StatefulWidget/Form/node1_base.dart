@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【onWillPop】 : 返回回调  【WillPopCallback】",
 //    }
 class CustomForm extends StatefulWidget {
-  const CustomForm({Key? key}) : super(key: key);
+  const CustomForm({super.key});
 
   @override
   _CustomFormState createState() => _CustomFormState();

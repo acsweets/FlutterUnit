@@ -21,7 +21,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomFadeInImage extends StatelessWidget {
-  const CustomFadeInImage({Key? key}) : super(key: key);
+  const CustomFadeInImage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,6 +3,7 @@
 /// create by 张风捷特烈 on 2020-03-26
 /// contact me by email 1981462002@qq.com
 /// 说明:
+library;
 //    {
 //      "widgetId": 28,
 //      "priority": 3,
@@ -16,7 +17,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets/utils/pather.dart';
 
 class ShapeFAB extends StatelessWidget {
-  const ShapeFAB({Key? key}) : super(key: key);
+  const ShapeFAB({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,14 +30,14 @@ class ShapeFAB extends StatelessWidget {
         spacing: 20,
         children: data.keys
             .map((e) => FloatingActionButton(
-          heroTag:  e.toString()+"c",
+          heroTag:  "${e}c",
           onPressed: () {},
           backgroundColor: e,
           shape: StarBorder(),
           foregroundColor: Colors.white,
-          child: Icon(data[e]),
           tooltip: "android",
           elevation: 5,
+          child: Icon(data[e]),
         )).toList());
   }
 }

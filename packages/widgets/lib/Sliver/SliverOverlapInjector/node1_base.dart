@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class SliverOverlapInjectorDemo extends StatelessWidget {
-  const SliverOverlapInjectorDemo({Key? key}) : super(key: key);
+  const SliverOverlapInjectorDemo({super.key});
 
   final List<String> _tabs = const ['风神传', '封妖志', "幻将录", "永恒传说"];
 

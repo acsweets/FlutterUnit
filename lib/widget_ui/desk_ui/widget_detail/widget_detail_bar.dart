@@ -28,8 +28,8 @@ class DeskSliverWidgetDetailBar extends StatelessWidget {
     return SliverAppBar(
       pinned: true,
       backgroundColor: isDark? appBarColor:backgroundColor,
-      titleTextStyle:  TextStyle(color: isDark?appBarTextColor:Color(0xff696969)),
-      iconTheme:  IconThemeData(color: isDark?appBarTextColor:Color(0xff696969)),
+      titleTextStyle:  TextStyle(color: isDark?appBarTextColor:const Color(0xff696969)),
+      iconTheme:  IconThemeData(color: isDark?appBarTextColor:const Color(0xff696969)),
       expandedHeight: 120.0,
       scrolledUnderElevation: 0.5,
       flexibleSpace: DragToMoveAreaNoDouble(
@@ -42,7 +42,7 @@ class DeskSliverWidgetDetailBar extends StatelessWidget {
           ),
           fixedSubtitle: Text(
             model.name,
-            style:  TextStyle(color:isDark?appBarTextColor:Color(0xff696969), fontSize: 12),
+            style:  TextStyle(color:isDark?appBarTextColor:const Color(0xff696969), fontSize: 12),
           ),
           title: Padding(
             padding: const EdgeInsets.only(bottom: 3),

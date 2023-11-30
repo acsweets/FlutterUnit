@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "【onSaved】 : 表单save时回调  【FormFieldSetter<String>】",
 //    }
 class FormFieldDemo extends StatelessWidget {
-  const FormFieldDemo({Key? key}) : super(key: key);
+  const FormFieldDemo({super.key});
 
   final String info =
       'FormField 代表表单中的一个字段，对于字符串类型的字段，框架中封装了 TextFormField 以便使用；下拉选择的字段，用 DropdownButtonFormField。'
@@ -33,7 +33,7 @@ class FormFieldDemo extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 }

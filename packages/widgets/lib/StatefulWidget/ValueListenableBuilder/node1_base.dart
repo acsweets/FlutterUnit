@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ValueListenableBuilderDemo extends StatelessWidget {
-  ValueListenableBuilderDemo({Key? key}) : super(key: key);
+  ValueListenableBuilderDemo({super.key});
 
   final ValueNotifier<int> _counter = ValueNotifier<int>(0);
 

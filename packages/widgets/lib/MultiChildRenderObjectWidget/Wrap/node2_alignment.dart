@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【alignment】 : 主轴对齐   【WrapAlignment】",
 //    }
 class WrapAlignmentWrap extends StatelessWidget {
-   WrapAlignmentWrap({Key? key}) : super(key: key);
+   WrapAlignmentWrap({super.key});
 
   @override
   Widget build(BuildContext context) {

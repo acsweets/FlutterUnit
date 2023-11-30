@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【defaultVerticalAlignment】 : 单元格竖直方向对齐模式   【TableCellVerticalAlignment】",
 //    }
 class CustomTable extends StatelessWidget {
-  const CustomTable({Key? key}) : super(key: key);
+  const CustomTable({super.key});
 
   @override
   Widget build(BuildContext context) {

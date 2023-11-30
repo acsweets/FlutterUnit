@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class TabPageSelectorDemo extends StatefulWidget {
-  const TabPageSelectorDemo({Key? key}) : super(key: key);
+  const TabPageSelectorDemo({super.key});
 
   @override
   _TabPageSelectorDemoState createState() => _TabPageSelectorDemoState();

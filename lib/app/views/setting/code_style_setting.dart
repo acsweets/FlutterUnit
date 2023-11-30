@@ -31,7 +31,7 @@ class Hello {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    appBar: AppBar(title: Text('代码高亮样式')),
+    appBar: AppBar(title: const Text('代码高亮样式')),
       body: BlocBuilder<AppBloc, AppState>(
           builder: (_, state) => _buildFontCell(context,
               Cons.codeThemeSupport.keys.toList(), state.codeStyleIndex)),

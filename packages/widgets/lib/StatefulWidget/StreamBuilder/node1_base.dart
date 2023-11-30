@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【builder】 : 点击事件  【AsyncWidgetBuilder<T>】",
 //    }
 class CustomStreamBuilder extends StatefulWidget {
-  const CustomStreamBuilder({Key? key}) : super(key: key);
+  const CustomStreamBuilder({super.key});
 
   @override
   _CustomStreamBuilderState createState() => _CustomStreamBuilderState();
@@ -77,7 +77,7 @@ class _CustomStreamBuilderState extends State<CustomStreamBuilder> {
         if (snap.connectionState == ConnectionState.active) {
           return Text(
             snap.data.toString(),
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           );
         }
         if (snap.connectionState == ConnectionState.waiting) {

@@ -11,19 +11,19 @@ import 'package:flutter/material.dart';
 //      "subtitle": "可以通过IconTheme.of获取图标主题数据，也可以为IconTheme【后代】的图标组件设置默认样式，包括颜色、透明度、尺寸。",
 //    }
 class IconThemeDemo extends StatelessWidget {
-  const IconThemeDemo({Key? key}) : super(key: key);
+  const IconThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return IconTheme(
-      data: const IconThemeData(
+    return const IconTheme(
+      data: IconThemeData(
           color: Colors.purple,
           opacity: 1.0,
           size: 30
       ),
       child: Wrap(
         spacing: 10,
-        children: const[
+        children: [
           Icon(Icons.add),
           Icon(Icons.ac_unit),
           Icon(Icons.g_translate),

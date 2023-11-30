@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 
 
 class CustomMultiChildLayoutDemo extends StatelessWidget {
-  const CustomMultiChildLayoutDemo({Key? key}) : super(key: key);
+  const CustomMultiChildLayoutDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class CustomMultiChildLayoutDemo extends StatelessWidget {
 // 50 颜色盒
 class Box50 extends StatelessWidget {
   final Color color;
-  const Box50(this.color, {Key? key}) : super(key: key);
+  const Box50(this.color, {super.key});
 
   @override
   Widget build(BuildContext context) {

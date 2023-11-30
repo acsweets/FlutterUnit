@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "着色器相关知识详见【绘制专辑】",
 //    }
 class LinearShaderMask extends StatelessWidget {
-  const LinearShaderMask({Key? key}) : super(key: key);
+  const LinearShaderMask({super.key});
 
   final List<Color> colors = const [Colors.red, Colors.yellow, Colors.blue];
 
@@ -48,7 +48,7 @@ class LinearShaderMask extends StatelessWidget {
     );
   }
 
-  Shader _buildShader(Rect bounds) => LinearGradient(
+  Shader _buildShader(Rect bounds) => const LinearGradient(
       begin: Alignment.centerLeft,
       end: Alignment.centerRight,
       tileMode: TileMode.mirror,

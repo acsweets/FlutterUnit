@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【alignment】 : 对齐方式   【AlignmentGeometry】",
 //    }
 class CustomFittedBox extends StatefulWidget {
-  const CustomFittedBox({Key? key}) : super(key: key);
+  const CustomFittedBox({super.key});
 
   @override
   _CustomFittedBoxState createState() => _CustomFittedBoxState();
@@ -81,14 +81,14 @@ class _CustomFittedBoxState extends State<CustomFittedBox> {
               min: 10,
               max: 150,
               divisions: 100,
-              label: '子宽度:' + _childW.toStringAsFixed(1),
+              label: '子宽度:${_childW.toStringAsFixed(1)}',
               value: _childW,
               onChanged: (v) => setState(() => _childW = v)),
           Slider(
               min: 10,
               max: 150,
               divisions: 100,
-              label: '子高度:' + _childH.toStringAsFixed(1),
+              label: '子高度:${_childH.toStringAsFixed(1)}',
               value: _childH,
               onChanged: (v) => setState(() => _childH = v)),
         ],

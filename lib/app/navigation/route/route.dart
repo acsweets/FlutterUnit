@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 import '../../views/setting/code_style_setting.dart';
 import '../../views/setting/font_setting.dart';
-import '../../views/setting/setting_page.dart';
 import '../../views/setting/theme_color_setting.dart';
 import '../unit_navigation.dart';
 
@@ -30,9 +29,9 @@ class RoutePath {
     switch (settings.name) {
       case nav:
         if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
-          return ZeroPageRoute(child: UnitNavigation());
+          return ZeroPageRoute(child: const UnitNavigation());
         }
-        return SlidePageRoute(child: UnitNavigation());
+        return SlidePageRoute(child: const UnitNavigation());
     }
 
     return null;

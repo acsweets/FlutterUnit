@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 /// create by 张风捷特烈 on 2022/04/23
@@ -11,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "通过 ColorFilter 对象实现颜色滤镜。",
 //    }
 class ImageFilteredColor extends StatefulWidget {
-  const ImageFilteredColor({Key? key}) : super(key: key);
+  const ImageFilteredColor({super.key});
 
   @override
   State<ImageFilteredColor> createState() => _ImageFilteredColorState();
@@ -115,7 +114,7 @@ class _ImageFilteredColorState extends State<ImageFilteredColor> {
 }
 
 class _TargetContent extends StatelessWidget {
-  const _TargetContent({Key? key}) : super(key: key);
+  const _TargetContent();
 
   @override
   Widget build(BuildContext context) {

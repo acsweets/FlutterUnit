@@ -14,7 +14,7 @@ class ColumnDetailPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(columnize.title),
       ),
-      body: CustomScrollView(
+      body: const CustomScrollView(
         slivers: [
           SliverPadding(
               padding: EdgeInsets.only(top: 8),

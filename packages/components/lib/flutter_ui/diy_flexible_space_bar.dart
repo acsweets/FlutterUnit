@@ -3,13 +3,11 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'dart:math';
 import 'dart:ui' as ui;
 
 
 import 'package:flutter/foundation.dart' show clampDouble;
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 
 /// The part of a Material Design [AppBar] that expands, collapses, and
@@ -125,7 +123,6 @@ class _DiyFlexibleSpaceBarState extends State<DiyFlexibleSpaceBar> {
     if (widget.centerTitle != null) {
       return widget.centerTitle!;
     }
-    assert(theme.platform != null);
     switch (theme.platform) {
       case TargetPlatform.android:
       case TargetPlatform.fuchsia:
@@ -143,7 +140,6 @@ class _DiyFlexibleSpaceBarState extends State<DiyFlexibleSpaceBar> {
       return Alignment.bottomCenter;
     }
     final TextDirection textDirection = Directionality.of(context);
-    assert(textDirection != null);
     switch (textDirection) {
       case TextDirection.rtl:
         return Alignment.bottomRight;
@@ -169,10 +165,6 @@ class _DiyFlexibleSpaceBarState extends State<DiyFlexibleSpaceBar> {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         final FlexibleSpaceBarSettings settings = context.dependOnInheritedWidgetOfExactType<FlexibleSpaceBarSettings>()!;
-        assert(
-        settings != null,
-        'A FlexibleSpaceBar must be wrapped in the widget returned by FlexibleSpaceBar.createSettings().',
-        );
 
         final List<Widget> children = <Widget>[];
 
@@ -269,7 +261,7 @@ class _DiyFlexibleSpaceBarState extends State<DiyFlexibleSpaceBar> {
 
           final double opacity = settings.toolbarOpacity;
           if (opacity > 0.0) {
-            TextStyle titleStyle = theme.primaryTextTheme.headline6!;
+            TextStyle titleStyle = theme.primaryTextTheme.titleLarge!;
             titleStyle = titleStyle.copyWith(
               color: titleStyle.color!.withOpacity(opacity),
             );

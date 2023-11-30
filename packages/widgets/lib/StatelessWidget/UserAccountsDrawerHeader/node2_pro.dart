@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【margin】: 外边距   【EdgeInsetsGeometry】",
 //    }
 class ProUAGHP extends StatelessWidget {
-  const ProUAGHP({Key? key}) : super(key: key);
+  const ProUAGHP({super.key});
 
   @override
   Widget build(BuildContext context) {

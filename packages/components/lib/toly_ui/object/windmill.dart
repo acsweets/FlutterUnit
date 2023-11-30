@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class WindmillWidget extends StatelessWidget {
   final double rotate;
   final double radius;
-  const WindmillWidget({Key? key, this.rotate=0,this.radius = 60}) : super(key: key);
+  const WindmillWidget({super.key, this.rotate=0,this.radius = 60});
 
   @override
   Widget build(BuildContext context) {

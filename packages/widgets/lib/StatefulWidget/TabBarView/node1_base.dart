@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【physics】 : 表现   【ScrollPhysics】",
 //    }
 class CustomTabBarView extends StatefulWidget {
-  const CustomTabBarView({Key? key}) : super(key: key);
+  const CustomTabBarView({super.key});
 
   @override
   _CustomTabBarViewState createState() => _CustomTabBarViewState();

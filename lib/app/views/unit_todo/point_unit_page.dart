@@ -51,9 +51,9 @@ class BugUnitPage extends StatelessWidget {
             child: ShaderMask(
               shaderCallback: (rect) =>
                   _buildShader(rect, Theme.of(context).primaryColor),
-              child: TextTyper(
+              child: const TextTyper(
                 text:info,
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                   shadows: [
                     Shadow(
                         color: Colors.black,

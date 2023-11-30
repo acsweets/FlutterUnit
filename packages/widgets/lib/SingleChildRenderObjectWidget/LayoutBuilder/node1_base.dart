@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【builder】 : 布局构造器   【LayoutWidgetBuilder】",
 //    }
 class CustomLayoutBuilder extends StatelessWidget {
-  const CustomLayoutBuilder({Key? key}) : super(key: key);
+  const CustomLayoutBuilder({super.key});
 
   @override
   Widget build(BuildContext context) {

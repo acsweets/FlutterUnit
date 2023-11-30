@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【onTap】: 点击事件   【Function()】",
 //    }
 class SelectListTile extends StatefulWidget {
-  const SelectListTile({Key? key}) : super(key: key);
+  const SelectListTile({super.key});
 
   @override
   _SelectListTileState createState() => _SelectListTileState();

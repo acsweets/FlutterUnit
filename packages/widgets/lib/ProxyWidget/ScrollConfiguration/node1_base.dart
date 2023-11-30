@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "    可以使用ScrollConfiguration让ListView无蓝色阴影",
 //    }
 class CustomScrollConfiguration extends StatelessWidget {
-  CustomScrollConfiguration({Key? key}) : super(key: key);
+  CustomScrollConfiguration({super.key});
 
   final List<Color> data = [
     Colors.cyan[50]!,
@@ -64,7 +64,7 @@ class CustomScrollConfiguration extends StatelessWidget {
 
 class NoScrollBehavior extends ScrollBehavior {
   @override
-  Widget buildViewportChrome(
-          BuildContext context, Widget child, AxisDirection axisDirection) =>
+  Widget buildOverscrollIndicator(
+      BuildContext context, Widget child, ScrollableDetails details) =>
       child;
 }

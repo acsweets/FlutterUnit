@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【padding】 : 内边距   【EdgeInsetsGeometry】",
 //    }
 class CustomAnimatedList extends StatefulWidget {
-  const CustomAnimatedList({Key? key}) : super(key: key);
+  const CustomAnimatedList({super.key});
 
   @override
   _CustomAnimatedListState createState() => _CustomAnimatedListState();
@@ -155,13 +155,12 @@ class ListModel<E> {
 
 class CardItem extends StatelessWidget {
   const CardItem(
-      {Key? key,
+      {super.key,
       required this.animation,
       this.onTap,
       required this.item,
       this.selected = false})
-      : assert(item >= 0),
-        super(key: key);
+      : assert(item >= 0);
   final Animation<double> animation;
   final VoidCallback? onTap;
   final int item;

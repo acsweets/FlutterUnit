@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "EdgeInsets.all用来限定相同的四边边距",
 //    }
 class PaddingAll extends StatelessWidget {
-  const PaddingAll({Key? key}) : super(key: key);
+  const PaddingAll({super.key});
 
   @override
   Widget build(BuildContext context) {

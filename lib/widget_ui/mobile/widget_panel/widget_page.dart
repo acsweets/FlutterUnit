@@ -38,12 +38,12 @@ class _WidgetPageState extends State<WidgetPage> {
           onRefresh: _onRefresh,
           enablePullUp: true,
           onLoading: _onLoadMore,
-          child: CustomScrollView(
+          child: const CustomScrollView(
 
             // key: PageStorageKey<String>(name),
             slivers: <Widget>[
 
-              const WidgetListPanel(),
+              WidgetListPanel(),
 
             ],
           ),

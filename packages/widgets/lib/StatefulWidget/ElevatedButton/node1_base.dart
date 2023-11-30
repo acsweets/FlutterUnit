@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ElevatedButtonDemo extends StatelessWidget {
-  const ElevatedButtonDemo({Key? key}) : super(key: key);
+  const ElevatedButtonDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,14 +25,14 @@ class ElevatedButtonDemo extends StatelessWidget {
           spacing: 20,
           children: [
             ElevatedButton(
-              child: const Text('ElevatedButton'),
               onPressed: _onPressed,
               onLongPress: _onLongPress,
+              child: const Text('ElevatedButton'),
             ),
             const ElevatedButton(
-              child: Text('禁用按钮'),
               onPressed: null,
               onLongPress: null,
+              child: Text('禁用按钮'),
             ),
           ],
         ));

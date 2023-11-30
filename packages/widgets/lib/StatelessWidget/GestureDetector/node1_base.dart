@@ -20,7 +20,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomGestureDetector extends StatefulWidget {
-  const CustomGestureDetector({Key? key}) : super(key: key);
+  const CustomGestureDetector({super.key});
 
   @override
   _CustomGestureDetectorState createState() => _CustomGestureDetectorState();

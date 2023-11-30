@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class OffSetWidgetDemo extends StatelessWidget {
-  const OffSetWidgetDemo({Key? key}) : super(key: key);
+  const OffSetWidgetDemo({super.key});
 
   final List<Map<String, dynamic>> data = const [
     {
@@ -72,9 +72,9 @@ class OffSetWidget extends StatelessWidget {
   final Direction direction;
 
   const OffSetWidget(
-      {Key? key, this.offset = Offset.zero,
+      {super.key, this.offset = Offset.zero,
       required this.child,
-      this.direction = Direction.topLeft}) : super(key: key);
+      this.direction = Direction.topLeft});
 
   @override
   Widget build(BuildContext context) {

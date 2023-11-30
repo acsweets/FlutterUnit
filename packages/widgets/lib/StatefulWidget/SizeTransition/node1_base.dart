@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【sizeFactor】 : 动画   【Animation<double>】",
 //    }
 class CustomSizeTransition extends StatefulWidget {
-  const CustomSizeTransition({Key? key}) : super(key: key);
+  const CustomSizeTransition({super.key});
 
   @override
   _CustomSizeTransitionState createState() => _CustomSizeTransitionState();

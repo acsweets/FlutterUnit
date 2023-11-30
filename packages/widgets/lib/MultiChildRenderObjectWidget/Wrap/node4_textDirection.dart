@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【textDirection】 : 文字方向   【TextDirection】",
 //    }
 class TextDirectionWrap extends StatelessWidget {
-  TextDirectionWrap({Key? key}) : super(key: key);
+  TextDirectionWrap({super.key});
 
   @override
   Widget build(BuildContext context) {

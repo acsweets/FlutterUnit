@@ -16,22 +16,22 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomRow extends StatelessWidget {
-  const CustomRow({Key? key}) : super(key: key);
+  const CustomRow({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
         height: 70,
         color: const Color(0x4484FFFF),
-        child: Row(
-          children: const [
+        child: const Row(
+          children: [
             Padding(
+              padding: EdgeInsets.only(left: 25, right: 20),
               child: Icon(
                 Icons.add_location,
                 size: 30,
                 color: Colors.pink,
               ),
-              padding: EdgeInsets.only(left: 25, right: 20),
             ),
             Expanded(
               child: Text(
@@ -40,8 +40,8 @@ class CustomRow extends StatelessWidget {
               ),
             ),
             Padding(
-              child: Icon(Icons.keyboard_arrow_right, color: Colors.black38),
               padding: EdgeInsets.only(right: 25),
+              child: Icon(Icons.keyboard_arrow_right, color: Colors.black38),
             ),
           ],
         ));

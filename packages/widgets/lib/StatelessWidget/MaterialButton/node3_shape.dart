@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ShapeMaterialButton extends StatelessWidget {
-  const ShapeMaterialButton({Key? key}) : super(key: key);
+  const ShapeMaterialButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,15 +29,15 @@ class ShapeMaterialButton extends StatelessWidget {
               color: Colors.blue,
               highlightColor: const Color(0xffF88B0A),
               splashColor: Colors.red,
-              child: const Icon(
-                Icons.add,
-                color: Colors.white,
-              ),
               shape: const CircleBorder(
                 side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
               ),
               onLongPress: () =>  Navigator.of(context).pushNamed('AboutMePage'),
-              onPressed: () =>  Navigator.of(context).pushNamed('AboutMePage')),
+              onPressed: () =>  Navigator.of(context).pushNamed('AboutMePage'),
+              child: const Icon(
+                Icons.add,
+                color: Colors.white,
+              )),
         ),
         SizedBox(
           width: 100,
@@ -49,14 +49,14 @@ class ShapeMaterialButton extends StatelessWidget {
               color: Colors.blue,
               highlightColor: const Color(0xffF88B0A),
               splashColor: Colors.red,
-              child: const Icon(
-                Icons.remove,
-                color: Colors.white,
-              ),
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(15))),
               onLongPress: () =>  Navigator.of(context).pushNamed('AboutMePage'),
-              onPressed: () =>  Navigator.of(context).pushNamed('AboutMePage')),
+              onPressed: () =>  Navigator.of(context).pushNamed('AboutMePage'),
+              child: const Icon(
+                Icons.remove,
+                color: Colors.white,
+              )),
         ),
       ],
     );

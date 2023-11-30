@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CupertinoFullscreenDialogTransitionDemo extends StatelessWidget {
-  const CupertinoFullscreenDialogTransitionDemo({Key? key}) : super(key: key);
+  const CupertinoFullscreenDialogTransitionDemo({super.key});
 
   final String info =
       '和 CupertinoPageTransition 一样，该组件底层基于 SlideTransition 组件实现，'
@@ -29,7 +29,7 @@ class CupertinoFullscreenDialogTransitionDemo extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 }

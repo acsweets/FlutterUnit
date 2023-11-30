@@ -45,18 +45,18 @@ class StandardHomeSearch extends StatelessWidget implements PreferredSizeWidget 
                       maxLines: 1,
                       decoration: InputDecoration(
                           filled: true,
-                          fillColor: isDark?Color(0xff292929):Color(0xffF3F6F9),
-                          prefixIcon: Icon(
+                          fillColor: isDark?const Color(0xff292929):const Color(0xffF3F6F9),
+                          prefixIcon: const Icon(
                             Icons.search,
                             color: Colors.grey,
                           ),
-                          border: UnderlineInputBorder(
+                          border: const UnderlineInputBorder(
                             borderSide: BorderSide.none,
                             borderRadius:
                                 BorderRadius.all(Radius.circular(35 / 2)),
                           ),
                           hintText: "搜索组件",
-                          hintStyle: TextStyle(fontSize: 14)),
+                          hintStyle: const TextStyle(fontSize: 14)),
                     ),
                   )),
             ),

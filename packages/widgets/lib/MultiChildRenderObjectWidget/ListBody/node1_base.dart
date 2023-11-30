@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ListBodyDemo extends StatelessWidget {
-  const ListBodyDemo({Key? key}) : super(key: key);
+  const ListBodyDemo({super.key});
 
 
   @override

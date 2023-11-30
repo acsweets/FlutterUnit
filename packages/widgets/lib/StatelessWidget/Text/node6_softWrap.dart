@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "下面softWrap=false;  overflow依次是:clip、fade、ellipsis、visible ",
 //    }
 class SoftWrapText extends StatelessWidget {
-  const SoftWrapText({Key? key}) : super(key: key);
+  const SoftWrapText({super.key});
 
   @override
   Widget build(BuildContext context) {

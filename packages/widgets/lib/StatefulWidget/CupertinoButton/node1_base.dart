@@ -2,6 +2,7 @@
 /// contact me by email 1981462002@qq.com
 /// 说明:
 ///
+library;
 //    {
 //      "widgetId": 24,
 //      "priority": 1,
@@ -17,7 +18,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomCupertinoButton extends StatelessWidget {
-  CustomCupertinoButton({Key? key}) : super(key: key);
+  CustomCupertinoButton({super.key});
 
   final Map<Color,double> data = {
     CupertinoColors.activeBlue:4.0,

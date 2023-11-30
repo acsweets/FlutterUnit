@@ -12,7 +12,6 @@ import 'package:flutter_unit/app/views/about/version_info.dart';
 import 'package:flutter_unit/app/views/data_manage/data_manage_page.dart';
 import 'package:flutter_unit/app/views/setting/code_style_setting.dart';
 import 'package:flutter_unit/app/views/setting/font_setting.dart';
-import 'package:flutter_unit/app/views/setting/item_style_setting.dart';
 import 'package:flutter_unit/app/views/setting/setting_page.dart';
 import 'package:flutter_unit/app/views/setting/theme_color_setting.dart';
 import 'package:flutter_unit/app/views/unit_todo/attr_unit_page.dart';
@@ -23,7 +22,6 @@ import 'package:flutter_unit/point_system/views/issues_point/issues_point_page.d
 import 'package:flutter_unit/widget_ui/desk_ui/widget_detail/widget_detail_page.dart';
 import 'package:flutter_unit/widget_ui/mobile/category_page/category_detail.dart';
 import 'package:flutter_unit/widget_ui/mobile/category_page/collect_page.dart';
-import 'package:flutter_unit/widget_ui/mobile/search_page/search_page.dart';
 import 'package:flutter_unit/widget_ui/mobile/widget_detail/widget_detail_page.dart';
 import 'package:widget_repository/widget_repository.dart';
 
@@ -64,9 +62,9 @@ class UnitRouters {
       //
       case UnitRouter.nav:
         if(Platform.isWindows||Platform.isMacOS||Platform.isLinux){
-          return ZeroPageRoute( child: UnitNavigation());
+          return ZeroPageRoute( child: const UnitNavigation());
         }
-        return SlidePageRoute(child: UnitNavigation());
+        return SlidePageRoute(child: const UnitNavigation());
 
       // 组件详情页
       case widget_detail:

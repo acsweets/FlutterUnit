@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【onReorder】 : 调换时回调  【ReorderCallback】",
 //    }
 class CustomReorderableListView extends StatefulWidget {
-  const CustomReorderableListView({Key? key}) : super(key: key);
+  const CustomReorderableListView({super.key});
 
   @override
   _CustomReorderableListViewState createState() => _CustomReorderableListViewState();

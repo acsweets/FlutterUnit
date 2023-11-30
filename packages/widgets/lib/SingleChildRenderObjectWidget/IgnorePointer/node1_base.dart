@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomIgnorePointer extends StatefulWidget {
-  const CustomIgnorePointer({Key? key}) : super(key: key);
+  const CustomIgnorePointer({super.key});
 
   @override
   _CustomIgnorePointerState createState() => _CustomIgnorePointerState();

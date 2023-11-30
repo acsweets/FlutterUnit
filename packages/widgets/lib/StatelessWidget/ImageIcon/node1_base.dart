@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //      }
 
 class CustomImageIcon extends StatelessWidget {
-  const CustomImageIcon({Key? key}) : super(key: key);
+  const CustomImageIcon({super.key});
 
   @override
   Widget build(BuildContext context) {

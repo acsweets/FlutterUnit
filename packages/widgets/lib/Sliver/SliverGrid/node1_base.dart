@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //        "属性特征同GridView,可详见之",
 //    }
 class SliverGirdDemo extends StatelessWidget {
-  SliverGirdDemo({Key? key}) : super(key: key);
+  SliverGirdDemo({super.key});
 
   final List<Color> data = List.generate(128, (i) => Color(0xFF6600FF - 2 * i));
 

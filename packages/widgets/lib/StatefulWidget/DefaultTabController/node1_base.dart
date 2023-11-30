@@ -20,7 +20,7 @@ class DefaultTabControllerDemo extends StatelessWidget {
     Tab(text: '混沌战士'),
   ];
 
-  const DefaultTabControllerDemo({Key? key}) : super(key: key);
+  const DefaultTabControllerDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class DefaultTabControllerDemo extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: const Text("DefaultTabController"),
-            bottom: TabBar(
+            bottom: const TabBar(
               tabs: tabs,
             ),
           ),

@@ -1,5 +1,4 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:utils/utils.dart';
 
 import '../../repositories/model/article.dart';
 import '../../repositories/repository/article_repository.dart';
@@ -59,7 +58,7 @@ class ArticleBloc extends Cubit<ArticleState> {
   @override
   Future<void> close() async {
     super.close();
-    print("=======close:${groupId}==================");
+    print("=======close:$groupId==================");
   }
 }
 

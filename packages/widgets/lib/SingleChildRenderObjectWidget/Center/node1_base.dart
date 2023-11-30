@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【child】 : 孩子组件   【Widget】",
 //    }
 class CustomCenter extends StatelessWidget {
-  const CustomCenter({Key? key}) : super(key: key);
+  const CustomCenter({super.key});
 
   @override
   Widget build(BuildContext context) {

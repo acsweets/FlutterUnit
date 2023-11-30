@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ListTileThemeDemo extends StatelessWidget {
-  const ListTileThemeDemo({Key? key}) : super(key: key);
+  const ListTileThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

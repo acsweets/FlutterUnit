@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【onPanCancel】 : 拖动取消   【GestureDragCancelCallback】",
 //    }
 class PanGestureDetector extends StatefulWidget {
-  const PanGestureDetector({Key? key}) : super(key: key);
+  const PanGestureDetector({super.key});
 
   @override
   _PanGestureDetectorState createState() => _PanGestureDetectorState();

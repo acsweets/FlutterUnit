@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// 说明:
 
 class CustomTransform extends StatefulWidget {
-  const CustomTransform({Key? key}) : super(key: key);
+  const CustomTransform({super.key});
 
   @override
   _CustomTransformState createState() => _CustomTransformState();

@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 
 
 class HeightDivider extends StatelessWidget {
-  const HeightDivider({Key? key}) : super(key: key);
+  const HeightDivider({super.key});
 
   @override
   Widget build(BuildContext context) {

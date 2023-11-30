@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:components/toly_ui/toly_ui.dart';
 
 import 'package:authentication/views/authentic_widget.dart';
@@ -21,7 +20,7 @@ class CollectPageAdapter extends StatelessWidget {
   Widget build(BuildContext context) {
     bool isDesk = Platform.isMacOS||Platform.isWindows||Platform.isLinux;
     if(isDesk){
-      return DeskCategoryPage();
+      return const DeskCategoryPage();
     }else{
       return CollectPage(canPop:canPop);
     }
@@ -83,7 +82,7 @@ class _CollectPageState extends State<CollectPage>
       systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarIconBrightness: Brightness.light
       ),
-      leading: widget.canPop?BackButton(color: Colors.white,):Container(
+      leading: widget.canPop?const BackButton(color: Colors.white,):Container(
           margin: const EdgeInsets.all(10),
           child: FeedbackWidget(
             onPressed: () {
@@ -95,7 +94,7 @@ class _CollectPageState extends State<CollectPage>
             ),
           )),
       backgroundColor: Theme.of(context).primaryColor,
-      actionsIconTheme: IconThemeData(color: Colors.white),
+      actionsIconTheme: const IconThemeData(color: Colors.white),
       actions: <Widget>[
         SizedBox(
             width: 32,
@@ -148,9 +147,9 @@ class _CollectPageState extends State<CollectPage>
   Widget _buildAddAction(BuildContext context) => GestureDetector(
     behavior: HitTestBehavior.opaque,
     onTap:  () => Scaffold.of(context).openEndDrawer(),
-    child: SizedBox(
+    child: const SizedBox(
       width: 32,
-        child: const Icon(
+        child: Icon(
           Icons.add,
           size: 24,
         ),

@@ -23,10 +23,10 @@ class LayoutUnitPage extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          Positioned(
+          const Positioned(
             top: 50,
             child: Column(
-              children: const [
+              children: [
                 CircleImage(
                   image: AssetImage('assets/images/icon_head.webp'),
                   size: 80,
@@ -49,9 +49,9 @@ class LayoutUnitPage extends StatelessWidget {
             child: ShaderMask(
               shaderCallback: (rect) =>
                   _buildShader(rect, Theme.of(context).primaryColor),
-              child: TextTyper(
+              child: const TextTyper(
                 text:info,
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                   shadows: [
                     Shadow(
                         color: Colors.black,

@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【tabBuilder】 : 页面构造器   【IndexedWidgetBuilder】",
 //    }
 class CustomCupertinoTabScaffold extends StatefulWidget {
-  const CustomCupertinoTabScaffold({Key? key}) : super(key: key);
+  const CustomCupertinoTabScaffold({super.key});
 
   @override
   _CustomCupertinoTabScaffoldState createState() =>

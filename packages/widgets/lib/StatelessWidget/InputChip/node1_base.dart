@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //      }
 
 class PressInputChip extends StatefulWidget {
-  const PressInputChip({Key? key}) : super(key: key);
+  const PressInputChip({super.key});
 
   @override
   _PressInputChipState createState() => _PressInputChipState();

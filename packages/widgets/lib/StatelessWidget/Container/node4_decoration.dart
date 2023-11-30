@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //              "可装饰: 边线、圆弧、颜色、渐变色、阴影、图片等内容",
 //    }
 class ContainerDecoration extends StatelessWidget {
-  ContainerDecoration({Key? key}) : super(key: key);
+  ContainerDecoration({super.key});
 
   final List<int> rainbow = [
     0xffff0000,

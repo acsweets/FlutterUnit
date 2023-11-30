@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【replacement】 : 隐藏时的占位组件  【Widget】",
 //    }
 class ReplacementVisibility extends StatelessWidget {
-  const ReplacementVisibility({Key? key}) : super(key: key);
+  const ReplacementVisibility({super.key});
 
   @override
   Widget build(BuildContext context) {

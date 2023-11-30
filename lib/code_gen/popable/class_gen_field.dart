@@ -24,7 +24,7 @@ class ClassGenField extends StatelessWidget {
       children: [
         Row(
           children: [
-            GenInput(
+            const GenInput(
               label: '类名',
               // controller: clazz.nameCtrl,
               hintText: '输入类名',
@@ -59,7 +59,7 @@ class ClassGenField extends StatelessWidget {
                 Field field = clazz.fields[index];
                 return Row(
             children: [
-              GenInput(
+              const GenInput(
                 label: '类型',
                 // controller: field.typeCtrl,
                 hintText: '输入字段类型名',
@@ -67,7 +67,7 @@ class ClassGenField extends StatelessWidget {
               const SizedBox(
                 width: 20,
               ),
-              GenInput(
+              const GenInput(
                 label: '变量名',
                 // controller: field.nameCtrl,
                 hintText: '输入字段变量名',
@@ -78,9 +78,9 @@ class ClassGenField extends StatelessWidget {
               Wrap(
                 direction: Axis.vertical,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(6.0),
-                    child: const Text('修饰',style: TextStyle(fontSize: 12),),
+                  const Padding(
+                    padding: EdgeInsets.all(6.0),
+                    child: Text('修饰',style: TextStyle(fontSize: 12),),
                   ),
                   TolySelect(
                     height: 30,
@@ -88,7 +88,7 @@ class ClassGenField extends StatelessWidget {
                     change: (int index){
                       // field.typeCtrl.text = selectData[index];
                       },
-                    activeIndex: selectData.indexOf(field.modifier)==-1?0:selectData.indexOf(field.modifier),
+                    activeIndex: !selectData.contains(field.modifier)?0:selectData.indexOf(field.modifier),
                     data: selectData,
                   )
                 ],

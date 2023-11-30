@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【opacity】 : 透明度   【double】",
 //    }
 class CustomAnimatedOpacity extends StatefulWidget {
-  const CustomAnimatedOpacity({Key? key}) : super(key: key);
+  const CustomAnimatedOpacity({super.key});
 
   @override
   _CustomAnimatedOpacityState createState() => _CustomAnimatedOpacityState();

@@ -4,7 +4,6 @@ import 'package:app/app.dart';
 import 'package:components/components.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:components/toly_ui/toly_ui.dart';
 import 'package:utils/utils.dart';
 import 'package:widget_module/blocs/blocs.dart';
 import 'package:widget_repository/widget_repository.dart';
@@ -42,7 +41,7 @@ class SliverWidgetDetailBar extends StatelessWidget {
         ),
         fixedSubtitle: Text(
           model.name,
-          style:  TextStyle(color: isDark?appBarTextColor:Color(0xff696969), fontSize: 12),
+          style:  TextStyle(color: isDark?appBarTextColor:const Color(0xff696969), fontSize: 12),
         ),
         title: Padding(
           padding: const EdgeInsets.only(bottom: 3),

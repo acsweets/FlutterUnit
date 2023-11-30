@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【border】 : 边线   【BoxBorder】\n",
 //    }
 class BorderDemo extends StatelessWidget {
-  const BorderDemo({Key? key}) : super(key: key);
+  const BorderDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

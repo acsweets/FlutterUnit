@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class StatefulBuilderDemo extends StatelessWidget {
-  const StatefulBuilderDemo({Key? key}) : super(key: key);
+  const StatefulBuilderDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

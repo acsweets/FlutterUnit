@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:app/app.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:components/toly_ui/toly_ui.dart';
 
 import 'package:flutter_unit/painter_system/gallery_card_item.dart';
@@ -50,7 +49,7 @@ class _DeskGalleryUnitState extends State<DeskGalleryUnit> {
     return Scaffold(
       body: Column(
         children: [
-          SimpleDeskTopBar(
+          const SimpleDeskTopBar(
             leading: Text(
               'Flutter 绘制集录',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),

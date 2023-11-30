@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【child】 : 孩子   【Widget】",
 //    }
 class CustomTooltip extends StatelessWidget {
-  const CustomTooltip({Key? key}) : super(key: key);
+  const CustomTooltip({super.key});
 
   @override
   Widget build(BuildContext context) {

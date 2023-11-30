@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //      }
 
 class SelectInputChip extends StatefulWidget {
-  const SelectInputChip({Key? key}) : super(key: key);
+  const SelectInputChip({super.key});
 
   @override
   _SelectInputChipState createState() => _SelectInputChipState();

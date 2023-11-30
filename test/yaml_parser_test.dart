@@ -1,13 +1,11 @@
 
-import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter_unit/code_gen/icon_font_gen/icon_font_class_parser.dart';
 // import 'package:yaml/yaml.dart';
 import 'package:yaml_modify/yaml_modify.dart';
 
 void main(){
-  final String filePath = r'E:\Projects\Flutter\FlutterUnit\pubspec.yaml';
+  const String filePath = r'E:\Projects\Flutter\FlutterUnit\pubspec.yaml';
   File pubspecFile = File(filePath);
   final String pubspec = pubspecFile.readAsStringSync();
   print(pubspec);

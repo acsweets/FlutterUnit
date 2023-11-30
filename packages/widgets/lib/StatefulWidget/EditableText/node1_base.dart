@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class EditableTextDemo extends StatefulWidget {
-  const EditableTextDemo({Key? key}) : super(key: key);
+  const EditableTextDemo({super.key});
 
   @override
   _EditableTextDemoState createState() => _EditableTextDemoState();

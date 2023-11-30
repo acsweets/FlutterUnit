@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【onChanged】 : 切换回调   【Function(double)】",
 //    }
 class CustomCupertinoSwitch extends StatefulWidget {
-  const CustomCupertinoSwitch({Key? key}) : super(key: key);
+  const CustomCupertinoSwitch({super.key});
 
   @override
   _CustomCupertinoSwitchState createState() => _CustomCupertinoSwitchState();

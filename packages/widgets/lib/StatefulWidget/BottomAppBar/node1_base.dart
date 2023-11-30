@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【child】 : 孩子   【Widget】",
 //    }
 class CustomBottomAppBar extends StatefulWidget {
-  const CustomBottomAppBar({Key? key}) : super(key: key);
+  const CustomBottomAppBar({super.key});
 
   @override
   _CustomBottomAppBarState createState() => _CustomBottomAppBarState();

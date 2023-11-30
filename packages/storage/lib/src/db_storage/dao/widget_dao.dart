@@ -67,10 +67,14 @@ class WidgetDao {
     if (arguments.stars.reduce((a, b) => a + b) == -5) {
       starArg = [1, 2, 3, 4, 5];
     }
+    // return db.rawQuery(
+    //     "SELECT * "
+    //     "FROM widget WHERE name like ? or info LIKE ? $familySql AND lever IN(?,?,?,?,?) ORDER BY lever DESC",
+    //     ["%$name%",'%$info%', ...familyArg, ...starArg,]);
     return db.rawQuery(
         "SELECT * "
-        "FROM widget WHERE name like ? or info LIKE ? $familySql AND lever IN(?,?,?,?,?) ORDER BY lever DESC",
-        ["%$name%",'%$info%', ...familyArg, ...starArg]);
+            "FROM widget WHERE name like ? or info LIKE ? $familySql AND lever IN(?,?,?,?,?) ORDER BY lever DESC",
+        ["%$name%", '%$name%', ...familyArg, ...starArg, arguments.pageSize, arguments.offset]);
   }
 
   Future<int> total(WidgetFilter args) async{

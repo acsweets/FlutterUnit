@@ -2,6 +2,7 @@
 /// create by 张风捷特烈 on 2020-03-26
 /// contact me by email 1981462002@qq.com
 /// 说明: 
+library;
 
 //    {
 //      "widgetId": 155,
@@ -16,7 +17,7 @@
 
 import 'package:flutter/material.dart';
 class CustomDrawerHeader extends StatelessWidget {
-  const CustomDrawerHeader({Key? key}) : super(key: key);
+  const CustomDrawerHeader({super.key});
 
   @override
   Widget build(BuildContext context) {

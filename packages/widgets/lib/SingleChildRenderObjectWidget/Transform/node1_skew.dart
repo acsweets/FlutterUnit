@@ -15,7 +15,7 @@ import 'matrix4_shower.dart';
 //          "斜切y由R1C0数控制,入参为弧度值,表示斜切角度",
 //    }
 class SkewTransform extends StatefulWidget {
-  const SkewTransform({Key? key}) : super(key: key);
+  const SkewTransform({super.key});
 
   @override
   _SkewTransformState createState() => _SkewTransformState();

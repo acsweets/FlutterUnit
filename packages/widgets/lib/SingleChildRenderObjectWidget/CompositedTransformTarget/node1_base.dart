@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 
 class CompositedTransformTargetDemo extends StatelessWidget {
 
-  const CompositedTransformTargetDemo({Key? key}) : super(key: key);
+  const CompositedTransformTargetDemo({super.key});
 
   static const  List<Color> colors =[Colors.red,Colors.yellow,Colors.blue,Colors.green];
 
@@ -96,7 +96,7 @@ class _LogoTipsState extends State<_LogoTips> {
 
   void _showOverlay() {
     _overlayEntry = _createOverlayEntry();
-    Overlay.of(context)?.insert(_overlayEntry!);
+    Overlay.of(context).insert(_overlayEntry!);
   }
 
   void _hideOverlay() {

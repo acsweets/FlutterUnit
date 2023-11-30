@@ -1,6 +1,7 @@
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
 /// 说明:
+library;
 //    {
 //      "widgetId": 9,
 //      "priority": 1,
@@ -17,7 +18,7 @@
 import 'package:flutter/material.dart';
 
 class CustomCircleAvatar extends StatelessWidget {
-  const CustomCircleAvatar({Key? key}) : super(key: key);
+  const CustomCircleAvatar({super.key});
 
   @override
   Widget build(BuildContext context) {

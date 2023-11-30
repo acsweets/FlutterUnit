@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CupertinoPopupSurfaceDemo extends StatelessWidget {
-  CupertinoPopupSurfaceDemo({Key? key}) : super(key: key);
+  CupertinoPopupSurfaceDemo({super.key});
 
   final List<int> rainbow = [
     0xffff0000,

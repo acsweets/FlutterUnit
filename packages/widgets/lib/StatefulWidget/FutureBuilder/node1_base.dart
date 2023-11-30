@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【future】 : 异步任务  【Future<T>】",
 //    }
 class CustomFutureBuilder extends StatefulWidget {
-  const CustomFutureBuilder({Key? key}) : super(key: key);
+  const CustomFutureBuilder({super.key});
 
   @override
   _CustomFutureBuilderState createState() => _CustomFutureBuilderState();

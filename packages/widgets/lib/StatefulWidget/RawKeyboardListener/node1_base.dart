@@ -15,7 +15,7 @@ import 'package:flutter/services.dart';
 //    }
 
 class RawKeyboardListenerDemo extends StatefulWidget {
-  const RawKeyboardListenerDemo({Key? key}) : super(key: key);
+  const RawKeyboardListenerDemo({super.key});
 
   @override
   _RawKeyboardListenerDemoState createState() => _RawKeyboardListenerDemoState();

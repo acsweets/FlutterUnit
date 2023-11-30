@@ -11,15 +11,15 @@ import 'package:flutter/cupertino.dart';
 //          "【radius】 : 半径   【double】",
 //    }
 class CustomCupertinoActivityIndicator extends StatelessWidget {
-  const CustomCupertinoActivityIndicator({Key? key}) : super(key: key);
+  const CustomCupertinoActivityIndicator({super.key});
 
 
   @override
   Widget build(BuildContext context) {
 
-    return Wrap(
+    return const Wrap(
       spacing: 20,
-      children: const [
+      children: [
         CupertinoActivityIndicator(
           animating: true,
           radius: 25,

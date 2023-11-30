@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【position】 : 动画   【Animation<Offset>】",
 //    }
 class CustomSlideTransition extends StatefulWidget {
-  const CustomSlideTransition({Key? key}) : super(key: key);
+  const CustomSlideTransition({super.key});
 
   @override
   _CustomSlideTransitionState createState() => _CustomSlideTransitionState();

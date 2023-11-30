@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CheckedModeBannerDemo extends StatelessWidget {
-  const CheckedModeBannerDemo({Key? key}) : super(key: key);
+  const CheckedModeBannerDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

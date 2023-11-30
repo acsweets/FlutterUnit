@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【strokeWidth】: 线粗   【double】",
 //    }
 class CustomPlaceholder extends StatelessWidget {
-  const CustomPlaceholder({Key? key}) : super(key: key);
+  const CustomPlaceholder({super.key});
 
   @override
   Widget build(BuildContext context) {

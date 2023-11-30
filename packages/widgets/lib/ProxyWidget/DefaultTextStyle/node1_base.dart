@@ -13,18 +13,18 @@ import 'package:flutter/material.dart';
 //          "其功能是: 设置默认的文字样式应用于【后代组件】,注意后代组件也可以指定自身的样式",
 //    }
 class DefaultTextStyleDemo extends StatelessWidget {
-  const DefaultTextStyleDemo({Key? key}) : super(key: key);
+  const DefaultTextStyleDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTextStyle(
-      style: const TextStyle(
+    return const DefaultTextStyle(
+      style: TextStyle(
           fontSize: 18,
           color: Colors.blue,
           decoration: TextDecoration.underline),
       child: Wrap(
         spacing: 5,
-        children: const[
+        children: [
           Text("Hello,",),
           FlutterLogo(),
           Text("Flutter",style: TextStyle(color: Colors.red),),

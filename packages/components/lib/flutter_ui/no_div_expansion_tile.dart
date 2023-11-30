@@ -27,7 +27,7 @@ class NoBorderExpansionTile extends StatefulWidget {
   /// the tile to reveal or hide the [children]. The [initiallyExpanded] property must
   /// be non-null.
   const NoBorderExpansionTile({
-    Key? key,
+    super.key,
     this.leading,
     required this.title,
     this.subtitle,
@@ -36,7 +36,7 @@ class NoBorderExpansionTile extends StatefulWidget {
     this.children = const <Widget>[],
     this.trailing,
     this.initiallyExpanded = false,
-  }) : super(key: key);
+  });
 
   /// A widget to display before the title.
   ///

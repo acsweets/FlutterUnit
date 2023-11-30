@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "可指定MaterialBannerThemeData数据属性为【后代】的MaterialBanner组件设置默认样式，如背景色、边距、文字样式等。也可以用MaterialBannerTheme.of获取MaterialBanner的主题数据。",
 //    }
 class MaterialBannerThemeDemo extends StatelessWidget {
-  const MaterialBannerThemeDemo({Key? key}) : super(key: key);
+  const MaterialBannerThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

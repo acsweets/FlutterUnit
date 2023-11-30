@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class CircleImage extends StatelessWidget {
 
   const CircleImage({
-    Key? key,
+    super.key,
     this.borderSize = 3,
     required this.image,
     this.size = 70,
     this.shadowColor,
     this.roundColor,
-  }) : super(key: key);
+  });
 
   final ImageProvider image; //图片
   final double size; //大小

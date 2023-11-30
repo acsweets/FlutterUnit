@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【maxWidth】 : 最大宽   【double】",
 //    }
 class CustomLimitedBox extends StatefulWidget {
-  const CustomLimitedBox({Key? key}) : super(key: key);
+  const CustomLimitedBox({super.key});
 
   @override
   _CustomLimitedBoxState createState() => _CustomLimitedBoxState();

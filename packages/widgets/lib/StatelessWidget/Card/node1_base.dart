@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【child】: 孩子   【Widget】",
 //    }
 class CustomCard extends StatelessWidget {
-  const CustomCard({Key? key}) : super(key: key);
+  const CustomCard({super.key});
 
   @override
   Widget build(BuildContext context) {

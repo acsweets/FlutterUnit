@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class NotSearchPage extends StatelessWidget {
 
-  const NotSearchPage({Key? key}):super(key: key);
+  const NotSearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {

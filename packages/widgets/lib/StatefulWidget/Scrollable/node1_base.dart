@@ -18,7 +18,7 @@ import 'package:flutter/rendering.dart';
 //    }
 
 class ScrollableDemo extends StatelessWidget {
-  ScrollableDemo({Key? key}) : super(key: key);
+  ScrollableDemo({super.key});
 
   final List<Color> data = List.generate(32, (i) => Color(0xFF6600FF - 2 * i));
 

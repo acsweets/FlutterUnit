@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【position】 : 前景色(左)/后景色(右)   【DecorationPosition】",
 //    }
 class BoxDecorationDemo extends StatelessWidget {
-  const BoxDecorationDemo({Key? key}) : super(key: key);
+  const BoxDecorationDemo({super.key});
 
   final List<int> rainbow = const [
     0xffff0000,

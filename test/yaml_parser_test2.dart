@@ -1,17 +1,14 @@
 
-import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter_unit/code_gen/icon_font_gen/icon_font_class_parser.dart';
 // import 'package:yaml/yaml.dart';
-import 'package:yaml_modify/yaml_modify.dart';
 
 void main(){
   String familyName = 'TolyIcon';
   String fontAssetsDist = 'assets/iconfont/iconfont.ttf';
 
   // final String filePath = r'E:\Projects\Flutter\FlutterUnit\pubspec.yaml';
-  final String filePath = r'E:\Projects\Flutter\Work\toly_image_edit\pubspec.yaml';
+  const String filePath = r'E:\Projects\Flutter\Work\toly_image_edit\pubspec.yaml';
   File pubspecFile = File(filePath);
 
   List<String> lines = pubspecFile.readAsLinesSync();

@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class PerformanceOverlayDemo extends StatelessWidget {
-  const PerformanceOverlayDemo({Key? key}) : super(key: key);
+  const PerformanceOverlayDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -13,7 +13,7 @@ import 'unit_rail_navigation.dart';
 
 class UnitDeskNavigation extends StatefulWidget {
 
-  const UnitDeskNavigation();
+  const UnitDeskNavigation({super.key});
 
   @override
   _UnitDeskNavigationState createState() => _UnitDeskNavigationState();

@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【verticalDirection】 : 竖直方向  【VerticalDirection】",
 //    }
 class VerticalDirectionWrap extends StatelessWidget {
-  VerticalDirectionWrap({Key? key}) : super(key: key);
+  VerticalDirectionWrap({super.key});
 
   @override
   Widget build(BuildContext context) {

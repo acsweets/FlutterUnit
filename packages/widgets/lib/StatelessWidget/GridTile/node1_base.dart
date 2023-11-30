@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //      }
 
 class CustomGridTile extends StatelessWidget {
-  const CustomGridTile({Key? key}) : super(key: key);
+  const CustomGridTile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,10 +30,6 @@ class CustomGridTile extends StatelessWidget {
           title: const Text("百里·巫缨"),
           subtitle: const Text("倾国必倾城"),
         ),
-        child: Opacity(
-          opacity: 0.5,
-          child: Image.asset("assets/images/sabar.webp", fit: BoxFit.cover),
-        ),
         footer: const Padding(
           padding: EdgeInsets.all(8.0),
           child: Text(
@@ -45,6 +41,10 @@ class CustomGridTile extends StatelessWidget {
               ],
             ),
           ),
+        ),
+        child: Opacity(
+          opacity: 0.5,
+          child: Image.asset("assets/images/sabar.webp", fit: BoxFit.cover),
         ),
       ),
     );

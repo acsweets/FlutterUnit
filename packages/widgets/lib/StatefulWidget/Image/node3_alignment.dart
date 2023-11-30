@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    },
 
 class AlignmentImage extends StatelessWidget {
-  const AlignmentImage({Key? key}) : super(key: key);
+  const AlignmentImage({super.key});
 
   final List<Alignment> alignment = const[
     Alignment.center,

@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomFlatButton extends StatelessWidget {
-  const CustomFlatButton({Key? key}) : super(key: key);
+  const CustomFlatButton({super.key});
 
   final String info =
       'FlatButton 按钮于 Flutter3.3 退出历史舞台。取代者为 ElevatedButton 按钮。';
@@ -27,7 +27,7 @@ class CustomFlatButton extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 

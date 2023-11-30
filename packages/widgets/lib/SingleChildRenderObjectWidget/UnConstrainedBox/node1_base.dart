@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【alignment】 : 对齐方式   【AlignmentGeometry】",
 //    }
 class CustomUnConstrainedBox extends StatefulWidget {
-  const CustomUnConstrainedBox({Key? key}) : super(key: key);
+  const CustomUnConstrainedBox({super.key});
 
   @override
   _CustomUnConstrainedBoxState createState() => _CustomUnConstrainedBoxState();

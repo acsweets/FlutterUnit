@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【crossAxisAlignment】 : 交叉轴对齐   【CrossAxisAlignment】",
 //    }
 class CrossAxisAlignmentFlex extends StatelessWidget {
-  CrossAxisAlignmentFlex({Key? key}) : super(key: key);
+  CrossAxisAlignmentFlex({super.key});
 
   static TextStyle textStyle =
   const TextStyle(color: Colors.white, fontWeight: FontWeight.bold);

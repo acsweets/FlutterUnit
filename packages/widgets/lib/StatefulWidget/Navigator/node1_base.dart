@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【onPopPage】 : 出栈回调   【PopPageCallback】",
 //    }
 class NavigatorDemo extends StatelessWidget {
-  const NavigatorDemo({Key? key}) : super(key: key);
+  const NavigatorDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -95,7 +95,7 @@ class TolyNavigatorObservers extends NavigatorObserver {
 }
 
 class HomeContent extends StatelessWidget {
-  const HomeContent({Key? key}) : super(key: key);
+  const HomeContent({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -148,7 +148,7 @@ class HomeContent extends StatelessWidget {
 }
 
 class RedPage extends StatelessWidget {
-  const RedPage({Key? key}) : super(key: key);
+  const RedPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +164,7 @@ class RedPage extends StatelessWidget {
 }
 
 class YellowPage extends StatelessWidget {
-  const YellowPage({Key? key}) : super(key: key);
+  const YellowPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -180,7 +180,7 @@ class YellowPage extends StatelessWidget {
 }
 
 class GreenPage extends StatelessWidget {
-  const GreenPage({Key? key}) : super(key: key);
+  const GreenPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "【onVisible】 : 显示时回调  【Function()】",
 //    }
 class CustomSnackBar extends StatefulWidget {
-  const CustomSnackBar({Key? key}) : super(key: key);
+  const CustomSnackBar({super.key});
 
   @override
   _CustomSnackBarState createState() => _CustomSnackBarState();

@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //          "【onSubmitted】: 提交监听    【ValueChanged<String>】",
 //    }
 class CupertinoTextFieldDemo extends StatefulWidget {
-  const CupertinoTextFieldDemo({Key? key}) : super(key: key);
+  const CupertinoTextFieldDemo({super.key});
 
   @override
   _CupertinoTextFieldDemoState createState() => _CupertinoTextFieldDemoState();

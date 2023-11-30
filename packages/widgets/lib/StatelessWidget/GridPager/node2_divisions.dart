@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【divisions】: 小块中子块的分割数   【int】",
 //      }
 class DivisionsGridPage extends StatelessWidget {
-  const DivisionsGridPage({Key? key}) : super(key: key);
+  const DivisionsGridPage({super.key});
 
   @override
   Widget build(BuildContext context) {

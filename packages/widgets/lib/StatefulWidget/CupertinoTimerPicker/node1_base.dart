@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "【mode】 : 模式*3  【CupertinoTimerPickerMode】",
 //    }
 class CustomCupertinoTimerPicker extends StatefulWidget {
-  const CustomCupertinoTimerPicker({Key? key}) : super(key: key);
+  const CustomCupertinoTimerPicker({super.key});
 
   @override
   _CustomCupertinoTimerPickerState createState() =>

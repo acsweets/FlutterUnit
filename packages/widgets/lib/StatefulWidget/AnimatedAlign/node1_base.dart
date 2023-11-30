@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【padding】 : 内边距   【EdgeInsetsGeometry】",
 //    }
 class CustomAnimatedAlign extends StatefulWidget {
-  const CustomAnimatedAlign({Key? key}) : super(key: key);
+  const CustomAnimatedAlign({super.key});
 
   @override
   _CustomAnimatedAlignState createState() => _CustomAnimatedAlignState();

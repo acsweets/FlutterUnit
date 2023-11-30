@@ -14,13 +14,13 @@ class SliverArticlePanel extends StatelessWidget {
   Widget build(BuildContext context) {
     ArticleState state = context.watch<ArticleBloc>().state;
     return switch (state) {
-      ArticleLoading() => SliverToBoxAdapter(
-          child: const CupertinoActivityIndicator(),
+      ArticleLoading() => const SliverToBoxAdapter(
+          child: CupertinoActivityIndicator(),
         ),
       ArticleWithData() => SliverArticle(
           data: state.data,
         ),
-      ArticleFailed() => SliverToBoxAdapter(
+      ArticleFailed() => const SliverToBoxAdapter(
           child: Text('error'),
         ),
     };
@@ -64,14 +64,14 @@ class ArticlePanel extends StatelessWidget {
       },
       child: Container(
         color: Colors.white,
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-        margin: EdgeInsets.only(bottom: 6),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        margin: const EdgeInsets.only(bottom: 6),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundImage: AssetImage(
                     'assets/images/icon_head.webp',
                   ),
@@ -84,8 +84,8 @@ class ArticlePanel extends StatelessWidget {
                 Expanded(
                     child: Text('${article.username}',
                         style:
-                            TextStyle(color: Color(0xff6A6D76), fontSize: 12))),
-                Text(
+                            const TextStyle(color: Color(0xff6A6D76), fontSize: 12))),
+                const Text(
                   '掘金',
                   style: TextStyle(fontSize: 12, color: Color(0xff6A6D76)),
                 ),
@@ -96,7 +96,7 @@ class ArticlePanel extends StatelessWidget {
               child: Text(
                 article.title,
                 maxLines: 2,
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
             Row(
@@ -106,7 +106,7 @@ class ArticlePanel extends StatelessWidget {
                   '${article.subtitle}',
                   maxLines: 4,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 12,
                       color: Color(
                         0xffA3A3A3,
@@ -129,10 +129,10 @@ class ArticlePanel extends StatelessWidget {
             ),
             Row(
               children: [
-                Spacer(),
+                const Spacer(),
                 Text(
                   '更新时间: ${formatLong.format(DateTime.fromMillisecondsSinceEpoch(article.update, isUtc: true))}',
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Color(
                         0xff6A6D76,
                       ),

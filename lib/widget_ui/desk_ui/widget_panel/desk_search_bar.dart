@@ -68,23 +68,23 @@ class _DeskSearchBarState extends State<DeskSearchBar> {
         borderRadius: BorderRadius.circular(8),
         shadowColor: Colors.black,
         child: ConstrainedBox(
-          constraints: BoxConstraints(maxHeight: 350, maxWidth: 250),
+          constraints: const BoxConstraints(maxHeight: 350, maxWidth: 250),
           child: ListView.builder(
               itemCount: options.length,
-              padding: EdgeInsets.symmetric(vertical: 10),
+              padding: const EdgeInsets.symmetric(vertical: 10),
               itemBuilder: (_, index) {
                 WidgetModel model = options.elementAt(index);
                 return InkWell(
                   onTap: () => onSelected(model),
                   child: Ink(
-                    padding: EdgeInsets.symmetric(vertical: 6, horizontal: 15),
+                    padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 15),
                     child: Row(children: [
                       Expanded(child: Text.rich(formSpan(model.name, _controller.text), maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 12))),
+                          style: const TextStyle(fontSize: 12))),
                       // Spacer(),
                       const SizedBox(width: 10,),
-                      Text(model.nameCN, style: TextStyle(fontSize: 12),),
+                      Text(model.nameCN, style: const TextStyle(fontSize: 12),),
                     ],),
                   ),
                 );
@@ -108,14 +108,14 @@ class _DeskSearchBarState extends State<DeskSearchBar> {
       maxLines: 1,
       focusNode: focusNode,
       decoration: InputDecoration(
-          prefixIconConstraints: BoxConstraints(
+          prefixIconConstraints: const BoxConstraints(
             minWidth: 30,
           ),
           filled: true,
           hoverColor: Colors.transparent,
-          contentPadding: EdgeInsets.only(top: 0),
-          fillColor: isDark ? null : Color(0xffF1F2F3),
-          prefixIcon: Icon(
+          contentPadding: const EdgeInsets.only(top: 0),
+          fillColor: isDark ? null : const Color(0xffF1F2F3),
+          prefixIcon: const Icon(
             Icons.search,
             size: 18,
             color: Colors.grey,
@@ -125,16 +125,16 @@ class _DeskSearchBarState extends State<DeskSearchBar> {
             borderSide: BorderSide(color: Theme
                 .of(context)
                 .primaryColor),
-            borderRadius: BorderRadius.all(Radius.circular(8)),
+            borderRadius: const BorderRadius.all(Radius.circular(8)),
           ),
 
-          enabledBorder: OutlineInputBorder(
+          enabledBorder: const OutlineInputBorder(
 
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.all(Radius.circular(8)),
           ),
           hintText: "输入组件名称",
-          hintStyle: TextStyle(fontSize: 12, color: Colors.grey)),
+          hintStyle: const TextStyle(fontSize: 12, color: Colors.grey)),
     );
   }
 

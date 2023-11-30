@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //          "【onChanged】 : 改变时回调   【Function(RangeValues)】",
 //    }
 class CustomRangeSlider extends StatefulWidget {
-  const CustomRangeSlider({Key? key}) : super(key: key);
+  const CustomRangeSlider({super.key});
 
   @override
   _CustomRangeSliderState createState() => _CustomRangeSliderState();

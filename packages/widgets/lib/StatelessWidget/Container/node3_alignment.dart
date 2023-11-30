@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【alignment】 : 对齐定位   【AlignmentGeometry】",
 //    }
 class ContainerAlignment extends StatelessWidget {
-  const ContainerAlignment({Key? key}) : super(key: key);
+  const ContainerAlignment({super.key});
 
   @override
   Widget build(BuildContext context) {

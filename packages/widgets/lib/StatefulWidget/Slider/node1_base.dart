@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【onChanged】 : 改变时回调   【Function(double)】",
 //    }
 class CustomSlider extends StatefulWidget {
-  const CustomSlider({Key? key}) : super(key: key);
+  const CustomSlider({super.key});
 
   @override
   _CustomSliderState createState() => _CustomSliderState();

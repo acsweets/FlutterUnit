@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【activeThumbImage】 : 选中小圈图片   【ImageProvider】",
 //    }
 class ImageSwitch extends StatefulWidget {
-  const ImageSwitch({Key? key}) : super(key: key);
+  const ImageSwitch({super.key});
 
   @override
   _ImageSwitchState createState() => _ImageSwitchState();

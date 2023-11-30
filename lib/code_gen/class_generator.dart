@@ -1,8 +1,4 @@
-import 'dart:io';
-import 'package:path/path.dart' as path;
 
-import 'model/class.dart';
-import 'model/field.dart';
 main() {
   // Class clazz1 = Class(
   //   name: 'TaskResult',

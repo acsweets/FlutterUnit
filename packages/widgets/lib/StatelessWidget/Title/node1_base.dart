@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【child】: 子组件    【Widget】",
 //    }
 class TitleDemo extends StatelessWidget {
-  const TitleDemo({Key? key}) : super(key: key);
+  const TitleDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

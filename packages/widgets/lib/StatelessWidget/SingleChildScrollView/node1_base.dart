@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【padding】 : 内边距  【EdgeInsetsGeometry】",
 //    }
 class CustomSingleChildScrollView extends StatelessWidget {
-  CustomSingleChildScrollView({Key? key}) : super(key: key);
+  CustomSingleChildScrollView({super.key});
 
   final List<Color> data = [
     Colors.blue[50]!,

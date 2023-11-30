@@ -34,7 +34,7 @@ class _DeskCodeGenTopBarState extends State<DeskCodeGenTopBar>  with SingleTicke
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         height: 64,
-      color: isDark?Color(0xff2C3036):Colors.white,
+      color: isDark?const Color(0xff2C3036):Colors.white,
         child: Row(
           children: [
             SizedBox(
@@ -60,10 +60,10 @@ class _DeskCodeGenTopBarState extends State<DeskCodeGenTopBar>  with SingleTicke
                 _tabs.map((String name) => Tab(text: name)).toList(),
               ),
             ),
-            Spacer(),
+            const Spacer(),
 
             const SizedBox(width: 20,),
-            WindowButtons(),
+            const WindowButtons(),
           ],
         ),
       ),

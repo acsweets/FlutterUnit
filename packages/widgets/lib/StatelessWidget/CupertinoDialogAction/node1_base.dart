@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【child】: 子组件   【Widget】",
 //    }
 class CupertinoDialogActionDemo extends StatelessWidget {
-  const CupertinoDialogActionDemo({Key? key}) : super(key: key);
+  const CupertinoDialogActionDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

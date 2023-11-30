@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【opacity】 : 透明度0~1   【double】",
 //    }
 class CustomOpacity extends StatefulWidget {
-  const CustomOpacity({Key? key}) : super(key: key);
+  const CustomOpacity({super.key});
 
   @override
   _CustomOpacityState createState() => _CustomOpacityState();

@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //          "Positioned组件只能用与Stack中，可以指定左上右下的距离对某个组件进行位置精确安放。",
 //    }
 class PositionedStack extends StatelessWidget {
-  const PositionedStack({Key? key}) : super(key: key);
+  const PositionedStack({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,9 +45,9 @@ class PositionedStack extends StatelessWidget {
         child: Stack(
           children: <Widget>[yellowBox, redBox, greenBox,
             Positioned(
-              child: cyanBox,
               bottom: 10,
               right: 10,
+              child: cyanBox,
             )
           ],
         ));

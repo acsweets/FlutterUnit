@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class TextButtonDemo extends StatelessWidget {
-  const TextButtonDemo({Key? key}) : super(key: key);
+  const TextButtonDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,14 +25,14 @@ class TextButtonDemo extends StatelessWidget {
           spacing: 20,
           children: [
             TextButton(
-              child: const Text('TextButton 文字'),
               onPressed: _onPressed,
               onLongPress: _onLongPress,
+              child: const Text('TextButton 文字'),
             ),
             const TextButton(
-              child: Text('TextButton 禁用'),
               onPressed: null,
               onLongPress: null,
+              child: Text('TextButton 禁用'),
             ),
           ],
         ));

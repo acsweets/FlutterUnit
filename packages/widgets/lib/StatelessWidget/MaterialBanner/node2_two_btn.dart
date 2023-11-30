@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "当尾部组件数量大于1,该组件结构为左中下。",
 //    }
 class MaterialBannerDemoTwo extends StatelessWidget {
-  const MaterialBannerDemoTwo({Key? key}) : super(key: key);
+  const MaterialBannerDemoTwo({super.key});
 
   final String info =
       'A banner displays an important, succinct message, and provides actions for users to address. '
@@ -23,9 +23,9 @@ class MaterialBannerDemoTwo extends StatelessWidget {
     return Column(
       children: <Widget>[
         MaterialBanner(
-          content: Text(
+          content: const Text(
             info,
-            style: const TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white),
           ),
           backgroundColor: Colors.purple,
           leading: const Icon(Icons.warning, color: Colors.yellow),

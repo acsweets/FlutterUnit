@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //          "【shape】 : 形状   【ShapeBorder】",
 //    }
 class CustomSimpleDialog extends StatelessWidget {
-  const CustomSimpleDialog({Key? key}) : super(key: key);
+  const CustomSimpleDialog({super.key});
 
   final List<String> info = const [
     '性别:    男     未婚',
@@ -65,11 +65,11 @@ class CustomSimpleDialog extends StatelessWidget {
         left: 20,
       ),
       contentPadding: const EdgeInsets.symmetric(horizontal: 5),
-      children: _buildChild(context),
       backgroundColor: Colors.white,
       elevation: 4,
       shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10))),
+      children: _buildChild(context),
     );
   }
 

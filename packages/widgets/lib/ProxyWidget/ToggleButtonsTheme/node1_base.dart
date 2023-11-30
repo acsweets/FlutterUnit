@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ToggleButtonsThemeDemo extends StatelessWidget {
-  const ToggleButtonsThemeDemo({Key? key}) : super(key: key);
+  const ToggleButtonsThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,16 +42,16 @@ class _ToggleButtonsSimpleState extends State<_ToggleButtonsSimple> {
   @override
   Widget build(BuildContext context) {
     return ToggleButtons(
-      children: const[
-        Icon(Icons.skip_previous),
-        Icon(Icons.pause),
-        Icon(Icons.skip_next),
-      ],
       isSelected: _isSelected,
       onPressed: (value) => setState(() {
         _isSelected = _isSelected.map((e) => false).toList();
         _isSelected[value] = true;
       }),
+      children: const[
+        Icon(Icons.skip_previous),
+        Icon(Icons.pause),
+        Icon(Icons.skip_next),
+      ],
     );
   }
 }

@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【onChangeEnd】 : 滑动结束时监听   【Function(double)】",
 //    }
 class DivisionsSlider extends StatefulWidget {
-  const DivisionsSlider({Key? key}) : super(key: key);
+  const DivisionsSlider({super.key});
 
   @override
   _DivisionsSliderState createState() => _DivisionsSliderState();

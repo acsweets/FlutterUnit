@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【onChanged】 : 输入事件   【Function(String)】",
 //    }
 class CustomTextField extends StatefulWidget {
-  const CustomTextField({Key? key}) : super(key: key);
+  const CustomTextField({super.key});
 
   @override
   _CustomTextFieldState createState() => _CustomTextFieldState();
@@ -53,11 +53,11 @@ class _CustomTextFieldState extends State<CustomTextField> {
             print('onEditingComplete');
           },
           onChanged: (v) {
-            print('onChanged:' + v);
+            print('onChanged:$v');
           },
           onSubmitted: (v) {
             FocusScope.of(context).requestFocus(_focusNode);
-            print('onSubmitted:' + v);
+            print('onSubmitted:$v');
             _controller.clear();
           },
         ));

@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomListener extends StatefulWidget {
-  const CustomListener({Key? key}) : super(key: key);
+  const CustomListener({super.key});
 
   @override
   _CustomListenerState createState() => _CustomListenerState();

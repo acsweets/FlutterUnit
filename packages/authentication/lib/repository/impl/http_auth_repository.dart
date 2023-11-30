@@ -1,6 +1,5 @@
 import 'package:authentication/models/user.dart';
 
-import 'package:utils/src/http_utils/task_result.dart';
 import 'package:utils/utils.dart';
 
 import '../auth_repository.dart';

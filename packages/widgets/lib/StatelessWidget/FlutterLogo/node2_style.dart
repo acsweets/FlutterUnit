@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【textColor】: 文字颜色   【Color】",
 //    }
 class FlutterLogoWithText extends StatelessWidget {
-  const FlutterLogoWithText({Key? key}) : super(key: key);
+  const FlutterLogoWithText({super.key});
 
   @override
   Widget build(BuildContext context) {

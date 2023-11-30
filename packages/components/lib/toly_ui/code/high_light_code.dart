@@ -1,6 +1,7 @@
 /// create by 张风捷特烈 on 2020-04-15
 /// contact me by email 1981462002@qq.com
 /// 说明:
+library;
 
 // Copyright 2016 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
@@ -30,7 +31,7 @@ abstract class Highlighter {
 //暗黑模式下的高亮样式
 class CodeHighlighter extends Highlighter {
   CodeHighlighter(
-      {Language language = const DartLanguage(), HighlighterStyle? style}):super(language: language) {
+      {super.language = const DartLanguage(), HighlighterStyle? style}) {
     _spans = <_HighlightSpan>[];
     _style = style ?? HighlighterStyle.fromColors(HighlighterStyle.lightColor);
   }

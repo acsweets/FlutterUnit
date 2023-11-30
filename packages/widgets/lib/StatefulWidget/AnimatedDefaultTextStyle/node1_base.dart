@@ -19,7 +19,7 @@ import 'package:flutter/material.dart';
 //          "【style】 : 文字样式   【TextStyle】",
 //    }
 class CustomAnimatedDefaultTextStyle extends StatefulWidget {
-  const CustomAnimatedDefaultTextStyle({Key? key}) : super(key: key);
+  const CustomAnimatedDefaultTextStyle({super.key});
 
   @override
   _CustomAnimatedDefaultTextStyleState createState() =>

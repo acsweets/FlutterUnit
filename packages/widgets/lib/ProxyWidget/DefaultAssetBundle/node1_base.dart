@@ -14,7 +14,7 @@ import 'dart:ui' as ui;
 //          "我们可以定义自己的 DefaultAssetBundle 来供后续节点使用，也可以直接使用默认的。该案例演示通过框架提供的 DefaultAssetBundle 加载一张资源图片进行显示。",
 //    }
 class DefaultAssetBundleDemo extends StatefulWidget {
-  const DefaultAssetBundleDemo({Key? key}) : super(key: key);
+  const DefaultAssetBundleDemo({super.key});
 
   @override
   _DefaultAssetBundleDemoState createState() => _DefaultAssetBundleDemoState();

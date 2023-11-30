@@ -19,7 +19,7 @@ import 'package:flutter/material.dart';
 //          "【mode】 : 模式*3  【CupertinoDatePickerMode】",
 //    }
 class CustomCupertinoDatePicker extends StatefulWidget {
-  const CustomCupertinoDatePicker({Key? key}) : super(key: key);
+  const CustomCupertinoDatePicker({super.key});
 
   @override
   _CustomCupertinoDatePickerState createState() =>

@@ -40,7 +40,7 @@ class CupertinoBackGestureDetector<T> extends StatefulWidget {
   final ValueGetter<CupertinoBackGestureController<T>> onStartPopGesture;
 
   @override
-  _CupertinoBackGestureDetectorState<T> createState() => _CupertinoBackGestureDetectorState<T>();
+ createState() => _CupertinoBackGestureDetectorState<T>();
 }
 
 class _CupertinoBackGestureDetectorState<T> extends State<CupertinoBackGestureDetector<T>> {
@@ -111,9 +111,9 @@ class _CupertinoBackGestureDetectorState<T> extends State<CupertinoBackGestureDe
     assert(debugCheckHasDirectionality(context));
     // For devices with notches, the drag area needs to be larger on the side
     // that has the notch.
-    double dragAreaWidth = Directionality.of(context) == TextDirection.ltr ?
-    MediaQuery.paddingOf(context).left :
-    MediaQuery.paddingOf(context).right;
+    double dragAreaWidth = Directionality.of(context) == TextDirection.ltr
+        ? MediaQuery.paddingOf(context).left
+        : MediaQuery.paddingOf(context).right;
     dragAreaWidth = max(dragAreaWidth, _kBackGestureWidth);
     return Stack(
       fit: StackFit.passthrough,
@@ -133,7 +133,6 @@ class _CupertinoBackGestureDetectorState<T> extends State<CupertinoBackGestureDe
     );
   }
 }
-
 
 class CupertinoBackGestureController<T> {
   /// Creates a controller for an iOS-style back gesture.
@@ -184,7 +183,8 @@ class CupertinoBackGestureController<T> {
         lerpDouble(_kMaxDroppedSwipePageForwardAnimationTime, 0, controller.value)!.floor(),
         _kMaxPageBackAnimationTime,
       );
-      controller.animateTo(1.0, duration: Duration(milliseconds: droppedPageForwardAnimationTime), curve: animationCurve);
+      controller.animateTo(1.0,
+          duration: Duration(milliseconds: droppedPageForwardAnimationTime), curve: animationCurve);
     } else {
       // This route is destined to pop at this point. Reuse navigator's pop.
       navigator.pop();
@@ -192,8 +192,10 @@ class CupertinoBackGestureController<T> {
       // The popping may have finished inline if already at the target destination.
       if (controller.isAnimating) {
         // Otherwise, use a custom popping animation duration and curve.
-        final int droppedPageBackAnimationTime = lerpDouble(0, _kMaxDroppedSwipePageForwardAnimationTime, controller.value)!.floor();
-        controller.animateBack(0.0, duration: Duration(milliseconds: droppedPageBackAnimationTime), curve: animationCurve);
+        final int droppedPageBackAnimationTime =
+            lerpDouble(0, _kMaxDroppedSwipePageForwardAnimationTime, controller.value)!.floor();
+        controller.animateBack(0.0,
+            duration: Duration(milliseconds: droppedPageBackAnimationTime), curve: animationCurve);
       }
     }
 
@@ -224,8 +226,7 @@ CupertinoBackGestureController<T> startPopGesture<T>(PageRoute<T> route) {
 }
 
 bool isPopGestureEnabled<T>(PageRoute<T> route) {
-  print(
-      "======_isPopGestureEnabled:${route.hasScopedWillPopCallback}=========");
+  print("======_isPopGestureEnabled:${route.popDisposition}=========");
 // If there's nothing to go back to, then obviously we don't support
 // the back gesture.
   if (route.isFirst) {
@@ -238,7 +239,7 @@ bool isPopGestureEnabled<T>(PageRoute<T> route) {
   }
 // If attempts to dismiss this route might be vetoed such as in a page
 // with forms, then do not allow the user to dismiss the route with a swipe.
-  if (route.hasScopedWillPopCallback) {
+  if (route.popDisposition == RoutePopDisposition.pop) {
     return false;
   }
 // Fullscreen dialogs aren't dismissible by back swipe.

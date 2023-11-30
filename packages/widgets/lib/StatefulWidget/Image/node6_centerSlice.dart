@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    },
 
 class CenterSliceImage extends StatelessWidget {
-  const CenterSliceImage({Key? key}) : super(key: key);
+  const CenterSliceImage({super.key});
 
   @override
   Widget build(BuildContext context) {

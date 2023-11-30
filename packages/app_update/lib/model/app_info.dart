@@ -1,4 +1,5 @@
 import 'package:app/app.dart';
+import 'package:dio/src/response.dart';
 import 'package:equatable/equatable.dart';
 import 'package:utils/utils.dart';
 
@@ -6,14 +7,14 @@ class AppInfoApi {
   static Future<TaskResult<AppInfo>> getAppVersion(
       {required String appName}) async {
     String errorMsg = "";
-    var result;
+   late Response result;
     try {
       result =
-          await HttpUtil.instance.client.get(PathUnit.appInfo + "/$appName");
+          await HttpUtil.instance.client.get("${PathUnit.appInfo}/$appName");
     } catch (err) {
       errorMsg = err.toString();
     }
-    print("=====${errorMsg}=====");
+    print("=====$errorMsg=====");
     // 获取的数据非空且 status = true
     if (result.data != null && result.data['status']) {
       // 说明有数据

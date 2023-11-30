@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【onWillPop】 : 返回回调  【WillPopCallback】",
 //    }
 class CustomWillPopScope extends StatelessWidget {
-  const CustomWillPopScope({Key? key}) : super(key: key);
+  const CustomWillPopScope({super.key});
 
   @override
   Widget build(BuildContext context) {

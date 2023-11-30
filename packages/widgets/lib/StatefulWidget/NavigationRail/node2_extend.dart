@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ExtendableNavigationRail extends StatefulWidget {
-  const ExtendableNavigationRail({Key? key}) : super(key: key);
+  const ExtendableNavigationRail({super.key});
 
   @override
   State<ExtendableNavigationRail> createState() => _ExtendableNavigationRailState();
@@ -61,7 +61,7 @@ class _ExtendableNavigationRailState extends State<ExtendableNavigationRail> {
 class _TestContent extends StatelessWidget {
   final String content;
 
-  const _TestContent({Key? key, required this.content}) : super(key: key);
+  const _TestContent({required this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -76,8 +76,7 @@ class _TestContent extends StatelessWidget {
 class ExtendableNavigation extends StatefulWidget {
   final ValueChanged<int>? onDestinationSelected;
 
-  const ExtendableNavigation({Key? key, this.onDestinationSelected})
-      : super(key: key);
+  const ExtendableNavigation({super.key, this.onDestinationSelected});
 
   @override
   State<ExtendableNavigation> createState() => _ExtendableNavigationState();

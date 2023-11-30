@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 
 
 class SliverWithKeepAliveWidgetDemo extends StatelessWidget {
-  const SliverWithKeepAliveWidgetDemo({Key? key}) : super(key: key);
+  const SliverWithKeepAliveWidgetDemo({super.key});
 
   final String info =
       '只有 SliverWithKeepAliveWidget 之下才可以包含 KeepAlive 组件, 由于其为抽象类，不能直接使用。其子类 SliverMultiBoxAdaptorWidget 也说抽象类，'
@@ -31,7 +31,7 @@ class SliverWithKeepAliveWidgetDemo extends StatelessWidget {
       color: Theme.of(context).primaryColor.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 }

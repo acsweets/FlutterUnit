@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class OutlinedButtonDemo extends StatelessWidget {
-  const OutlinedButtonDemo({Key? key}) : super(key: key);
+  const OutlinedButtonDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,14 +25,14 @@ class OutlinedButtonDemo extends StatelessWidget {
           spacing: 20,
           children: [
             OutlinedButton(
-              child: const Text('OutlinedButton'),
               onPressed: _onPressed,
               onLongPress: _onLongPress,
+              child: const Text('OutlinedButton'),
             ),
             const OutlinedButton(
-              child: Text('禁用按钮'),
               onPressed: null,
               onLongPress: null,
+              child: Text('禁用按钮'),
             ),
           ],
         ));

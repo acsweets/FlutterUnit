@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:app/app.dart';
 import 'package:flutter/material.dart';
@@ -54,8 +53,8 @@ class WidgetDetailPage extends StatelessWidget {
     );
   }
 
-  Widget get linkText => Row(
-        children: const [
+  Widget get linkText => const Row(
+        children: [
           Padding(
             padding: EdgeInsets.only(left: 15, right: 5),
             child: Icon(Icons.link, color: Colors.blue),

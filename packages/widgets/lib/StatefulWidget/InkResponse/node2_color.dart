@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ColorInkResponse extends StatefulWidget {
-  const ColorInkResponse({Key? key}) : super(key: key);
+  const ColorInkResponse({super.key});
 
   @override
   _ColorInkResponseState createState() => _ColorInkResponseState();

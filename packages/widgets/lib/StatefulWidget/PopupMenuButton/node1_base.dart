@@ -20,7 +20,7 @@ import 'package:widgets/utils/dialog_about.dart';
 //          "【onSelected】 : 选择事件   【Function(T)】",
 //    }
 class CustomPopupMenuButton extends StatefulWidget {
-  const CustomPopupMenuButton({Key? key}) : super(key: key);
+  const CustomPopupMenuButton({super.key});
 
   @override
   _CustomPopupMenuButtonState createState() => _CustomPopupMenuButtonState();

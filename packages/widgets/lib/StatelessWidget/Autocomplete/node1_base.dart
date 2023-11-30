@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【onSelected】 : 选择时回调   【AutocompleteOnSelected<T>】",
 //    }
 class AutocompleteDemo extends StatelessWidget {
-  const AutocompleteDemo({Key? key}) : super(key: key);
+  const AutocompleteDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

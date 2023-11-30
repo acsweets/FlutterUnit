@@ -66,8 +66,7 @@ class _SliverColorList extends StatelessWidget {
   final Color? color2;
   final int count;
   const _SliverColorList(
-      {super.key,
-        required this.height,
+      {required this.height,
         required this.fontSize,
         required this.count,
         this.color1,
@@ -82,7 +81,7 @@ class _SliverColorList extends StatelessWidget {
           height: height,
           child: Center(
             child: Text(
-              'Item ${index}',
+              'Item $index',
               style: TextStyle(fontSize: fontSize),
             ),
           ),

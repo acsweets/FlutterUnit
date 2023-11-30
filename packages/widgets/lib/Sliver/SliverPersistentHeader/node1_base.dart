@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【pinned】 : 是否顶部停留   【bool】",
 //    }
 class SliverPersistentHeaderDemo extends StatelessWidget {
-  SliverPersistentHeaderDemo({Key? key}) : super(key: key);
+  SliverPersistentHeaderDemo({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

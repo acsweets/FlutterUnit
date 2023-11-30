@@ -12,7 +12,7 @@ import 'send_code.dart';
 /// 说明:
 
 class RegisterPage extends StatefulWidget {
-  const RegisterPage({Key? key}) : super(key: key);
+  const RegisterPage({super.key});
 
   @override
   _RegisterPageState createState() => _RegisterPageState();
@@ -170,7 +170,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 onPressed: (enable || !value) ? null : _doRegister,
                 child: Text(info,
-                    style: TextStyle(color: Colors.white, fontSize: 14,fontWeight: FontWeight.bold)),
+                    style: const TextStyle(color: Colors.white, fontSize: 14,fontWeight: FontWeight.bold)),
 
             );
           },

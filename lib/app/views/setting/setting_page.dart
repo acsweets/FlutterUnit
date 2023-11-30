@@ -5,7 +5,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_unit/app/navigation/overlay_tool_wrapper.dart';
 
 
-import 'app_style_setting.dart';
 import 'theme_model_setting.dart';
 
 class SettingPage extends StatelessWidget {
@@ -64,7 +63,7 @@ class SettingPage extends StatelessWidget {
             title: const Text('字体设置', style:  TextStyle(fontSize: 16)),
             subtitle: BlocBuilder<AppBloc,AppState>(
               builder: (_,state)=>Text(
-                  state.fontFamily,style: TextStyle(fontSize: 12),
+                  state.fontFamily,style: const TextStyle(fontSize: 12),
               ),
             ),
             trailing: _nextIcon(context),

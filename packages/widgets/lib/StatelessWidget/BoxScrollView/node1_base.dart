@@ -20,7 +20,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class BoxScrollViewDemo extends StatelessWidget {
-  const BoxScrollViewDemo({Key? key}) : super(key: key);
+  const BoxScrollViewDemo({super.key});
 
   final String info =
       'BoxScrollView 是 ScrollView 的子类，实现了它的抽象方法，且暴露出另一个抽象方法 buildChildLayout，返回 Sliver 家族 Widget，'
@@ -36,7 +36,7 @@ class BoxScrollViewDemo extends StatelessWidget {
             color: Colors.blue.withOpacity(0.1),
             padding: const EdgeInsets.all(10),
             margin: const EdgeInsets.all(10),
-            child: Text(info),
+            child: const Text(info),
           ),
           Expanded(child: MyBoxScrollView()),
         ],
@@ -46,7 +46,7 @@ class BoxScrollViewDemo extends StatelessWidget {
 }
 
 class MyBoxScrollView extends BoxScrollView {
-  MyBoxScrollView({Key? key}) : super(key: key);
+  MyBoxScrollView({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

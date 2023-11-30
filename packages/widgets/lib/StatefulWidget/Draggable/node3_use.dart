@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class DeleteDraggable extends StatefulWidget {
-  const DeleteDraggable({Key? key}) : super(key: key);
+  const DeleteDraggable({super.key});
 
   @override
   _DeleteDraggableState createState() => _DeleteDraggableState();
@@ -34,7 +34,7 @@ class _DeleteDraggableState extends State<DeleteDraggable> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Wrap(children: _buildColors(), spacing: 10),
+        Wrap(spacing: 10, children: _buildColors()),
         const SizedBox(height: 20),
         _buildDragTarget()
       ],
@@ -62,24 +62,24 @@ class _DeleteDraggableState extends State<DeleteDraggable> {
   List<Widget> _buildColors() => colors
       .map(
         (e) => Draggable<int>(
-        child: Container(
-          width: 30,
-              height: 30,
-              alignment: Alignment.center,
-              child: Text(
-                colors.indexOf(e).toString(),
-                style: const TextStyle(
-                    color: Colors.white, fontWeight: FontWeight.bold),
-              ),
-              decoration: BoxDecoration(color: e, shape: BoxShape.circle),
-            ),
         data: colors.indexOf(e),
         feedback: Container(
           width: 25,
           height: 25,
           decoration: BoxDecoration(
               color: e.withAlpha(100), shape: BoxShape.circle),
-        )),
+        ),
+        child: Container(
+          width: 30,
+              height: 30,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+              child: Text(
+                colors.indexOf(e).toString(),
+                style: const TextStyle(
+                    color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+            )),
   )
       .toList();
 }

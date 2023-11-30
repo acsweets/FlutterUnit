@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class DraggablePage extends StatefulWidget {
-  const DraggablePage({Key? key}) : super(key: key);
+  const DraggablePage({super.key});
 
   @override
   _DraggablePageState createState() => _DraggablePageState();
@@ -32,8 +32,8 @@ class _DraggablePageState extends State<DraggablePage> {
     return Column(
       children: <Widget>[
         Wrap(
-          children: _buildColors(),
           spacing: 10,
+          children: _buildColors(),
         ),
         const SizedBox(
           height: 20,
@@ -60,22 +60,22 @@ class _DraggablePageState extends State<DraggablePage> {
             onDragEnd: (d) => setState(() => _info = '结束拖拽'),
             onDragCompleted: () => _info = '拖拽完成',
             onDraggableCanceled: (v, o) => _info = '拖拽取消',
-            child: Container(
-              width: 30,
-              height: 30,
-              alignment: Alignment.center,
-              child: Text(
-              colors.indexOf(e).toString(),
-              style: const TextStyle(
-                  color: Colors.white, fontWeight: FontWeight.bold,),
-            ),
-            decoration: BoxDecoration(color: e, shape: BoxShape.circle),
-          ),
           data: e,
           feedback: Container(
             width: 25,
             height: 25,
             decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+          ),
+            child: Container(
+              width: 30,
+              height: 30,
+              alignment: Alignment.center,
+            decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+              child: Text(
+              colors.indexOf(e).toString(),
+              style: const TextStyle(
+                  color: Colors.white, fontWeight: FontWeight.bold,),
+            ),
           )),
     )
         .toList();

@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 
 
 class ButtonThemeDemo extends StatelessWidget {
-  const ButtonThemeDemo({Key? key}) : super(key: key);
+  const ButtonThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

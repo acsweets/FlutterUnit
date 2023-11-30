@@ -17,13 +17,13 @@ import 'package:flutter/material.dart';
 
 
 class CustomIcon extends StatelessWidget {
-  const CustomIcon({Key? key}) : super(key: key);
+  const CustomIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
+    return const Wrap(
       crossAxisAlignment: WrapCrossAlignment.center,
-      children: const [
+      children: [
         Icon(Icons.send, color: Colors.orange, size: 60),
         Icon(Icons.android, color: Colors.green, size: 100),
       ],

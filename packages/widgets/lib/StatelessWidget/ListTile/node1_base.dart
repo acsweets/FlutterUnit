@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【onLongPress】: 点击事件   【Function()】",
 //    }
 class CustomListTile extends StatelessWidget {
-  const CustomListTile({Key? key}) : super(key: key);
+  const CustomListTile({super.key});
 
   @override
   Widget build(BuildContext context) {

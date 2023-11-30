@@ -22,7 +22,7 @@ import 'package:flutter/material.dart';
 //          "   snap为true时必需floating为true",
 //    }
 class SliverAppBarDemo extends StatefulWidget {
-  const SliverAppBarDemo({Key? key}) : super(key: key);
+  const SliverAppBarDemo({super.key});
 
   @override
   _SliverAppBarDemoState createState() => _SliverAppBarDemoState();

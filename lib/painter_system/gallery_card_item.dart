@@ -96,7 +96,7 @@ class GalleryCardItem extends StatelessWidget {
           ),
           decoration:  BoxDecoration(
               color: isDark?Colors.black87:Colors.white,
-              borderRadius: BorderRadius.all(
+              borderRadius: const BorderRadius.all(
                 Radius.circular(20),
               ))),
     );

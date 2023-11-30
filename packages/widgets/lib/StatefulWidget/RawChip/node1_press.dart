@@ -19,7 +19,7 @@ import 'package:flutter/material.dart';
 //          "【onPressed】 : 点击事件  【Function()】",
 //    }
 class PressRawChip extends StatelessWidget {
-  const PressRawChip({Key? key}) : super(key: key);
+  const PressRawChip({super.key});
 
   @override
   Widget build(BuildContext context) {

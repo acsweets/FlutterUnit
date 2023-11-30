@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【alignment】 : 对齐动画   【Animation<AlignmentGeometry>】",
 //    }
 class CustomAlignTransition extends StatefulWidget {
-  const CustomAlignTransition({Key? key}) : super(key: key);
+  const CustomAlignTransition({super.key});
 
   @override
   _CustomAlignTransitionState createState() => _CustomAlignTransitionState();

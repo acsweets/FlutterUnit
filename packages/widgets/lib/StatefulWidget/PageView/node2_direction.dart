@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【reverse】 : 是否反向  【bool】",
 //    }
 class DirectionPageView extends StatelessWidget {
-  DirectionPageView({Key? key}) : super(key: key);
+  DirectionPageView({super.key});
 
   final List<Color> data = [
     Colors.orange[50]!,

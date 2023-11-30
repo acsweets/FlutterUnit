@@ -7,12 +7,11 @@ typedef CheckCallback<T> = void Function(T color);
 
 class ColorChooser extends StatefulWidget {
   const ColorChooser(
-      {Key? key,
+      {super.key,
         this.defaultIndex=0,
       this.radius = 10,
       required this.colors,
-      required this.onChecked})
-      : super(key: key);
+      required this.onChecked});
   final double radius;
   final List<Color> colors;
   final Function(Color)? onChecked;
@@ -66,12 +65,11 @@ class _ColorChooserState extends State<ColorChooser> {
 
 class IconChooser extends StatefulWidget {
   const IconChooser(
-      {Key? key,
+      {super.key,
       this.radius = 20,
       required this.icons,
       required this.onChecked,
-      this.initialIndex = 0})
-      : super(key: key);
+      this.initialIndex = 0});
   final double radius;
   final List<IconData> icons;
   final int initialIndex;

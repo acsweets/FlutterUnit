@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【sliver】 : 子组件  【Function()】",
 //    }
 class SliverOpacityDemo extends StatelessWidget {
-  SliverOpacityDemo({Key? key}) : super(key: key);
+  SliverOpacityDemo({super.key});
 
   final List<Color> data = List.generate(128, (i) => Color(0xFF6600FF - 2 * i));
 

@@ -21,7 +21,7 @@ import 'package:flutter/material.dart';
 //          "【onTap】 : 点击事件   【Function(int)】",
 //    }
 class CustomBottomNavigationBar extends StatefulWidget {
-  const CustomBottomNavigationBar({Key? key}) : super(key: key);
+  const CustomBottomNavigationBar({super.key});
 
   @override
   _CustomBottomNavigationBarState createState() =>

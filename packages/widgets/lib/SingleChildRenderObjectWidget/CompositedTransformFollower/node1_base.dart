@@ -22,7 +22,7 @@ import 'package:flutter/material.dart';
 
 class CompositedTransformFollowerDemo extends StatelessWidget {
 
-  const CompositedTransformFollowerDemo({Key? key}) : super(key: key);
+  const CompositedTransformFollowerDemo({super.key});
 
   static const List<Color> colors =[Colors.red,Colors.yellow,Colors.blue,Colors.green];
 
@@ -104,7 +104,7 @@ class _LogoTipsState extends State<_LogoTips> {
 
   void _showOverlay() {
     _overlayEntry = _createOverlayEntry();
-    Overlay.of(context)?.insert(_overlayEntry!);
+    Overlay.of(context).insert(_overlayEntry!);
   }
 
   void _hideOverlay() {

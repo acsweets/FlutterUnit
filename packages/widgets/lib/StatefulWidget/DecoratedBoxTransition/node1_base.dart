@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【decoration】 : 动画   【Animation<Decoration>】",
 //    }
 class CustomDecoratedBoxTransition extends StatefulWidget {
-  const CustomDecoratedBoxTransition({Key? key}) : super(key: key);
+  const CustomDecoratedBoxTransition({super.key});
 
   @override
   _CustomDecoratedBoxTransitionState createState() =>

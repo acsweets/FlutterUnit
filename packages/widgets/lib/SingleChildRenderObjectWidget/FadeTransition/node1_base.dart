@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【opacity】 : 动画   【Animation<double>】",
 //    }
 class CustomFadeTransition extends StatefulWidget {
-  const CustomFadeTransition({Key? key}) : super(key: key);
+  const CustomFadeTransition({super.key});
 
   @override
   _CustomFadeTransitionState createState() => _CustomFadeTransitionState();

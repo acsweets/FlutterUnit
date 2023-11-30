@@ -18,7 +18,7 @@ import 'package:flutter/cupertino.dart';
 //          "【onSelectedItemChanged】 : 选中事件  【Function(int)】",
 //    }
 class CustomCupertinoPicker extends StatelessWidget {
-  const CustomCupertinoPicker({Key? key}) : super(key: key);
+  const CustomCupertinoPicker({super.key});
 
   final List<String> names = const[
     'Java',

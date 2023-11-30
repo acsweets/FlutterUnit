@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class BadgeAlignOffsetDemo extends StatelessWidget {
-  const BadgeAlignOffsetDemo({Key? key}) : super(key: key);
+  const BadgeAlignOffsetDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

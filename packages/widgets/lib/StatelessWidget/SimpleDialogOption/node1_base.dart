@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【onPressed】 : 点击事件  【Function()】",
 //    }
 class CustomSimpleDialogOption extends StatelessWidget {
-  const CustomSimpleDialogOption({Key? key}) : super(key: key);
+  const CustomSimpleDialogOption({super.key});
 
   @override
   Widget build(BuildContext context) {

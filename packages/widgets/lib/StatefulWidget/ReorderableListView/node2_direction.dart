@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【reverse】 : 是否反向  【bool】",
 //    }
 class DirectionReorderableListView extends StatefulWidget {
-  const DirectionReorderableListView({Key? key}) : super(key: key);
+  const DirectionReorderableListView({super.key});
 
   @override
   _DirectionReorderableListViewState createState() =>

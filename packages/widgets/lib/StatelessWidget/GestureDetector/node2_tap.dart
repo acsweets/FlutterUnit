@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【onTapCancel】 : 点击取消   【GestureTapCancelCallback】",
 //    }
 class TapGestureDetector extends StatefulWidget {
-  const TapGestureDetector({Key? key}) : super(key: key);
+  const TapGestureDetector({super.key});
 
   @override
   _TapGestureDetectorState createState() => _TapGestureDetectorState();

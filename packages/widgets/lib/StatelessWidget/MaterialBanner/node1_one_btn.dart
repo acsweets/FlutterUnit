@@ -16,25 +16,25 @@ import 'package:flutter/material.dart';
 //          "【backgroundColor】: 背景色    【Color】",
 //    }
 class MaterialBannerDemo extends StatelessWidget {
-  const MaterialBannerDemo({Key? key}) : super(key: key);
+  const MaterialBannerDemo({super.key});
 
   final String info = 'Welcome to Flutter Unit!';
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: <Widget>[
         MaterialBanner(
           content: Text(
             info,
-            style: const TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white),
           ),
           backgroundColor: Colors.purple,
-          leading: const Icon(Icons.info, color: Colors.lightBlueAccent),
-          padding: const EdgeInsetsDirectional.only(start: 16.0, top: 2.0),
+          leading: Icon(Icons.info, color: Colors.lightBlueAccent),
+          padding: EdgeInsetsDirectional.only(start: 16.0, top: 2.0),
           forceActionsBelow: false,
           // 默认false
-          actions: const <Widget>[
+          actions: <Widget>[
             Text(
               'I KNOW',
               style: TextStyle(

@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomColumn extends StatelessWidget {
-  const CustomColumn({Key? key}) : super(key: key);
+  const CustomColumn({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,15 +32,15 @@ class CustomColumn extends StatelessWidget {
     return Container(
         height: 70,
         color: const Color(0x4484FFFF),
-        child: Row(
-          children: const [
+        child: const Row(
+          children: [
             Padding(
+              padding: EdgeInsets.only(left: 25, right: 20),
               child: Icon(
                 Icons.add_location,
                 size: 30,
                 color: Colors.pink,
               ),
-              padding: EdgeInsets.only(left: 25, right: 20),
             ),
             Expanded(
               child: Text(
@@ -49,8 +49,8 @@ class CustomColumn extends StatelessWidget {
               ),
             ),
             Padding(
-              child: Icon(Icons.keyboard_arrow_right, color: Colors.black38),
               padding: EdgeInsets.only(right: 25),
+              child: Icon(Icons.keyboard_arrow_right, color: Colors.black38),
             ),
           ],
         ));

@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "    PositionedTransition组件只能在Stack内起作用",
 //    }
 class CustomRelativePositionedTransition extends StatefulWidget {
-  const CustomRelativePositionedTransition({Key? key}) : super(key: key);
+  const CustomRelativePositionedTransition({super.key});
 
   @override
   _CustomRelativePositionedTransitionState createState() =>

@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //          "【painter】 : 绘画器   【CustomPainter】",
 //    }
 class ClockPage extends StatelessWidget {
-  const ClockPage({Key? key}) : super(key: key);
+  const ClockPage({super.key});
 
   @override
   Widget build(BuildContext context) {

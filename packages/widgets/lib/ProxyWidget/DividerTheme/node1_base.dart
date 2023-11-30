@@ -14,12 +14,12 @@ import 'package:flutter/material.dart';
 
 
 class DividerThemeDemo extends StatelessWidget {
-  const DividerThemeDemo({Key? key}) : super(key: key);
+  const DividerThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return DividerTheme(
-      data: const DividerThemeData(
+    return const DividerTheme(
+      data: DividerThemeData(
         color: Colors.orange,
         thickness: 2,
         space: 10,
@@ -29,16 +29,16 @@ class DividerThemeDemo extends StatelessWidget {
       child: Wrap(
         spacing: 10,
         children: [
-          const Divider(),
-          const Divider(),
-          const Divider(),
-          const Divider(),
-          const Divider(),
+          Divider(),
+          Divider(),
+          Divider(),
+          Divider(),
+          Divider(),
           SizedBox(
             height: 100,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
+              children: [
                 VerticalDivider(),
                 VerticalDivider(),
                 VerticalDivider(),

@@ -19,7 +19,7 @@ import 'package:flutter/material.dart';
 //          "【child】 : 子组件   【Widget】",
 //    }
 class AnimatedPhysicalModelDemo extends StatefulWidget {
-  const AnimatedPhysicalModelDemo({Key? key}) : super(key: key);
+  const AnimatedPhysicalModelDemo({super.key});
 
   @override
   _AnimatedPhysicalModelDemoState createState() =>
@@ -42,15 +42,15 @@ class _AnimatedPhysicalModelDemoState extends State<AnimatedPhysicalModelDemo> {
             curve: Curves.fastOutSlowIn,
             shadowColor: flag?Colors.orange:Colors.purple,
             elevation: flag?10:5,
-            child: Image.asset(
-              'assets/images/caver.webp',
-              fit: BoxFit.cover,
-            ),
             borderRadius: BorderRadius.all(Radius.circular(flag? 10:75)),
             clipBehavior: Clip.hardEdge,
             shape: BoxShape.rectangle,
             color: Colors.deepPurpleAccent,
             onEnd: () => print('----onEnd---'),
+            child: Image.asset(
+              'assets/images/caver.webp',
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ],

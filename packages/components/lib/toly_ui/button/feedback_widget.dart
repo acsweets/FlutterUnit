@@ -21,7 +21,7 @@ class FeedbackWidget extends StatefulWidget {
   final Function()? onLongPressed;
   final double a;
 
-  const FeedbackWidget({Key? key,
+  const FeedbackWidget({super.key,
     required this.child,
     this.mode = FeedMode.scale,
     this.a = 0.9,
@@ -29,7 +29,7 @@ class FeedbackWidget extends StatefulWidget {
     this.duration = const Duration(milliseconds: 150),
     this.onPressed,
     this.onEnd,
-  }) : super(key: key);
+  });
 
   @override
   _FeedBackState createState() => _FeedBackState();

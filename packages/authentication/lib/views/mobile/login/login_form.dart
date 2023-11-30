@@ -9,7 +9,7 @@ import '../../../authentication.dart';
 
 
 class LoginFrom extends StatefulWidget {
-  const LoginFrom({Key? key}) : super(key: key);
+  const LoginFrom({super.key});
 
   @override
   _LoginFromState createState() => _LoginFromState();
@@ -69,9 +69,9 @@ class _LoginFromState extends State<LoginFrom> {
           onTap: () {
             Navigator.of(context).pushReplacementNamed(UnitRouter.register);
           },
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0),
-            child: const Text(
+          child: const Padding(
+            padding: EdgeInsets.symmetric(vertical: 8.0),
+            child: Text(
               "没有账号，立即注册",
               style: TextStyle(
                   color: Colors.blue,
@@ -186,13 +186,13 @@ class _LoginFromState extends State<LoginFrom> {
   }
 
   Widget buildOtherLogin() {
-    return Wrap(
+    return const Wrap(
       alignment: WrapAlignment.center,
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 30.0),
+          padding: EdgeInsets.only(top: 30.0),
           child: Row(
-            children: const [
+            children: [
               Expanded(
                   child: Divider(
                 height: 20,
@@ -211,7 +211,7 @@ class _LoginFromState extends State<LoginFrom> {
             ],
           ),
         ),
-        const Icon(
+        Icon(
           TolyIcon.icon_github,
           color: Colors.black,
           size: 30,

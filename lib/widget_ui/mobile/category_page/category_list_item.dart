@@ -24,9 +24,9 @@ class CategoryListItem extends StatelessWidget {
       decoration: BoxDecoration(
         color: Theme.of(context).listTileTheme.tileColor,
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.01),blurRadius: 6,offset: Offset(0,2))
+          BoxShadow(color: Colors.black.withOpacity(0.01),blurRadius: 6,offset: const Offset(0,2))
         ],
-        borderRadius: BorderRadius.all(Radius.circular(8)),
+        borderRadius: const BorderRadius.all(Radius.circular(8)),
       ),
     );
 

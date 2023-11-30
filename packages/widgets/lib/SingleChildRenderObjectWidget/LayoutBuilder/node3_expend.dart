@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class SimpleExpandableText extends StatefulWidget {
-  const SimpleExpandableText({Key? key}) : super(key: key);
+  const SimpleExpandableText({super.key});
 
   @override
   createState() => _SimpleExpandableTextState();

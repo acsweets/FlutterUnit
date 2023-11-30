@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【width】: 占位宽   【double】",
 //    }
 class WidthVerticalDivider extends StatelessWidget {
-  const WidthVerticalDivider({Key? key}) : super(key: key);
+  const WidthVerticalDivider({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -32,12 +32,12 @@ class DecorationSliverDemo extends StatelessWidget {
                       blurRadius: 2,
                       offset: Offset(-2, -1))
                 ],
-                gradient: LinearGradient(
-                  colors: const <Color>[
+                gradient: const LinearGradient(
+                  colors: <Color>[
                     Color(0xFFEEEEEE),
                     Color(0xFF111133),
                   ],
-                  stops: const <double>[0.1, 1.0],
+                  stops: <double>[0.1, 1.0],
                 ),
               ),
               sliver: SliverList(
@@ -47,7 +47,7 @@ class DecorationSliverDemo extends StatelessWidget {
                       child: Center(
                           child: Text(
                             '张风捷特烈-$index',
-                            style: TextStyle(fontSize: 24, color: Colors.white),
+                            style: const TextStyle(fontSize: 24, color: Colors.white),
                           )),
                     ),
                     childCount: 128),

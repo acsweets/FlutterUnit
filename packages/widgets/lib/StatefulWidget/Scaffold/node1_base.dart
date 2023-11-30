@@ -18,7 +18,7 @@ import '../PopupMenuButton/node1_base.dart';
 //          "【floatingActionButtonLocation】 : 浮动按钮位置   【FloatingActionButtonLocation】",
 //    }
 class CustomScaffold extends StatefulWidget {
-  const CustomScaffold({Key? key}) : super(key: key);
+  const CustomScaffold({super.key});
 
   @override
   State<StatefulWidget> createState() => _CustomScaffoldState();

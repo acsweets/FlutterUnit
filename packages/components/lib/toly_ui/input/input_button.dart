@@ -28,13 +28,12 @@ class InputButton extends StatefulWidget {
   final String defaultText;
 
   const InputButton(
-      {Key? key,
+      {super.key,
       this.onSubmit,
       this.onChanged,
       this.defaultText = '请输入',
       this.onTap,
-      this.config = const InputButtonConfig()})
-      : super(key: key);
+      this.config = const InputButtonConfig()});
 
   @override
   _InputButtonState createState() => _InputButtonState();
@@ -52,7 +51,7 @@ class _InputButtonState extends State<InputButton> {
     super.initState();
     _height = widget.config.height;
     _fontSize = widget.config.fontSize;
-    _radius = Radius.circular(6);
+    _radius = const Radius.circular(6);
     _controller = TextEditingController(text: widget.defaultText);
   }
 
@@ -117,8 +116,8 @@ class _InputButtonState extends State<InputButton> {
       children: <Widget>[
         Expanded(
           child: SizedBox(
-            child: textField,
             height: _height,
+            child: textField,
           ),
         ),
         ClipRRect(
@@ -128,9 +127,9 @@ class _InputButtonState extends State<InputButton> {
               topRight: _radius,
               bottomRight: _radius),
           child: SizedBox(
-            child: btn,
             width: _height,
             height: _height,
+            child: btn,
           ),
         ),
       ],

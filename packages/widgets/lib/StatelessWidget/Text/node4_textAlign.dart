@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "下面依次是:left、right、center、justify、start、end ",
 //    }
 class TextAlignText extends StatelessWidget {
-  const TextAlignText({Key? key}) : super(key: key);
+  const TextAlignText({super.key});
 
   @override
   Widget build(BuildContext context) {

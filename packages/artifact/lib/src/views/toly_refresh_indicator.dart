@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart'
@@ -67,12 +66,12 @@ class _TolyRefreshIndicatorState
       RefreshStatus.completed => const Icon(Icons.check,color: Colors.green,),
       RefreshStatus.idle || RefreshStatus.canRefresh => RotationTransition(
           turns: rotateAnima,
-          child: Icon(
+          child: const Icon(
             CupertinoIcons.arrow_down,
             color: Color(0xff666668),
           ),
         ),
-      _ => SizedBox()
+      _ => const SizedBox()
     };
 
     return Container(

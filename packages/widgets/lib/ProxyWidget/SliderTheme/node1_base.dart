@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class SliderThemeDemo extends StatefulWidget {
-  const SliderThemeDemo({Key? key}) : super(key: key);
+  const SliderThemeDemo({super.key});
 
   @override
   _SliderThemeDemoState createState() => _SliderThemeDemoState();

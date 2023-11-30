@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class InheritedThemeDemo extends StatelessWidget {
-  const InheritedThemeDemo({Key? key}) : super(key: key);
+  const InheritedThemeDemo({super.key});
 
 
   @override
@@ -28,7 +28,7 @@ class InheritedThemeDemo extends StatelessWidget {
 }
 
 class TestBody extends StatelessWidget {
-  const TestBody({Key? key}) : super(key: key);
+  const TestBody({super.key});
 
   @override
   Widget build(BuildContext context) {

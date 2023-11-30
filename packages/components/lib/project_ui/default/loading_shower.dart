@@ -8,7 +8,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class LoadingShower extends StatelessWidget {
 
-  const LoadingShower({Key? key}) : super(key: key);
+  const LoadingShower({super.key});
 
   @override
   Widget build(BuildContext context) {

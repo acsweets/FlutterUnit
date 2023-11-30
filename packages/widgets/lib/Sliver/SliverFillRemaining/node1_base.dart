@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【child】 : 子组件   【Widget】",
 //    }
 class SliverFillRemainingDemo extends StatefulWidget {
-  const SliverFillRemainingDemo({Key? key}) : super(key: key);
+  const SliverFillRemainingDemo({super.key});
 
   @override
   _SliverFillRemainingDemoState createState() =>

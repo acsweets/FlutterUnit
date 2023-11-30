@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //          "使用WidgetSpan来承载普通组件，作为RichText的内容",
 //    }
 class RichTextWithWidget extends StatelessWidget {
-  const RichTextWithWidget({Key? key}) : super(key: key);
+  const RichTextWithWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

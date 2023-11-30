@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【dense】: 是否密排   【bool】",
 //    }
 class DenseSwitchListTile extends StatefulWidget {
-  const DenseSwitchListTile({Key? key}) : super(key: key);
+  const DenseSwitchListTile({super.key});
 
   @override
   _DenseSwitchListTileState createState() => _DenseSwitchListTileState();

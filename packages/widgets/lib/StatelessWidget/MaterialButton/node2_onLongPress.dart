@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class LongPressMaterialButton extends StatelessWidget {
-  const LongPressMaterialButton({Key? key}) : super(key: key);
+  const LongPressMaterialButton({super.key});
 
   @override
   Widget build(BuildContext context) {

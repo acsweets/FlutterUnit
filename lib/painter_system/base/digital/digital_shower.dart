@@ -27,7 +27,7 @@ class _DigitalShowerState extends State<DigitalShower> {
       ),
       body: Center(
           child: MultiDigitalWidget(
-            colors: [Colors.indigo,],
+            colors: const [Colors.indigo,],
         width: 50,
         spacing: 16,
         count: 4,

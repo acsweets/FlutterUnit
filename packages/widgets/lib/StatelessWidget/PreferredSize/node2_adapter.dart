@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【PreferredSize将普通组件转化为PreferredSizeWidget",
 //    }
 class AdapterPreferredSize extends StatelessWidget {
-  const AdapterPreferredSize({Key? key}) : super(key: key);
+  const AdapterPreferredSize({super.key});
 
   @override
   Widget build(BuildContext context) {

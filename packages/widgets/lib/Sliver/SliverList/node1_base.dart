@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【delegate】 : 孩子代理   【SliverChildDelegate】",
 //    }
 class SliverListDemo extends StatelessWidget {
-  SliverListDemo({Key? key}) : super(key: key);
+  SliverListDemo({super.key});
 
   final List<Color> data =[
     Colors.purple[50]!,

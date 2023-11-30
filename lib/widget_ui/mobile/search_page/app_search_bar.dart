@@ -39,7 +39,7 @@ class _AppSearchBarState extends State<AppSearchBar> {
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
                   hintText: "搜点啥...",
-                  hintStyle: TextStyle(fontSize: 14)),
+                  hintStyle: const TextStyle(fontSize: 14)),
               onChanged: _doSearch,
               onSubmitted: (str) {
                 //提交后,收起键盘

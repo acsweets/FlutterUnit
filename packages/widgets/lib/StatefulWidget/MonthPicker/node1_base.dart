@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【onChanged】 : 点击回调  【Function(DateTime)】",
 //    }
 class CustomMonthPicker extends StatelessWidget{
-  const CustomMonthPicker({Key? key}) : super(key: key);
+  const CustomMonthPicker({super.key});
 
   final String info =
       'MonthPicker 月份期选择器于 Flutter3.0 退出历史舞台。取代者为 CalendarDatePicker 日历选择器。';
@@ -24,7 +24,7 @@ class CustomMonthPicker extends StatelessWidget{
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 

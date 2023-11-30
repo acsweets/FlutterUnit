@@ -19,19 +19,19 @@ class InheritedWidgetDemo extends StatelessWidget {
       'InheritedWidget 是一个抽象类，不可以直接使用。可以自定义对应共享数据的子类，如这里的通过 InfoInheritedWidget 实现：当前这段话可以在任意子树节点上下文获取。'
       '一般都会定义一个 XXX.of(context) 的方法来获取数据，如 MediaQuery.of，Theme.of 等。';
 
-  const InheritedWidgetDemo({Key? key}) : super(key: key);
+  const InheritedWidgetDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return InfoInheritedWidget(
+    return const InfoInheritedWidget(
       info: info,
-      child: const InfoWidget(),
+      child: InfoWidget(),
     );
   }
 }
 
 class InfoWidget extends StatelessWidget {
-  const InfoWidget({Key? key}) : super(key: key);
+  const InfoWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,8 +49,7 @@ class InfoWidget extends StatelessWidget {
 class InfoInheritedWidget extends InheritedWidget {
   final String info;
 
-  const InfoInheritedWidget({Key? key,required this.info, required Widget child})
-      : super(key: key, child: child);
+  const InfoInheritedWidget({super.key,required this.info, required super.child});
 
   @override
   bool updateShouldNotify(covariant InfoInheritedWidget oldWidget) =>

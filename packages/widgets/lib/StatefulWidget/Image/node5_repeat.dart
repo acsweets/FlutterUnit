@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //    },
 
 class RepeatImage extends StatelessWidget {
-  const RepeatImage({Key? key}) : super(key: key);
+  const RepeatImage({super.key});
 
   @override
   Widget build(BuildContext context) {

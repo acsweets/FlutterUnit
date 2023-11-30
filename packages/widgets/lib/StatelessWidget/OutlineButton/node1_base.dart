@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomOutlineButton extends StatelessWidget {
-  const CustomOutlineButton({Key? key}) : super(key: key);
+  const CustomOutlineButton({super.key});
 
   final String info =
       'OutlineButton 按钮于 Flutter3.0 退出历史舞台。取代者为 OutlinedButton 按钮。';
@@ -29,7 +29,7 @@ class CustomOutlineButton extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 

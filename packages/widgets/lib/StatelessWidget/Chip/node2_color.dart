@@ -3,6 +3,7 @@
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
 /// 说明: 
+library;
 
 //    {
 //      "widgetId": 11,
@@ -14,7 +15,7 @@
 //    }
 import 'package:flutter/material.dart';
 class ColorOfChip extends StatelessWidget {
-  const ColorOfChip({Key? key}) : super(key: key);
+  const ColorOfChip({super.key});
 
   @override
   Widget build(BuildContext context) {

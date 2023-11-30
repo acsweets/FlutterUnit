@@ -15,7 +15,7 @@ import 'package:flutter/cupertino.dart';
 //          "【padding】 : 内边距   【EdgeInsetsGeometry】",
 //    }
 class CupertinoSegmentedControlDemo extends StatefulWidget {
-  const CupertinoSegmentedControlDemo({Key? key}) : super(key: key);
+  const CupertinoSegmentedControlDemo({super.key});
 
   @override
   _CupertinoSegmentedControlDemoState createState() =>

@@ -15,7 +15,7 @@ import 'package:widgets/utils/dialog_about.dart';
 //          "【onPressed】 : 点击事件  【Function()】",
 //    }
 class CustomCupertinoActionSheetAction extends StatelessWidget {
-  const CustomCupertinoActionSheetAction({Key? key}) : super(key: key);
+  const CustomCupertinoActionSheetAction({super.key});
 
   @override
   Widget build(BuildContext context) {

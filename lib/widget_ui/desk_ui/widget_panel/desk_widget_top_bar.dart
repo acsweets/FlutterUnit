@@ -33,7 +33,7 @@ class _DeskWidgetTopBarState extends State<DeskWidgetTopBar>  with SingleTickerP
       child: Container(
         padding: const EdgeInsets.only(left: 20),
         height: 64,
-        color: isDark?Color(0xff2C3036):Colors.white,
+        color: isDark?const Color(0xff2C3036):Colors.white,
         child: Row(
           children: [
             SizedBox(
@@ -59,9 +59,9 @@ class _DeskWidgetTopBarState extends State<DeskWidgetTopBar>  with SingleTickerP
                 _tabs.map((String name) => Tab(text: name)).toList(),
               ),
             ),
-            Spacer(),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            const Spacer(),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.0),
               child: SizedBox(
                   width: 250, height: 30, child: DeskSearchBar(
               )),

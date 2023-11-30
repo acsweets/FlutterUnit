@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class RenderObjectToWidgetAdapterDemo extends StatelessWidget {
-  const RenderObjectToWidgetAdapterDemo({Key? key}) : super(key: key);
+  const RenderObjectToWidgetAdapterDemo({super.key});
 
   final String info =
       '该组件并没有什么太大的使用价值，但却非常有纪念意义。它是 Flutter 框架中最顶层的 Widget，它的 child 是 runApp 传入的组件，在 attachRootWidget 方法中被实例化。'
@@ -28,7 +28,7 @@ class RenderObjectToWidgetAdapterDemo extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 }

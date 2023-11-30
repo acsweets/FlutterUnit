@@ -13,7 +13,7 @@ import 'package:widgets/utils/dialog_about.dart';
 //          "【height】 : 高度  【double】",
 //    }
 class CustomPopupMenuDivider extends StatelessWidget {
-  const CustomPopupMenuDivider({Key? key}) : super(key: key);
+  const CustomPopupMenuDivider({super.key});
 
   final Map<String, IconData> map = const {
     "关于": Icons.info_outline,

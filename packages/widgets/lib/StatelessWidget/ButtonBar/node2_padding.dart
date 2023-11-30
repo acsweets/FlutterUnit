@@ -14,7 +14,7 @@ import 'package:widgets/utils/dialog_about.dart';
 //          "【buttonHeight】: 高   【double】",
 //    }
 class PaddingButtonBar extends StatelessWidget {
-  const PaddingButtonBar({Key? key}) : super(key: key);
+  const PaddingButtonBar({super.key});
 
   @override
   Widget build(BuildContext context) {

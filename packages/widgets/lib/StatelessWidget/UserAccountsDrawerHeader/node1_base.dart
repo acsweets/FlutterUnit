@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomUAGHP extends StatelessWidget {
-  const CustomUAGHP({Key? key}) : super(key: key);
+  const CustomUAGHP({super.key});
 
   @override
   Widget build(BuildContext context) {

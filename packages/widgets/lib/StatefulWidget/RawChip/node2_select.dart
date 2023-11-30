@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "【onDeleted】 : 尾部事件  【Function()】",
 //    }
 class SelectRawChip extends StatefulWidget {
-  const SelectRawChip({Key? key}) : super(key: key);
+  const SelectRawChip({super.key});
 
   @override
   _SelectRawChipState createState() => _SelectRawChipState();

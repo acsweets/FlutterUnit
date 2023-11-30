@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "【onChanged】: 选中事件   【Function(bool)】",
 //    }
 class CustomSwitchListTile extends StatefulWidget {
-  const CustomSwitchListTile({Key? key}) : super(key: key);
+  const CustomSwitchListTile({super.key});
 
   @override
   _CustomSwitchListTileState createState() => _CustomSwitchListTileState();

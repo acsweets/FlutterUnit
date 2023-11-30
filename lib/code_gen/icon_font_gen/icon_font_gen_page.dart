@@ -101,7 +101,7 @@ class _IconFontGenPageState extends State<IconFontGenPage>
 
             Expanded(
                 child: Align(
-              alignment: Alignment(1, -0.8),
+              alignment: const Alignment(1, -0.8),
               child: GenMessageAction(
                 onGen: doGen,
               ),
@@ -161,7 +161,7 @@ class LabelInputInput extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
           child: Text(
             label,
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
           ),
         ),
         Expanded(
@@ -169,23 +169,23 @@ class LabelInputInput extends StatelessWidget {
             height: 35,
             child: TextField(
               controller: controller,
-              style: TextStyle(fontSize: 14),
+              style: const TextStyle(fontSize: 14),
               decoration: InputDecoration(
                   filled: true,
                   hoverColor: Colors.transparent,
-                  contentPadding: EdgeInsets.only(top: 0, left: 15),
-                  fillColor: isDark?null:Color(0xffF1F2F3),
+                  contentPadding: const EdgeInsets.only(top: 0, left: 15),
+                  fillColor: isDark?null:const Color(0xffF1F2F3),
                   focusedBorder: OutlineInputBorder(
                     borderSide:
                         BorderSide(color: Theme.of(context).primaryColor),
-                    borderRadius: BorderRadius.all(Radius.circular(6)),
+                    borderRadius: const BorderRadius.all(Radius.circular(6)),
                   ),
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: isDark?Color(0xff2C3036):Color(0xffE2E7EE)),
-                    borderRadius: BorderRadius.all(Radius.circular(6)),
+                    borderSide: BorderSide(color: isDark?const Color(0xff2C3036):const Color(0xffE2E7EE)),
+                    borderRadius: const BorderRadius.all(Radius.circular(6)),
                   ),
                   hintText: hintText,
-                  hintStyle: TextStyle(fontSize: 12, color: Colors.grey)),
+                  hintStyle: const TextStyle(fontSize: 12, color: Colors.grey)),
             ),
           ),
         ),
@@ -221,19 +221,19 @@ class FileSelectorInput extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
           child: Text(
             label,
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
           ),
         ),
         SizedBox(
           height: 35,
           child: TextField(
             controller: controller,
-            style: TextStyle(fontSize: 14),
+            style: const TextStyle(fontSize: 14),
             decoration: InputDecoration(
-                suffixIconConstraints: BoxConstraints(maxWidth: 80),
+                suffixIconConstraints: const BoxConstraints(maxWidth: 80),
                 suffixIcon: Row(
                   children: [
-                    VerticalDivider(
+                    const VerticalDivider(
                       width: 1,
                     ),
                     Expanded(
@@ -255,18 +255,18 @@ class FileSelectorInput extends StatelessWidget {
                 ),
                 filled: true,
                 hoverColor: Colors.transparent,
-                contentPadding: EdgeInsets.only(top: 0, left: 15),
-                fillColor: isDark?null:Color(0xffF1F2F3),
+                contentPadding: const EdgeInsets.only(top: 0, left: 15),
+                fillColor: isDark?null:const Color(0xffF1F2F3),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Theme.of(context).primaryColor),
-                  borderRadius: BorderRadius.all(Radius.circular(6)),
+                  borderRadius: const BorderRadius.all(Radius.circular(6)),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: isDark?Color(0xff2C3036):Color(0xffE2E7EE)),
-                  borderRadius: BorderRadius.all(Radius.circular(6)),
+                  borderSide: BorderSide(color: isDark?const Color(0xff2C3036):const Color(0xffE2E7EE)),
+                  borderRadius: const BorderRadius.all(Radius.circular(6)),
                 ),
                 hintText: hintText,
-                hintStyle: TextStyle(fontSize: 12, color: Colors.grey)),
+                hintStyle: const TextStyle(fontSize: 12, color: Colors.grey)),
           ),
         ),
       ],

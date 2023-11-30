@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class EmptyShower extends StatelessWidget {
   final String message;
 
-  const EmptyShower({Key? key, this.message = "数据为空"}) : super(key: key);
+  const EmptyShower({super.key, this.message = "数据为空"});
 
   @override
   Widget build(BuildContext context) {

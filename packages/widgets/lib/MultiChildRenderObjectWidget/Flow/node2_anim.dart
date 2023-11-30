@@ -23,17 +23,17 @@ class BurstFlow extends StatefulWidget {
       height: 300,
       alignment: Alignment.center,
       child: BurstFlow(
-          children: data
-              .map((e) => CircleAvatar(backgroundImage: AssetImage(e)))
-              .toList(),
           menu: const CircleAvatar(
             backgroundImage: AssetImage('assets/images/icon_head.webp'),
-          )));
+          ),
+          children: data
+              .map((e) => CircleAvatar(backgroundImage: AssetImage(e)))
+              .toList()));
 
   final List<Widget> children;
   final Widget menu;
 
-  const BurstFlow({Key? key, required this.children, required this.menu}) : super(key: key);
+  const BurstFlow({super.key, required this.children, required this.menu});
 
   @override
   _BurstFlowState createState() => _BurstFlowState();

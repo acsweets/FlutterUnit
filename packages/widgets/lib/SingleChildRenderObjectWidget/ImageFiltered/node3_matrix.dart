@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "通过 ImageFilter.matrix 构造，进行矩阵变换，但比较鸡肋。",
 //    }
 class ImageFilteredMatrix extends StatefulWidget {
-  const ImageFilteredMatrix({Key? key}) : super(key: key);
+  const ImageFilteredMatrix({super.key});
 
   @override
   State<ImageFilteredMatrix> createState() => _ImageFilteredMatrixState();
@@ -48,7 +48,7 @@ class _ImageFilteredMatrixState extends State<ImageFilteredMatrix> {
                     max: 90,
                     value: _sigmaX,
                     divisions: 360,
-                    label: 'x:' + _sigmaX.toStringAsFixed(1),
+                    label: 'x:${_sigmaX.toStringAsFixed(1)}',
                     onChanged: (v) => setState(() => _sigmaX = v)),
               ),
             ],
@@ -59,7 +59,7 @@ class _ImageFilteredMatrixState extends State<ImageFilteredMatrix> {
 }
 
 class _TargetContent extends StatelessWidget {
-  const _TargetContent({Key? key}) : super(key: key);
+  const _TargetContent();
 
   @override
   Widget build(BuildContext context) {

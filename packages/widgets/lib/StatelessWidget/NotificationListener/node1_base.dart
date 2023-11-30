@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class NotificationListenerDemo extends StatefulWidget {
-  const NotificationListenerDemo({Key? key}) : super(key: key);
+  const NotificationListenerDemo({super.key});
 
   @override
   _NotificationListenerDemoState createState() => _NotificationListenerDemoState();

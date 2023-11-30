@@ -19,7 +19,7 @@ import 'node1_base.dart';
 class RepaintBoundarySave extends StatelessWidget {
   final GlobalKey _globalKey = GlobalKey();
 
-  RepaintBoundarySave({Key? key}) : super(key: key);
+  RepaintBoundarySave({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,11 +35,6 @@ class RepaintBoundarySave extends StatelessWidget {
   }
 
   Widget _buildButton3(context) => MaterialButton(
-      child: const Icon(
-        Icons.save_alt,
-        size: 15,
-        color: Colors.white,
-      ),
       color: Colors.green,
       shape: const CircleBorder(
         side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
@@ -47,14 +42,19 @@ class RepaintBoundarySave extends StatelessWidget {
       onPressed: () async {
         Uint8List? bits = await _widget2Image(_globalKey);
         Directory dir = await getApplicationSupportDirectory();
-        File file = File(dir.path + "/save_img.png");
+        File file = File("${dir.path}/save_img.png");
         if(bits==null) return;
         var f = await file.writeAsBytes(bits);
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           backgroundColor: Theme.of(context).primaryColor,
           content: Text('保存成功后! 路径为:${f.path}'),
         ));
-      });
+      },
+      child: const Icon(
+        Icons.save_alt,
+        size: 15,
+        color: Colors.white,
+      ));
 
   Future<Uint8List?> _widget2Image(GlobalKey key) async {
     RenderObject? boundary = key.currentContext?.findRenderObject();

@@ -122,9 +122,9 @@ class _PhoneGalleryUnitState extends State<PhoneGalleryUnit> {
     return Container(
       alignment: const Alignment(0, 0.3),
       height: MediaQuery.of(context).size.height * 0.2,
-      child: Row(
+      child: const Row(
         mainAxisSize: MainAxisSize.min,
-        children: const [
+        children: [
            FlutterLogo(
             size: 40,
           ),

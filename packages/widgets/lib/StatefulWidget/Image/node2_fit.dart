@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //    },
 
 class FitImage extends StatefulWidget {
-  const FitImage({Key? key}) : super(key: key);
+  const FitImage({super.key});
 
   @override
   _FitImageState createState() => _FitImageState();

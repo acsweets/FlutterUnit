@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【thickness】: 线粗细   【double】",
 //    }
 class CustomVerticalDivider extends StatelessWidget {
-  const CustomVerticalDivider({Key? key}) : super(key: key);
+  const CustomVerticalDivider({super.key});
 
   @override
   Widget build(BuildContext context) {

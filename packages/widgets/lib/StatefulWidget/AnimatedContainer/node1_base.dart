@@ -23,7 +23,7 @@ import 'package:flutter/material.dart';
 //          "【padding】 : 内边距   【EdgeInsetsGeometry】",
 //    }
 class CustomAnimatedContainer extends StatefulWidget {
-  const CustomAnimatedContainer({Key? key}) : super(key: key);
+  const CustomAnimatedContainer({super.key});
 
   @override
   _CustomAnimatedContainerState createState() =>

@@ -63,14 +63,14 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
       appBar: AppBar(title: Text(widget.article.title),actions: [
         IconButton(onPressed: (){
           _launchURL('https://juejin.cn${widget.article.url}');
-        }, icon: Icon(TolyIcon.icon_artifact,size: 20,))
+        }, icon: const Icon(TolyIcon.icon_artifact,size: 20,))
       ],),
       body: Stack(
         alignment: Alignment.center,
         children: [
           WebViewWidget(controller: controller),
           if(progress!=100)
-          Center(
+          const Center(
             child: CupertinoActivityIndicator(),
           )
         ],

@@ -15,7 +15,7 @@ class DropSelectableWidget extends StatefulWidget {
   final double fontSize;
 
   const DropSelectableWidget(
-      {Key? key,
+      {super.key,
         this.data = const [],
         this.onDropSelected,
         this.disableColor = Colors.black,
@@ -23,8 +23,7 @@ class DropSelectableWidget extends StatefulWidget {
         this.height = 30,
         this.width = 200,
         this.fontSize = 14,
-      })
-      : super(key: key);
+      });
 
   @override
   _DropSelectableWidgetState createState() => _DropSelectableWidgetState();
@@ -104,7 +103,7 @@ class _DropSelectableWidgetState extends State<DropSelectableWidget>
 
   void _showOverlay() {
     _overlayEntry = _createOverlayEntry();
-    Overlay.of(context)?.insert(_overlayEntry!);
+    Overlay.of(context).insert(_overlayEntry!);
   }
 
   void _hideOverlay() {

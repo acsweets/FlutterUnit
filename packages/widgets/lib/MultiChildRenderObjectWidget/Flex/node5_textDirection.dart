@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【textDirection】 : 水平方向顺序   【TextDirection】",
 //    }
 class TextDirectionFlex extends StatelessWidget {
-  TextDirectionFlex({Key? key}) : super(key: key);
+  TextDirectionFlex({super.key});
 
   static TextStyle textStyle =
       const TextStyle(color: Colors.white, fontWeight: FontWeight.bold);

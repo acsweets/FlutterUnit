@@ -9,9 +9,9 @@ class DownloadDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('下载详情页'),
+        title: const Text('下载详情页'),
       ),
-      body: Center(child: DetailProgressView()),
+      body: const Center(child: DetailProgressView()),
     );
   }
 }

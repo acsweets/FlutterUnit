@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【crossAxisAlignment】 : 交叉轴对齐   【CrossAxisAlignment】",
 //    }
 class CrossAxisAlignmentWrap extends StatelessWidget {
-  CrossAxisAlignmentWrap({Key? key}) : super(key: key);
+  CrossAxisAlignmentWrap({super.key});
 
   @override
   Widget build(BuildContext context) {

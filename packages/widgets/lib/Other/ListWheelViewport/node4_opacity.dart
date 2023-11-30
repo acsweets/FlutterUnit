@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ListWheelViewportDemo4 extends StatelessWidget {
-  ListWheelViewportDemo4({Key? key}) : super(key: key);
+  ListWheelViewportDemo4({super.key});
 
   final List<Color> data = [
     Colors.blue[50]!,

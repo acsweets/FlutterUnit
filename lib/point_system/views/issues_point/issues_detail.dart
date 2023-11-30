@@ -17,7 +17,7 @@ class IssuesDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size(0,kToolbarHeight),
+        preferredSize: const Size(0,kToolbarHeight),
         child: DragToMoveAreaNoDouble(
           child: AppBar(
             centerTitle: false,

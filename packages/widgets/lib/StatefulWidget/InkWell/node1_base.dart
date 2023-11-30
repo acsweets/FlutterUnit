@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomInkWell extends StatefulWidget {
-  const CustomInkWell({Key? key}) : super(key: key);
+  const CustomInkWell({super.key});
 
   @override
   _CustomInkWellState createState() => _CustomInkWellState();

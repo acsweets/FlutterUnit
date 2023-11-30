@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【direction】 : 主轴对齐   【Axis】",
 //    }
 class DirectionWrap extends StatelessWidget {
-  DirectionWrap({Key? key}) : super(key: key);
+  DirectionWrap({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -23,11 +23,11 @@ class _GithubRepoPanelState extends State<GithubRepoPanel> {
         child: Container(
           // alignment: Alignment.topCenter,
           width: 250,
-          padding: EdgeInsets.all(10),
-          margin: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           decoration:  BoxDecoration(
               boxShadow: [
-                BoxShadow(color: Colors.black.withOpacity(0.1), offset: Offset(0, .5), blurRadius: 3)
+                BoxShadow(color: Colors.black.withOpacity(0.1), offset: const Offset(0, .5), blurRadius: 3)
               ],
               color:Theme.of(context).listTileTheme.tileColor,
               borderRadius: BorderRadius.circular(8)),
@@ -41,26 +41,26 @@ class _GithubRepoPanelState extends State<GithubRepoPanel> {
                 style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
               const SizedBox(height: 4,),
-              Row(
+              const Row(
                 children: [
                   Text(
                     '创建时间',
-                    style: const TextStyle(),
+                    style: TextStyle(),
                   ),
-                  const SizedBox(width: 8,),
+                  SizedBox(width: 8,),
                   Text(
                     '2020年04月15日',
-                    style: const TextStyle(),
+                    style: TextStyle(),
                   ),
                 ],
               ),
               const SizedBox(height: 4,),
               Row(
                 children: [
-                  Text('开源协议'),
+                  const Text('开源协议'),
                   const SizedBox(width: 8,),
                   WrapColor(
-                    padding: EdgeInsets.symmetric(vertical: 2,horizontal: 4),
+                    padding: const EdgeInsets.symmetric(vertical: 2,horizontal: 4),
                     child: Text(
                       '${widget.repository.license?.type}',
                       style: const TextStyle(
@@ -91,7 +91,7 @@ class _GithubRepoPanelState extends State<GithubRepoPanel> {
                         crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
                           const Icon(Icons.star_border),
-                          Text(widget.repository.stargazersCount.toString(),style: TextStyle(fontSize: 12),),
+                          Text(widget.repository.stargazersCount.toString(),style: const TextStyle(fontSize: 12),),
                         ]),
                     SizedBox(
                       height: 15,
@@ -108,7 +108,7 @@ class _GithubRepoPanelState extends State<GithubRepoPanel> {
                           const SizedBox(
                             width: 5,
                           ),
-                          Text(widget.repository.subscribersCount.toString(),style: TextStyle(fontSize: 12),),
+                          Text(widget.repository.subscribersCount.toString(),style: const TextStyle(fontSize: 12),),
                         ]),
                     SizedBox(
                       height: 15,
@@ -122,7 +122,7 @@ class _GithubRepoPanelState extends State<GithubRepoPanel> {
                         crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
                           const Icon(TolyIcon.icon_fork),
-                          Text(widget.repository.forksCount.toString(),style: TextStyle(fontSize: 12),),
+                          Text(widget.repository.forksCount.toString(),style: const TextStyle(fontSize: 12),),
                         ]),
                     SizedBox(
                       height: 15,
@@ -139,7 +139,7 @@ class _GithubRepoPanelState extends State<GithubRepoPanel> {
                           const SizedBox(
                             width: 5,
                           ),
-                          Text(widget.repository.openIssuesCount.toString(),style: TextStyle(fontSize: 12),),
+                          Text(widget.repository.openIssuesCount.toString(),style: const TextStyle(fontSize: 12),),
                         ]),
                   ],
                 ),

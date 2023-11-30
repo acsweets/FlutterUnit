@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【color】 : 颜色   【Animation<Color>】",
 //    }
 class AnimatedModalBarrierDemo extends StatefulWidget {
-  const AnimatedModalBarrierDemo({Key? key}) : super(key: key);
+  const AnimatedModalBarrierDemo({super.key});
 
   @override
   _AnimatedModalBarrierDemoState createState() =>

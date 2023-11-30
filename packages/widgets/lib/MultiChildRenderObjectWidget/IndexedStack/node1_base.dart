@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【index】 : 当前显示组件  【int】",
 //    }
 class CustomIndexedStack extends StatefulWidget {
-  const CustomIndexedStack({Key? key}) : super(key: key);
+  const CustomIndexedStack({super.key});
 
   @override
   _CustomIndexedStackState createState() => _CustomIndexedStackState();

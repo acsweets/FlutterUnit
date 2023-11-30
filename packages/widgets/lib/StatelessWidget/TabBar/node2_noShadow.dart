@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "将Theme关于水波纹的颜色设置为透明即可。",
 //    }
 class NoShadowTabBarDemo extends StatefulWidget {
-  const NoShadowTabBarDemo({Key? key}) : super(key: key);
+  const NoShadowTabBarDemo({super.key});
 
   @override
   _NSTabBarState createState() => _NSTabBarState();

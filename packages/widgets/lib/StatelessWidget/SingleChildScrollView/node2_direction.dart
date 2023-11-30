@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【reverse】 : 是否反向   【Axis】",
 //    }
 class DirectionSingleChildScrollView extends StatelessWidget {
-  DirectionSingleChildScrollView({Key? key}) : super(key: key);
+  DirectionSingleChildScrollView({super.key});
 
   final List<Color> data = [
     Colors.blue[50]!,

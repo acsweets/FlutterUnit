@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【child】 : 子组件   【Widget】\n",
 //    }
 class CustomDropDownButtonHideUnderline extends StatefulWidget {
-  const CustomDropDownButtonHideUnderline({Key? key}) : super(key: key);
+  const CustomDropDownButtonHideUnderline({super.key});
 
   @override
   _CustomDropDownButtonHideUnderlineState createState() =>

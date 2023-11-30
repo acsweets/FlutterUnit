@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomAnimatedSwitcher extends StatefulWidget {
-  const CustomAnimatedSwitcher({Key? key}) : super(key: key);
+  const CustomAnimatedSwitcher({super.key});
 
   @override
   _CustomAnimatedSwitcherState createState() => _CustomAnimatedSwitcherState();
@@ -44,12 +44,12 @@ class _CustomAnimatedSwitcherState extends State<CustomAnimatedSwitcher> {
           duration: const Duration(milliseconds: 400),
           transitionBuilder: (Widget child, Animation<double> animation) =>
               ScaleTransition(
-                  child: RotationTransition(turns: animation, child: child),
-                  scale: animation),
+                  scale: animation,
+                  child: RotationTransition(turns: animation, child: child)),
           child: Text(
             '$_count',
             key: ValueKey<int>(_count),
-            style: Theme.of(context).textTheme.headline3,
+            style: Theme.of(context).textTheme.displaySmall,
           ),
         );
 
@@ -61,14 +61,14 @@ class _CustomAnimatedSwitcherState extends State<CustomAnimatedSwitcher> {
         color: Colors.red,
         highlightColor: const Color(0xffF88B0A),
         splashColor: Colors.red,
-        child: const Icon(
-          Icons.remove,
-          color: Colors.white,
-        ),
        shape: const CircleBorder(
          side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
        ),
-        onPressed: () => setState(() => _count -= 1));
+        onPressed: () => setState(() => _count -= 1),
+        child: const Icon(
+          Icons.remove,
+          color: Colors.white,
+        ));
   }
 
   Widget _buildAddBtn() => MaterialButton(
@@ -78,12 +78,12 @@ class _CustomAnimatedSwitcherState extends State<CustomAnimatedSwitcher> {
         color: Colors.blue,
         highlightColor: const Color(0xffF88B0A),
         splashColor: Colors.red,
-        child: const Icon(
-          Icons.add,
-          color: Colors.white,
-        ),
         shape: const CircleBorder(
           side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
         ),
-        onPressed: () => setState(() => _count += 1));
+        onPressed: () => setState(() => _count += 1),
+        child: const Icon(
+          Icons.add,
+          color: Colors.white,
+        ));
 }

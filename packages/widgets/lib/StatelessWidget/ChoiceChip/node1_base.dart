@@ -2,6 +2,7 @@
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
 /// 说明:
+library;
 //    {
 //      "widgetId": 12,
 //      "priority": 1,
@@ -15,7 +16,7 @@
 import 'package:flutter/material.dart';
 
 class CustomChoiceChip extends StatefulWidget {
-  const CustomChoiceChip({Key? key}) : super(key: key);
+  const CustomChoiceChip({super.key});
 
   @override
   _CustomChoiceChipState createState() => _CustomChoiceChipState();

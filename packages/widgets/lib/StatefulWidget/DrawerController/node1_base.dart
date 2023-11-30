@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class DrawerControllerDemo extends StatefulWidget {
-  const DrawerControllerDemo({Key? key}) : super(key: key);
+  const DrawerControllerDemo({super.key});
 
   @override
   _DrawerControllerDemoState createState() => _DrawerControllerDemoState();

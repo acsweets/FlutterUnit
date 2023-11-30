@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomSingleChildLayoutDemo extends StatelessWidget {
-  const CustomSingleChildLayoutDemo({Key? key}) : super(key: key);
+  const CustomSingleChildLayoutDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

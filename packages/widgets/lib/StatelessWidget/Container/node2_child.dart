@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【child】: 子组件    【Widget】",
 //    }
 class ContainerWithChild extends StatelessWidget {
-  const ContainerWithChild({Key? key}) : super(key: key);
+  const ContainerWithChild({super.key});
 
   @override
   Widget build(BuildContext context) {

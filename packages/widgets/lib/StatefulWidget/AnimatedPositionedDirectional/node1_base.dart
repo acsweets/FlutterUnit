@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //          "【bottom】 : 到父底距离   【double】",
 //    }
 class CustomAnimatedPositionedDirectional extends StatefulWidget {
-  const CustomAnimatedPositionedDirectional({Key? key}) : super(key: key);
+  const CustomAnimatedPositionedDirectional({super.key});
 
   @override
   _CustomAnimatedPositionedDirectionalState createState() =>

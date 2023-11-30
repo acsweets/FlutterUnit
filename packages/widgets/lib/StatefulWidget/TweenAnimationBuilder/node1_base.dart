@@ -20,7 +20,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class TweenAnimationBuilderDemo extends StatefulWidget {
-  const TweenAnimationBuilderDemo({Key? key}) : super(key: key);
+  const TweenAnimationBuilderDemo({super.key});
 
   @override
   _TweenAnimationBuilderDemoState createState() =>
@@ -45,11 +45,11 @@ class _TweenAnimationBuilderDemoState extends State<TweenAnimationBuilderDemo> {
           child: Container(
             width: 40,
             height: 40,
-            child: child,
             decoration: BoxDecoration(
               color: color,
               borderRadius: BorderRadius.circular(5)
             ),
+            child: child,
           ),
         );
       },

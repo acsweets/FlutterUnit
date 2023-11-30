@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【interval】: 小块边长   【double】",
 //      }
 class CustomGridPage extends StatelessWidget {
-  const CustomGridPage({Key? key}) : super(key: key);
+  const CustomGridPage({super.key});
 
   @override
   Widget build(BuildContext context) {

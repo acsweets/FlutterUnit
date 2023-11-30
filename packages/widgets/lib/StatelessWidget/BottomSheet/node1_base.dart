@@ -1,6 +1,7 @@
 /// create by 张风捷特烈 on 2020-03-25
 /// contact me by email 1981462002@qq.com
 /// 说明:
+library;
 //    {
 //      "widgetId": 142,
 //      "name": 'BottomSheet基本使用',
@@ -16,7 +17,7 @@
 import 'package:flutter/material.dart';
 
 class CustomBottomSheet extends StatefulWidget {
-  const CustomBottomSheet({Key? key}) : super(key: key);
+  const CustomBottomSheet({super.key});
 
   @override
   _CustomBottomSheetState createState() => _CustomBottomSheetState();

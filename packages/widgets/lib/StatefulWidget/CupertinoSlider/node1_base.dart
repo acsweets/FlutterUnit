@@ -19,7 +19,7 @@ import 'package:flutter/material.dart';
 //          "【onChanged】 : 改变时回调   【Function(double)】",
 //    }
 class CustomCupertinoSlider extends StatefulWidget {
-  const CustomCupertinoSlider({Key? key}) : super(key: key);
+  const CustomCupertinoSlider({super.key});
 
   @override
   _CustomCupertinoSliderState createState() => _CustomCupertinoSliderState();

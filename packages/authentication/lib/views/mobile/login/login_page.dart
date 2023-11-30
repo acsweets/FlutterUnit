@@ -1,6 +1,4 @@
-import 'package:authentication/authentication.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../register/arc_clipper.dart';
 import 'login_form.dart';
@@ -22,7 +20,7 @@ import 'login_form.dart';
 // }
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,9 +38,9 @@ class LoginPage extends StatelessWidget {
             height: winSize.height * 0.68,
             width: MediaQuery.of(context).size.width,
             padding: const EdgeInsets.only(left: 20.0, right: 20, top: 10),
-            child: Stack(
+            child: const Stack(
               alignment: Alignment.center,
-              children: const [
+              children: [
                 LoginFrom(),
               ],
             ))

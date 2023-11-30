@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【onHighlightChanged】 : 高亮变化回调   【Function(bool)】",
 //    }
 class CustomTableRowInkWell extends StatelessWidget {
-  const CustomTableRowInkWell({Key? key}) : super(key: key);
+  const CustomTableRowInkWell({super.key});
 
   @override
   Widget build(BuildContext context) {

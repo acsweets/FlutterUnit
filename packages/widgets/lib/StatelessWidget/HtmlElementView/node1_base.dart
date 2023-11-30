@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【viewType】 : html元素唯一表识   【String】",
 //    }
 class HtmlElementViewDemo extends StatelessWidget {
-  const HtmlElementViewDemo({Key? key}) : super(key: key);
+  const HtmlElementViewDemo({super.key});
 
   final String info =
       '该组件只能用于 Flutter Web 中，嵌入 Html 元素的较为昂贵。'
@@ -26,7 +26,7 @@ class HtmlElementViewDemo extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 }

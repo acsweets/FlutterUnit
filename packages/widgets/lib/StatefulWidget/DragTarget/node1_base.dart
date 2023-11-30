@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomDragTarget extends StatefulWidget {
-  const CustomDragTarget({Key? key}) : super(key: key);
+  const CustomDragTarget({super.key});
 
   @override
   _CustomDragTargetState createState() => _CustomDragTargetState();
@@ -30,7 +30,7 @@ class _CustomDragTargetState extends State<CustomDragTarget> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Wrap(children: _buildColors(), spacing: 10),
+        Wrap(spacing: 10, children: _buildColors()),
         const SizedBox(height: 20),
         _buildDragTarget()
       ],
@@ -50,22 +50,22 @@ class _CustomDragTargetState extends State<CustomDragTarget> {
   List<Widget> _buildColors() => colors
       .map(
         (e) => Draggable<Color>(
+            data: e,
+          feedback: Container(
+            width: 25,
+            height: 25,
+            decoration: BoxDecoration(color: e, shape: BoxShape.circle),
+          ),
             child: Container(
               width: 30,
               height: 30,
               alignment: Alignment.center,
+            decoration: BoxDecoration(color: e, shape: BoxShape.circle),
               child: Text(
                 colors.indexOf(e).toString(),
                 style: const TextStyle(
                     color: Colors.white, fontWeight: FontWeight.bold),
               ),
-            decoration: BoxDecoration(color: e, shape: BoxShape.circle),
-          ),
-          data: e,
-          feedback: Container(
-            width: 25,
-            height: 25,
-            decoration: BoxDecoration(color: e, shape: BoxShape.circle),
           )),
     ).toList();
 

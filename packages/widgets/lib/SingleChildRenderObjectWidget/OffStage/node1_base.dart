@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【offstage】 : 是否消失   【bool】",
 //    }
 class CustomOffstage extends StatefulWidget {
-  const CustomOffstage({Key? key}) : super(key: key);
+  const CustomOffstage({super.key});
 
   @override
   _CustomOffstageState createState() => _CustomOffstageState();

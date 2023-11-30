@@ -13,7 +13,7 @@ import 'package:flutter/cupertino.dart';
 //          "【navigationBar】 : 头部   【ObstructingPreferredSizeWidget】",
 //    }
 class CustomCupertinoPageScaffold extends StatelessWidget {
-  const CustomCupertinoPageScaffold({Key? key}) : super(key: key);
+  const CustomCupertinoPageScaffold({super.key});
 
   @override
   Widget build(BuildContext context) {

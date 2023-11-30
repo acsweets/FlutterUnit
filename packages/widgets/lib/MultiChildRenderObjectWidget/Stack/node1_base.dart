@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【fit】 : 适应模式   【StackFit】",
 //    }
 class CustomStack extends StatelessWidget {
-  const CustomStack({Key? key}) : super(key: key);
+  const CustomStack({super.key});
 
   @override
   Widget build(BuildContext context) {

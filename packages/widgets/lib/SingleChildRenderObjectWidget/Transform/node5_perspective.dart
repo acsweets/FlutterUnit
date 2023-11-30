@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "由R3C1、R3C2、R3C3控制透视",
 //    }
 class R3C2 extends StatefulWidget {
-  const R3C2({Key? key}) : super(key: key);
+  const R3C2({super.key});
 
   @override
   _R3C2State createState() => _R3C2State();

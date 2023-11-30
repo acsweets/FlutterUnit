@@ -22,10 +22,10 @@ class UnitDrawerHeader extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Wrap(
+          const Wrap(
             spacing: 10,
             crossAxisAlignment: WrapCrossAlignment.center,
-            children: const <Widget>[
+            children: <Widget>[
               FlutterLogo(
                 size: 35,
               ),
@@ -61,8 +61,8 @@ class UnitDrawerHeader extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Row(
-            children: const <Widget>[
+          const Row(
+            children: <Widget>[
               Spacer(
                 flex: 5,
               ),

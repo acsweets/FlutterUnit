@@ -1,10 +1,8 @@
-import 'dart:io';
 import 'dart:ui';
 
 import 'package:authentication/blocs/authentic/bloc.dart';
 import 'package:authentication/blocs/user/bloc.dart';
 import 'package:components/components.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,7 +10,7 @@ import '../../../blocs/authentic/event.dart';
 import '../../../blocs/user/state.dart';
 
 class UserAccountPage extends StatelessWidget {
-  const UserAccountPage({Key? key}) : super(key: key);
+  const UserAccountPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +30,7 @@ class UserAccountPage extends StatelessWidget {
       backgroundColor: isDark ? null : bgColor,
       appBar: AppBar(
         backgroundColor: isDark ? null : sbgColor,
-        title: Text(
+        title: const Text(
           '账号资料',
         ),
       ),
@@ -49,10 +47,10 @@ class UserAccountPage extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
-                      padding: EdgeInsets.only(left: 15),
+                      padding: const EdgeInsets.only(left: 15),
                       width: 120,
-                      child: Text('头像')),
-                  Spacer(),
+                      child: const Text('头像')),
+                  const Spacer(),
                   // AuthUserAvatar(
                   //   size: 50,
                   //   borderSize: 2,
@@ -86,13 +84,13 @@ class UserAccountPage extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
-                      padding: EdgeInsets.only(left: 15),
+                      padding: const EdgeInsets.only(left: 15),
                       width: 120,
-                      child: Text('昵称')),
-                  Spacer(),
+                      child: const Text('昵称')),
+                  const Spacer(),
                   Text(
                     performance.username ?? '',
-                    style: TextStyle(color: Colors.grey),
+                    style: const TextStyle(color: Colors.grey),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -112,16 +110,16 @@ class UserAccountPage extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                    padding: EdgeInsets.only(left: 15),
+                    padding: const EdgeInsets.only(left: 15),
                     width: 120,
                     child: const Text('箴言')),
-                Spacer(),
-                Text(
+                const Spacer(),
+                const Text(
                   // '${performance.userId}',
                   '海的彼岸，有我未曾见证的风采。', style: TextStyle(color: Colors.grey,fontSize: 12),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 12),
                   child: Icon(
                     Icons.arrow_forward_ios_sharp,
                     size: 20,
@@ -200,16 +198,16 @@ class UserAccountPage extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                    padding: EdgeInsets.only(left: 15),
+                    padding: const EdgeInsets.only(left: 15),
                     width: 120,
                     child: const Text('账号')),
-                Spacer(),
-                Text(
+                const Spacer(),
+                const Text(
                   // '${performance.userId}',
                   '******', style: TextStyle(color: Colors.grey,fontSize: 12),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 12),
                   child: Icon(
                     Icons.arrow_forward_ios_sharp,
                     size: 20,
@@ -266,8 +264,8 @@ class UserAccountPage extends StatelessWidget {
           // ),
           // if(false)
           ListTile(
-            title: Center(
-                child: const Text(
+            title: const Center(
+                child: Text(
                   '删除账号',
                   style: TextStyle(
                       fontSize: 15,
@@ -290,7 +288,7 @@ class UserAccountPage extends StatelessWidget {
                         // await Future.delayed(Duration(seconds: 3));
                         // await context.read<UserBloc>().repo.unregister();
                         //
-                        context.read<AuthBloc>().add(Logout());
+                        context.read<AuthBloc>().add(const Logout());
 
                         // Navigator.of(context).pushAndRemoveUntil(
                         //   NoAnimRouter(AuthRelation(
@@ -382,8 +380,7 @@ class UserItemPanel extends StatelessWidget {
   final String value;
   final Color? color;
   const UserItemPanel(
-      {Key? key, required this.label, required this.value, required this.color})
-      : super(key: key);
+      {super.key, required this.label, required this.value, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -394,14 +391,14 @@ class UserItemPanel extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-                padding: EdgeInsets.only(left: 15), child: Text(label)),
+                padding: const EdgeInsets.only(left: 15), child: Text(label)),
           ),
           Text(
             value,
-            style: TextStyle(color: Colors.grey),
+            style: const TextStyle(color: Colors.grey),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 12),
             child: Icon(
               Icons.arrow_forward_ios_sharp,
               size: 20,

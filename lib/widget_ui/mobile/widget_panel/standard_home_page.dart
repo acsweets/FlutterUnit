@@ -1,5 +1,4 @@
 import 'package:components/toly_ui/toly_ui.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -68,7 +67,7 @@ class _StandardHomePageState extends State<StandardHomePage>
             child: NestedScrollView(
                 floatHeaderSlivers: true,
                 headerSliverBuilder: _buildHeader,
-                body: WidgetPage()),
+                body: const WidgetPage()),
           ),
           SizedBox(
             height: bottom,

@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //          "【aspectRatio】 : 宽高比例   【double】",
 //    }
 class CustomAspectRatio extends StatefulWidget {
-  const CustomAspectRatio({Key? key}) : super(key: key);
+  const CustomAspectRatio({super.key});
 
   @override
   _CustomAspectRatioState createState() => _CustomAspectRatioState();

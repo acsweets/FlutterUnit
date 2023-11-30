@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【separatorBuilder】 : 条目构造器   【IndexedWidgetBuilder】",
 //    }
 class SeparatedListView extends StatelessWidget {
-  SeparatedListView({Key? key}) : super(key: key);
+  SeparatedListView({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

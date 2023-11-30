@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomCupertinoAlertDialog extends StatelessWidget {
-  const CustomCupertinoAlertDialog({Key? key}) : super(key: key);
+  const CustomCupertinoAlertDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -85,10 +85,10 @@ class CustomCupertinoAlertDialog extends StatelessWidget {
   }
 
   Widget _buildContent() {
-    return Padding(
-      padding: const EdgeInsets.only(top: 18.0),
+    return const Padding(
+      padding: EdgeInsets.only(top: 18.0),
       child: Column(
-        children: const[
+        children: [
            Text(
             '    Hi toly! If you push the conform buttom ,'
             ' You will lose this file. Are you sure wand to do that?',

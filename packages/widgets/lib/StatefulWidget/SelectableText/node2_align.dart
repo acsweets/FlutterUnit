@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【textDirection】 : 文字方向*2   【TextDirection】",
 //    }
 class AlignSelectableText extends StatefulWidget {
-  const AlignSelectableText({Key? key}) : super(key: key);
+  const AlignSelectableText({super.key});
 
   @override
   _AlignSelectableTextState createState() => _AlignSelectableTextState();

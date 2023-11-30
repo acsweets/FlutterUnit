@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【onPressed】 : 点击回调  【Function()】",
 //    }
 class CustomSnackBarAction extends StatelessWidget {
-  const CustomSnackBarAction({Key? key}) : super(key: key);
+  const CustomSnackBarAction({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【duration】 : 时长   【Duration】",
 //    }
 class CustomAnimatedCrossFade extends StatefulWidget {
-  const CustomAnimatedCrossFade({Key? key}) : super(key: key);
+  const CustomAnimatedCrossFade({super.key});
 
   @override
   _CustomAnimatedCrossFadeState createState() =>

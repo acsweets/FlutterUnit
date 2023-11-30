@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【onChanged】 : 点击回调  【Function(DateTime)】",
 //    }
 class CustomYearPicker extends StatefulWidget {
-  const CustomYearPicker({Key? key}) : super(key: key);
+  const CustomYearPicker({super.key});
 
   @override
   _CustomYearPickerState createState() => _CustomYearPickerState();

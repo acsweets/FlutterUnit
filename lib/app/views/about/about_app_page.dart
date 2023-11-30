@@ -118,10 +118,10 @@ class AboutAppPage extends StatelessWidget {
               FeedbackWidget(
                   onPressed: () =>
                       _launchURL("https://github.com/toly1994328/FlutterUnit"),
-                  child: Wrap(
+                  child: const Wrap(
                     direction: Axis.vertical,
                     crossAxisAlignment: WrapCrossAlignment.center,
-                    children: const [
+                    children: [
                       Icon(
                         TolyIcon.icon_github,
                         size: 35,
@@ -132,9 +132,9 @@ class AboutAppPage extends StatelessWidget {
             ],
           ),
         ),
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Text(
               'Flutter Unit',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),

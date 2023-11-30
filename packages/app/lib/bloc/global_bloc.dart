@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:storage/storage.dart';
 
-import '../model/app_style.dart';
 import '../repository/app_state_repository.dart';
 import '../model/global_state.dart';
 

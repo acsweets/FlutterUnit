@@ -11,15 +11,15 @@ import 'package:flutter/material.dart';
 //          "【selectButtonBuilder】: *选择按钮构造器   【InspectorSelectButtonBuilder】",
 //    }
 class WidgetInspectorDemo extends StatelessWidget {
-  const WidgetInspectorDemo({Key? key}) : super(key: key);
+  const WidgetInspectorDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 200,
       child: WidgetInspector(
-        child: const HomePage(),
         selectButtonBuilder: _selectButtonBuilder,
+        child: const HomePage(),
       ),
     );
   }
@@ -31,7 +31,7 @@ class WidgetInspectorDemo extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();

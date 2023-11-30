@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //          "【onTap】 : 点击事件   【Function(int)】",
 //    }
 class CustomCupertinoTabBar extends StatefulWidget {
-  const CustomCupertinoTabBar({Key? key}) : super(key: key);
+  const CustomCupertinoTabBar({super.key});
 
   @override
   _CustomCupertinoTabBarState createState() => _CustomCupertinoTabBarState();

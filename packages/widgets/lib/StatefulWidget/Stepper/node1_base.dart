@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【controlsBuilder】 : 控制器构造  【ControlsWidgetBuilder】",
 //    }
 class StepperDemo extends StatefulWidget {
-  const StepperDemo({Key? key}) : super(key: key);
+  const StepperDemo({super.key});
 
   @override
   _StepperDemoState createState() => _StepperDemoState();

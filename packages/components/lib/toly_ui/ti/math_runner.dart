@@ -8,12 +8,11 @@ typedef FunNum1 = Function(double t);
 
 class MathRunner extends StatefulWidget {
   const MathRunner(
-      {Key? key,
+      {super.key,
       this.child,
       required this.f,
       required this.g,
-      this.reverse = true})
-      : super(key: key);
+      this.reverse = true});
 
   final Widget? child;
   final FunNum1 f;

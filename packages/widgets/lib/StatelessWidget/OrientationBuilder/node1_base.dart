@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "【builder】 : 方向组件构造器   【OrientationWidgetBuilder】",
 //    }
 class OrientationBuilderDemo extends StatefulWidget {
-  const OrientationBuilderDemo({Key? key}) : super(key: key);
+  const OrientationBuilderDemo({super.key});
 
   @override
   _OrientationBuilderDemoState createState() => _OrientationBuilderDemoState();
@@ -26,8 +26,8 @@ class _OrientationBuilderDemoState extends State<OrientationBuilderDemo> {
         Container(
           width: _width,
           height: 200,
-          child: OrientationBuilder(builder: _builder),
           color: Colors.orange,
+          child: OrientationBuilder(builder: _builder),
         ),
         _buildSlider()
       ],

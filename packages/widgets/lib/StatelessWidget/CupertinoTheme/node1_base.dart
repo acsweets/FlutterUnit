@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "后代组件可以通过CupertinoTheme.of获取主题的数据进行使用。",
 //    }
 class TextCupertinoTheme extends StatelessWidget {
-  const TextCupertinoTheme({Key? key}) : super(key: key);
+  const TextCupertinoTheme({super.key});
 
   @override
   Widget build(BuildContext context) {

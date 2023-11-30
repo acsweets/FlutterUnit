@@ -12,7 +12,7 @@ class MarkdownWidget extends StatelessWidget {
   final String markdownData;
   final int style;
 
-  const MarkdownWidget({Key? key, this.markdownData = "", this.style = kWhite}) : super(key: key);
+  const MarkdownWidget({super.key, this.markdownData = "", this.style = kWhite});
 
   MarkdownStyleSheet  _getCommonSheet(BuildContext context, Color codeBackground) {
     MarkdownStyleSheet markdownStyleSheet = MarkdownStyleSheet.fromTheme(Theme.of(context));
@@ -140,9 +140,8 @@ class MarkdownWidget extends StatelessWidget {
           for (Match srcMatch in srcTags) {
             String srcString = srcMatch.group(0)??'';
             if (srcString.contains("http")) {
-              String newSrc = srcString.substring(
-                      srcString.indexOf("http"), srcString.length - 1) +
-                  "?raw=true";
+              String newSrc = "${srcString.substring(
+                      srcString.indexOf("http"), srcString.length - 1)}?raw=true";
               match = "[![]($newSrc)]($newSrc)";
             }
           }

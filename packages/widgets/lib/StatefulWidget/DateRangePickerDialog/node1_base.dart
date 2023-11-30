@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -16,7 +15,7 @@ import 'package:intl/intl.dart';
 //          "【saveText】 : 保存文字  【String?】",
 //    }
 class DateRangePickerDialogDemo extends StatefulWidget {
-  const DateRangePickerDialogDemo({Key? key}) : super(key: key);
+  const DateRangePickerDialogDemo({super.key});
 
   @override
   _DateRangePickerDialogDemoState createState() =>

@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "EdgeInsets.symmetric用来限定水平和竖直方向的边距",
 //    }
 class PaddingSymmetric extends StatelessWidget {
-  const PaddingSymmetric({Key? key}) : super(key: key);
+  const PaddingSymmetric({super.key});
 
   @override
   Widget build(BuildContext context) {

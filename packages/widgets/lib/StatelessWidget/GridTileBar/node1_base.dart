@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 
 
 class CustomGridTileBar extends StatelessWidget {
-  const CustomGridTileBar({Key? key}) : super(key: key);
+  const CustomGridTileBar({super.key});
 
   @override
   Widget build(BuildContext context) {

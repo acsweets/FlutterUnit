@@ -25,7 +25,7 @@ class DeskLikePage extends StatelessWidget {
     LikeWidgetState state = bloc.state;
     return GridView.builder(
         itemCount: state.widgets.length,
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         gridDelegate: deskGridDelegate, itemBuilder:  (_, index) => GestureDetector(
         onTap: () => _toDetailPage(context, state.widgets[index]),
         child: CollectWidgetListItem(
@@ -34,7 +34,7 @@ class DeskLikePage extends StatelessWidget {
               _deleteCollect(context, model),
         )));
 
-    return SizedBox.shrink();
+    return const SizedBox.shrink();
 
   }
 

@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "通过 _ActionIcon 组件根据 ActionIconTheme 主题，来适配不同平台的右抽屉按钮图标。",
 //    }
 class EndDrawerButtonIconDemo extends StatelessWidget {
-  const EndDrawerButtonIconDemo({Key? key}) : super(key: key);
+  const EndDrawerButtonIconDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

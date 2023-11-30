@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【ignoring】 : 是否忽略事件   【bool】\n",
 //    }
 class SliverIgnorePointerDemo extends StatefulWidget {
-  const SliverIgnorePointerDemo({Key? key}) : super(key: key);
+  const SliverIgnorePointerDemo({super.key});
 
   @override
   _SliverIgnorePointerDemoState createState() =>

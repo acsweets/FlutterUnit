@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class ParentDataWidgetDemo extends StatelessWidget {
-  const ParentDataWidgetDemo({Key? key}) : super(key: key);
+  const ParentDataWidgetDemo({super.key});
 
   final String info =
       'ParentDataWidget 是一个抽象类，不能直接使用，它拥有 ParentData 子类型的泛型，该泛型会限定该组件的适应场景。'
@@ -26,7 +26,7 @@ class ParentDataWidgetDemo extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info),
+      child: const Text(info),
     );
   }
 }

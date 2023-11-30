@@ -16,7 +16,7 @@ import 'package:flutter/services.dart';
 
 
 class AnnotatedRegionDemo extends StatelessWidget {
-  const AnnotatedRegionDemo({Key? key}) : super(key: key);
+  const AnnotatedRegionDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class AnnotatedRegionDemo extends StatelessWidget {
 
 
 class AnnotatedRegionTestPage extends StatelessWidget{
-  const AnnotatedRegionTestPage({Key? key}) : super(key: key);
+  const AnnotatedRegionTestPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,8 +57,8 @@ class AnnotatedRegionTestPage extends StatelessWidget{
             children: [
               Container(height: 56+30.0,color: Colors.blue,
               alignment: const Alignment(0,0.55),
-              child: Row(
-                children: const [
+              child: const Row(
+                children: [
                   BackButton(color: Colors.white,),
                   Text("AnnotatedRegion测试",style: TextStyle(color: Colors.white,fontSize: 18),)
                 ],

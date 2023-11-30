@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //          "【letterSpacing】: 字距   【double】",
 //    }
 class CustomText extends StatelessWidget {
-  const CustomText({Key? key}) : super(key: key);
+  const CustomText({super.key});
 
   @override
   Widget build(BuildContext context) {

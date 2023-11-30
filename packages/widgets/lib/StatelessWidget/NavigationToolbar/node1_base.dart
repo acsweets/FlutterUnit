@@ -14,13 +14,13 @@ import 'package:flutter/material.dart';
 //          "【middleSpacing】: 中间组件距左距离    【double】",
 //    }
 class NavigationToolbarDemo extends StatelessWidget {
-  const NavigationToolbarDemo({Key? key}) : super(key: key);
+  const NavigationToolbarDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return  const Column(
         mainAxisSize: MainAxisSize.min,
-        children: const <Widget>[
+        children: <Widget>[
           SizedBox(
             height: 60,
             child: NavigationToolbar(

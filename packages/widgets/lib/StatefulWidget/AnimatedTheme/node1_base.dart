@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【child】 : 子组件   【Widget】",
 //    }
 class AnimatedThemeDemo extends StatefulWidget {
-  const AnimatedThemeDemo({Key? key}) : super(key: key);
+  const AnimatedThemeDemo({super.key});
 
   @override
   _AnimatedThemeDemoState createState() => _AnimatedThemeDemoState();
@@ -24,7 +24,7 @@ class _AnimatedThemeDemoState extends State<AnimatedThemeDemo> {
   ThemeData startThem = ThemeData(
       primaryColor: Colors.blue,
       textTheme: const TextTheme(
-        headline1: TextStyle(
+        displayLarge: TextStyle(
           color: Colors.white,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class _AnimatedThemeDemoState extends State<AnimatedThemeDemo> {
   ThemeData endThem = ThemeData(
       primaryColor: Colors.red,
       textTheme: const TextTheme(
-          headline1: TextStyle(
+          displayLarge: TextStyle(
         color: Colors.black,
         fontSize: 16,
         fontWeight: FontWeight.normal,
@@ -79,7 +79,7 @@ class _AnimatedThemeDemoState extends State<AnimatedThemeDemo> {
 }
 
 class ChildContent extends StatelessWidget {
-  const ChildContent({Key? key}) : super(key: key);
+  const ChildContent({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +94,7 @@ class ChildContent extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       child: Text(
         'Flutter Unit',
-        style: Theme.of(context).textTheme.headline1,
+        style: Theme.of(context).textTheme.displayLarge,
       ),
     );
   }

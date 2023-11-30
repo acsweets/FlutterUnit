@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【shrinkWrap】 : 无边界时是否包裹  【bool】",
 //    }
 class HorizontalListView extends StatelessWidget {
-  HorizontalListView({Key? key}) : super(key: key);
+  HorizontalListView({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

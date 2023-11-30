@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "入参 : 显示信息   【Object】",
 //    }
 class ErrorWidgetDemo extends StatelessWidget {
-  const ErrorWidgetDemo({Key? key}) : super(key: key);
+  const ErrorWidgetDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

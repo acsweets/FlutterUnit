@@ -4,6 +4,7 @@
 /// contact me by email 1981462002@qq.com
 /// 说明:
 ///
+library;
 //    {
 //      "widgetId": 127,
 //      "name": 'AlertDialog基本使用',
@@ -24,7 +25,7 @@
 import 'package:flutter/material.dart';
 
 class CustomAlertDialog extends StatelessWidget {
-  const CustomAlertDialog({Key? key}) : super(key: key);
+  const CustomAlertDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -96,9 +97,9 @@ class CustomAlertDialog extends StatelessWidget {
   }
 
   Widget _buildContent() {
-    return  Column(
+    return  const Column(
       mainAxisSize: MainAxisSize.min,
-      children: const [
+      children: [
          Padding(
           padding: EdgeInsets.all(10.0),
           child: Text(

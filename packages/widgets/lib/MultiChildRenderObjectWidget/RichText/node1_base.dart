@@ -14,7 +14,7 @@ import '../../utils/color_utils.dart';
 //          "    其他属性与Text相同,详见之。",
 //    }
 class CustomRichText extends StatelessWidget {
-  const CustomRichText({Key? key}) : super(key: key);
+  const CustomRichText({super.key});
 
   final str = "        发光强度简称光强，国际单位是（坎德拉）简写cd。"
       "1cd是指光源在指定方向的单位立体角内发出的光通量。"

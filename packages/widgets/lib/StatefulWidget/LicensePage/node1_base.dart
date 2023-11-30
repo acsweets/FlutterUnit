@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【applicationLegalese】 : 应用律术   【String】",
 //    }
 class CustomLicensePage extends StatelessWidget {
-  const CustomLicensePage({Key? key}) : super(key: key);
+  const CustomLicensePage({super.key});
 
   @override
   Widget build(BuildContext context) {

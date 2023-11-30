@@ -12,7 +12,7 @@ import '../PopupMenuButton/node1_base.dart';
 //          "【bottom】 : 底部组件   【PreferredSizeWidget】",
 //    }
 class TabAppBar extends StatefulWidget {
-  const TabAppBar({Key? key}) : super(key: key);
+  const TabAppBar({super.key});
 
   @override
   _TabAppBarState createState() => _TabAppBarState();

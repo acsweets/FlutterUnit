@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class KeepAliveDemo extends StatelessWidget {
-  KeepAliveDemo({Key? key}) : super(key: key);
+  KeepAliveDemo({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,
@@ -60,10 +60,10 @@ class ColorBox extends StatefulWidget {
   final int index;
 
   const ColorBox({
-    Key? key,
+    super.key,
     required this.color,
     required this.index,
-  }) : super(key: key);
+  });
 
   @override
   _ColorBoxState createState() => _ColorBoxState();

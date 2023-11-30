@@ -1,14 +1,11 @@
-import 'dart:convert';
 import 'dart:math';
 
 import 'package:app/app.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:intl/intl.dart';
 
-import '../../blocs/article/bloc.dart';
 import '../../blocs/exp.dart';
 import '../../repositories/model/columnize.dart';
 import '../../repositories/repository/article_repository.dart';
@@ -157,7 +154,7 @@ class ColumnizeItem extends StatelessWidget {
       },
       child: Container(
         alignment: Alignment.topLeft,
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         // margin: EdgeInsets.only(left: 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -170,11 +167,11 @@ class ColumnizeItem extends StatelessWidget {
                     Text(
                       columnize.title,
                       style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                          const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                     ),
                     Text(
                       '作者: ${columnize.username}',
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 12,
                           color: Color(
                             0xff6A6D76,
@@ -182,15 +179,15 @@ class ColumnizeItem extends StatelessWidget {
                     ),
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6),
-                      border: Border.all(color: Color(0xff3872E0))),
+                      border: Border.all(color: const Color(0xff3872E0))),
                   child: Text(
                     '${columnize.count} 篇',
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Color(0xff3872E0), fontSize: 12, height: 1.1),
                   ),
                 )
@@ -201,32 +198,32 @@ class ColumnizeItem extends StatelessWidget {
             ),
             Text(
               '专栏简介: ${columnize.subtitle}',
-              style: TextStyle(
+              style: const TextStyle(
                   color: Color(
                     0xffA3A3A3,
                   ),
                   fontSize: 12),
               maxLines: 3,
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               children: [
                 Text(
                   '更新时间: ${formatLong.format(DateTime.fromMillisecondsSinceEpoch(columnize.update, isUtc: true))}',
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Color(
                         0xff6A6D76,
                       ),
                       fontSize: 12),
                 ),
-                Spacer(),
+                const Spacer(),
               ],
             ),
           ],
         ),
         decoration: BoxDecoration(
           gradient:
-              LinearGradient(transform: GradientRotation(3 * pi / 4), colors: [
+              LinearGradient(transform: const GradientRotation(3 * pi / 4), colors: [
             color.withOpacity(0.1),
             color.withOpacity(0.08),
             color.withOpacity(0),

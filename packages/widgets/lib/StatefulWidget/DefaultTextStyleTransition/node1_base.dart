@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【style】 : 动画   【Animation<TextStyle>】",
 //    }
 class CustomDefaultTextStyleTransition extends StatefulWidget {
-  const CustomDefaultTextStyleTransition({Key? key}) : super(key: key);
+  const CustomDefaultTextStyleTransition({super.key});
 
   @override
   _CustomDefaultTextStyleTransitionState createState() =>

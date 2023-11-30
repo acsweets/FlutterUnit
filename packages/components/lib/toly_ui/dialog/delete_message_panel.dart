@@ -1,5 +1,4 @@
 
-import 'package:components/toly_ui/toly_ui.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 typedef AsyncTask = Future<void> Function(BuildContext context);
@@ -16,14 +15,14 @@ class DeleteMessagePanel extends StatelessWidget {
   final Widget? icon;
 
   const DeleteMessagePanel({
-    Key? key,
+    super.key,
     required this.title,
     required this.msg,
     required this.task,
      this.conformText,
     this.icon,
      this.cancelText,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -118,7 +117,7 @@ class MobileMessagePanel extends StatelessWidget {
   final AsyncTask task;
 
   const MobileMessagePanel({
-    Key? key,
+    super.key,
     required this.title,
     required this.msg,
     required this.task,
@@ -126,7 +125,7 @@ class MobileMessagePanel extends StatelessWidget {
     this.conformColor,
     this.icon,
     this.cancelText,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -136,7 +135,7 @@ class MobileMessagePanel extends StatelessWidget {
       backgroundColor: conformColor??Colors.redAccent,
       elevation: 0,
       padding: EdgeInsets.zero,
-      minimumSize: Size(70, 35),
+      minimumSize: const Size(70, 35),
       shape: const StadiumBorder(),
     );
     Color? cancelTextColor =isDark?Colors.white: Theme.of(context).textTheme.displayMedium?.color;
@@ -183,7 +182,7 @@ class MobileMessagePanel extends StatelessWidget {
                       // backgroundColor: Color(value),
                       elevation: 0,
                       padding: EdgeInsets.zero,
-                      minimumSize: Size(70, 35),
+                      minimumSize: const Size(70, 35),
                       shape: const StadiumBorder(),
                     ),
                     child: Text(

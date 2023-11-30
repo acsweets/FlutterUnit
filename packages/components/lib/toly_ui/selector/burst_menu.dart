@@ -30,7 +30,7 @@ class BurstMenu extends StatefulWidget {
   final BurstMenuItemClick? burstMenuItemClick;
 
   const BurstMenu({
-    Key? key,
+    super.key,
     required this.menus,
     required this.center,
     this.radius = 100,
@@ -41,9 +41,9 @@ class BurstMenu extends StatefulWidget {
     this.duration = const Duration(milliseconds: 300),
     this.burstType = BurstType.circle,
     this.burstMenuItemClick,
-  }) : super(key: key);
+  });
 
-  const BurstMenu.topLeft({Key? key,
+  const BurstMenu.topLeft({super.key,
     required this.menus,
     this.burstMenuItemClick,
     this.radius = 100,
@@ -54,9 +54,9 @@ class BurstMenu extends StatefulWidget {
     this.burstType = BurstType.topLeft,
     this.swapAngle = 90,
     this.startAngle = 0,
-  }) : super(key: key);
+  });
 
-  const BurstMenu.bottomLeft({Key? key,
+  const BurstMenu.bottomLeft({super.key,
     required this.menus,
     this.burstMenuItemClick,
     this.radius = 100,
@@ -67,9 +67,9 @@ class BurstMenu extends StatefulWidget {
     this.burstType = BurstType.bottomLeft,
     this.swapAngle = 90,
     this.startAngle = -90,
-  }) : super(key: key);
+  });
 
-  const BurstMenu.topRight({Key? key,
+  const BurstMenu.topRight({super.key,
     required this.menus,
     this.burstMenuItemClick,
     this.radius = 100,
@@ -80,9 +80,9 @@ class BurstMenu extends StatefulWidget {
     this.burstType = BurstType.topRight,
     this.swapAngle = -90,
     this.startAngle = 180,
-  }) : super(key: key);
+  });
 
-  const BurstMenu.bottomRight({Key? key,
+  const BurstMenu.bottomRight({super.key,
     required this.menus,
     this.burstMenuItemClick,
     this.radius = 100,
@@ -93,7 +93,7 @@ class BurstMenu extends StatefulWidget {
     this.burstType = BurstType.bottomRight,
     this.swapAngle = 90,
     this.startAngle = 180,
-  }) : super(key: key);
+  });
 
   @override
   BurstMenuState createState() => BurstMenuState();

@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomBackdropFilter extends StatefulWidget {
-  const CustomBackdropFilter({Key? key}) : super(key: key);
+  const CustomBackdropFilter({super.key});
 
   @override
   _CustomBackdropFilterState createState() => _CustomBackdropFilterState();
@@ -82,7 +82,7 @@ class _CustomBackdropFilterState extends State<CustomBackdropFilter> {
               max: 4,
               value: _sigmaX,
               divisions: 360,
-              label: 'x:' + _sigmaX.toStringAsFixed(1),
+              label: 'x:${_sigmaX.toStringAsFixed(1)}',
               onChanged: (v) {
                 setState(() {
                   _sigmaX = v;
@@ -93,7 +93,7 @@ class _CustomBackdropFilterState extends State<CustomBackdropFilter> {
               max: 4,
               value: _sigmaY,
               divisions: 360,
-              label: 'beta:' + _sigmaY.toStringAsFixed(1),
+              label: 'beta:${_sigmaY.toStringAsFixed(1)}',
               onChanged: (v) {
                 setState(() {
                   _sigmaY = v;

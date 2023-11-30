@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class PhysicalShapeDemo extends StatelessWidget {
-  const PhysicalShapeDemo({Key? key}) : super(key: key);
+  const PhysicalShapeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,15 +27,15 @@ class PhysicalShapeDemo extends StatelessWidget {
       child: PhysicalShape(
           shadowColor: Colors.orange,
           elevation: 3,
-          child: Image.asset(
-            'assets/images/caver.webp',
-            fit: BoxFit.cover,
-          ),
           clipBehavior: Clip.hardEdge,
           clipper: const ShapeBorderClipper(
             shape: CircleBorder(side: BorderSide.none),
           ),
-          color: Colors.deepPurpleAccent),
+          color: Colors.deepPurpleAccent,
+          child: Image.asset(
+            'assets/images/caver.webp',
+            fit: BoxFit.cover,
+          )),
     );
   }
 }

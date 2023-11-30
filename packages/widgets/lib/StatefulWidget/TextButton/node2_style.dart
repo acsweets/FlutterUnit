@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class TextButtonStyleDemo extends StatelessWidget {
-  const TextButtonStyleDemo({Key? key}) : super(key: key);
+  const TextButtonStyleDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,28 +25,26 @@ class TextButtonStyleDemo extends StatelessWidget {
         children: [
           TextButton(
             style: TextButton.styleFrom(
-                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white, backgroundColor: Colors.blue,
                 padding: const EdgeInsets.symmetric(horizontal: 8),
-                primary: Colors.white,
                 elevation: 2,
                 shadowColor: Colors.orangeAccent),
-            child: const Text('TextButton 样式'),
             onPressed: _onPressed,
             onLongPress: _onLongPress,
+            child: const Text('TextButton 样式'),
           ),
           TextButton(
             style: TextButton.styleFrom(
-                backgroundColor: Colors.white,
-                primary: Colors.black,
+                foregroundColor: Colors.black, backgroundColor: Colors.white,
                 side: const BorderSide(color: Colors.blue, width: 1),
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 // elevation: 2,
                 shadowColor: Colors.orangeAccent),
-            child: const Text('TextButton 边线'),
             autofocus: false,
             onPressed: _onPressed,
             onLongPress: _onLongPress,
+            child: const Text('TextButton 边线'),
           ),
         ],
       ),

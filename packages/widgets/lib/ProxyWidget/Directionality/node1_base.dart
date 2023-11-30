@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【child】 : 子组件   【Widget】",
 //    }
 class DirectionalityDemo extends StatefulWidget {
-  const DirectionalityDemo({Key? key}) : super(key: key);
+  const DirectionalityDemo({super.key});
 
   @override
   _DirectionalityDemoState createState() => _DirectionalityDemoState();

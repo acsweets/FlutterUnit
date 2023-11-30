@@ -75,7 +75,7 @@ class WidgetList extends StatelessWidget {
     );
 
     return GridView.builder(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       gridDelegate: gridDelegate,
       itemBuilder: _buildItem,
       itemCount: state.widgets.length,

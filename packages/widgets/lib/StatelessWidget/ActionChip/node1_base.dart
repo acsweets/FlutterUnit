@@ -12,6 +12,7 @@
 //          "其他属性同Chip组件，无右侧组件。",
 //    }
 ///
+library;
 
 
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ import 'package:widgets/utils/dialog_about.dart';
 
 
 class CustomActionChip extends StatelessWidget {
-  const CustomActionChip({Key? key}) : super(key: key);
+  const CustomActionChip({super.key});
 
   @override
   Widget build(BuildContext context) {

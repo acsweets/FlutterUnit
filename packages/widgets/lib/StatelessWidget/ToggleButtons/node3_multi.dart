@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //      "subtitle": "    可以控制状态转化的逻辑来形成不同的效果。",
 //    }
 class ProToggleButtons extends StatefulWidget {
-  const ProToggleButtons({Key? key}) : super(key: key);
+  const ProToggleButtons({super.key});
 
   @override
   _ProToggleButtonsState createState() => _ProToggleButtonsState();
@@ -24,11 +24,6 @@ class _ProToggleButtonsState extends State<ProToggleButtons> {
   @override
   Widget build(BuildContext context) {
     return ToggleButtons(
-      children: const <Widget>[
-        Icon(Icons.skip_previous),
-        Icon(Icons.pause),
-        Icon(Icons.skip_next),
-      ],
       borderWidth: 1,
       borderColor: Colors.blue,
       selectedBorderColor: Colors.orangeAccent,
@@ -40,6 +35,11 @@ class _ProToggleButtonsState extends State<ProToggleButtons> {
       onPressed: (value) => setState(() {
         _isSelected[value] = !_isSelected[value];
       }),
+      children: const <Widget>[
+        Icon(Icons.skip_previous),
+        Icon(Icons.pause),
+        Icon(Icons.skip_next),
+      ],
     );
   }
 }

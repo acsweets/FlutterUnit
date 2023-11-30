@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【child】 : 子组件   【Widget】",
 //    }
 class PrimaryScrollControllerDemo extends StatelessWidget {
-  const PrimaryScrollControllerDemo({Key? key}) : super(key: key);
+  const PrimaryScrollControllerDemo({super.key});
 
   final String info =
       'PrimaryScrollController 是 InheritedWidget 子类，也就说明它可以为子树组件提供某些默认数据，'
@@ -30,7 +30,7 @@ class PrimaryScrollControllerDemo extends StatelessWidget {
       color: Colors.blue.withOpacity(0.1),
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.all(10),
-      child: Text(info+"当前其持有的滑动控制器对象: $label"),
+      child: Text("$info当前其持有的滑动控制器对象: $label"),
     );
   }
 }

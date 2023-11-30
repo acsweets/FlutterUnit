@@ -14,7 +14,7 @@ import 'package:flutter/cupertino.dart';
 //          "【home】 : 主页   【Widget】",
 //    }
 class CustomCupertinoApp extends StatelessWidget {
-  const CustomCupertinoApp({Key? key}) : super(key: key);
+  const CustomCupertinoApp({super.key});
 
   @override
   Widget build(BuildContext context) {

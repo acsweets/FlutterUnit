@@ -3,6 +3,7 @@
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
 /// 说明: 
+library;
 
 //    {
 //      "widgetId": 11,
@@ -16,7 +17,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets/utils/dialog_about.dart';
 
 class DeleteOfChip extends StatelessWidget {
-  const DeleteOfChip({Key? key}) : super(key: key);
+  const DeleteOfChip({super.key});
 
   @override
   Widget build(BuildContext context) {

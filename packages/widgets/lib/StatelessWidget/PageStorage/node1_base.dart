@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class PageStorageDemo extends StatefulWidget {
-  const PageStorageDemo({Key? key}) : super(key: key);
+  const PageStorageDemo({super.key});
 
   @override
   _PageStorageDemoState createState() => _PageStorageDemoState();
@@ -29,8 +29,8 @@ class _PageStorageDemoState extends State<PageStorageDemo> {
       height: 200,
       child: Scaffold(
         body: PageStorage(
-          child: _buildContentByIndex(),
           bucket: _bucket,
+          child: _buildContentByIndex(),
         ),
         bottomNavigationBar: BottomNavigationBar(
           elevation: 0,
@@ -70,7 +70,7 @@ class _PageStorageDemoState extends State<PageStorageDemo> {
 }
 
 class CountWidget extends StatefulWidget {
-  const CountWidget({Key? key}) : super(key: key);
+  const CountWidget({super.key});
 
   @override
   _CountWidgetState createState() => _CountWidgetState();
@@ -82,7 +82,7 @@ class _CountWidgetState extends State<CountWidget> {
   @override
   void initState() {
     super.initState();
-    _count = PageStorage.of(context)?.readState(context);
+    _count = PageStorage.of(context).readState(context);
   }
 
   @override
@@ -95,13 +95,13 @@ class _CountWidgetState extends State<CountWidget> {
           Text('点击了$_count次'),
           MaterialButton(
               onPressed: _addCount,
-              child: const Icon(
-                Icons.add,
-                color: Colors.white,
-              ),
               color: Colors.green,
               shape: const CircleBorder(
                 side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
+              ),
+              child: const Icon(
+                Icons.add,
+                color: Colors.white,
               ))
         ],
       ),
@@ -111,7 +111,7 @@ class _CountWidgetState extends State<CountWidget> {
   void _addCount() {
     setState(() {
       _count++;
-      PageStorage.of(context)?.writeState(context, _count);
+      PageStorage.of(context).writeState(context, _count);
     });
   }
 }

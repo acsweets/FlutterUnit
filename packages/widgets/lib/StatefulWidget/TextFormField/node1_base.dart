@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【onSaved】 : 表单save时回调  【FormFieldSetter<String>】",
 //    }
 class CustomTextFormField extends StatefulWidget {
-  const CustomTextFormField({Key? key}) : super(key: key);
+  const CustomTextFormField({super.key});
 
   @override
   _CustomTextFormFieldState createState() => _CustomTextFormFieldState();

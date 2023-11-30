@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class LoadImage extends StatelessWidget {
-  const LoadImage({Key? key}) : super(key: key);
+  const LoadImage({super.key});
 
   final String assetsImagePath = "assets/images/icon_head.webp";
   final String netImageUrl = "https://p9-juejin.byteimg.com"

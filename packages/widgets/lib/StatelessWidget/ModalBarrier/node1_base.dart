@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【color】 : 颜色   【Color】",
 //    }
 class ModalBarrierDemo extends StatelessWidget {
-  const ModalBarrierDemo({Key? key}) : super(key: key);
+  const ModalBarrierDemo({super.key});
 
 
   @override

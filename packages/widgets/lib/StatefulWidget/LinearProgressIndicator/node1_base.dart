@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "    value为null时会不停循环",
 //    }
 class CustomLinearProgressIndicator extends StatefulWidget {
-  const CustomLinearProgressIndicator({Key? key}) : super(key: key);
+  const CustomLinearProgressIndicator({super.key});
 
   @override
   _CustomLinearProgressIndicatorState createState() =>

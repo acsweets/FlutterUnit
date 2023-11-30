@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【color】: 子组件    【Color】",
 //    }
 class CustomContainer extends StatelessWidget {
-  const CustomContainer({Key? key}) : super(key: key);
+  const CustomContainer({super.key});
 
   @override
   Widget build(BuildContext context) {

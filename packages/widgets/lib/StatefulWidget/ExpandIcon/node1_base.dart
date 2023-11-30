@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【onPressed】 : 点击事件   【Function(bool)】",
 //    }
 class CustomExpandIcon extends StatefulWidget {
-  const CustomExpandIcon({Key? key}) : super(key: key);
+  const CustomExpandIcon({super.key});
 
   @override
   _CustomExpandIconState createState() => _CustomExpandIconState();

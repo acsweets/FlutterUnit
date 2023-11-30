@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【sizeCurve】 : 尺寸变化曲线   【CrossFadeState】",
 //    }
 class CurveAnimatedCrossFade extends StatefulWidget {
-  const CurveAnimatedCrossFade({Key? key}) : super(key: key);
+  const CurveAnimatedCrossFade({super.key});
 
   @override
   _CurveAnimatedCrossFadeState createState() => _CurveAnimatedCrossFadeState();

@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【actions】 : 中间组件列表  【List<Widget>】",
 //    }
 class CustomCupertinoActionSheet extends StatelessWidget {
-  const CustomCupertinoActionSheet({Key? key}) : super(key: key);
+  const CustomCupertinoActionSheet({super.key});
 
   @override
   Widget build(BuildContext context) {

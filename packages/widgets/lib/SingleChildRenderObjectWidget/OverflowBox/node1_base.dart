@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //          "【alignment】 : 对齐方式   【AlignmentGeometry】",
 //    }
 class CustomOverflowBox extends StatefulWidget {
-  const CustomOverflowBox({Key? key}) : super(key: key);
+  const CustomOverflowBox({super.key});
 
   @override
   _CustomOverflowBoxState createState() => _CustomOverflowBoxState();

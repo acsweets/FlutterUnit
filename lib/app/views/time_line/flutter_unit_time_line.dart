@@ -208,7 +208,7 @@ class TimeLineNode extends StatelessWidget {
             lineColor: Colors.white,
             circleRadius: circleRadius,
             color: Colors.white,
-            circleOffset: Offset(lineWidth / 2, offset + 10 / 2)),
+            circleOffset: const Offset(lineWidth / 2, offset + 10 / 2)),
       );
 
   Widget _buildCenterWidget(Color themeColor) {

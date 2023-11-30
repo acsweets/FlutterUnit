@@ -11,25 +11,25 @@ import 'package:flutter/material.dart';
 //          "子组件可以通过ThemeData.of获取主题的数据进行使用。",
 //    }
 class TextThemeDemo extends StatelessWidget {
-  const TextThemeDemo({Key? key}) : super(key: key);
+  const TextThemeDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
     TextTheme queryData = Theme.of(context).textTheme;
     Map<String, TextStyle> styles = {
-      "headline1: ": queryData.headline1!,
-      "headline2: ": queryData.headline2!,
-      "headline3: ": queryData.headline3!,
-      "headline4: ": queryData.headline4!,
-      "headline5: ": queryData.headline5!,
-      "headline6: ": queryData.headline6!,
-      "button: ": queryData.button!,
-      "overline: ": queryData.overline!,
-      "subtitle1: ": queryData.subtitle1!,
-      "subtitle2: ": queryData.subtitle2!,
-      "caption: ": queryData.caption!,
-      "bodyText1: ": queryData.bodyText1!,
-      "bodyText2: ": queryData.bodyText2!,
+      "headline1: ": queryData.displayLarge!,
+      "headline2: ": queryData.displayMedium!,
+      "headline3: ": queryData.displaySmall!,
+      "headline4: ": queryData.headlineMedium!,
+      "headline5: ": queryData.headlineSmall!,
+      "headline6: ": queryData.titleLarge!,
+      "button: ": queryData.labelLarge!,
+      "overline: ": queryData.labelSmall!,
+      "subtitle1: ": queryData.titleMedium!,
+      "subtitle2: ": queryData.titleSmall!,
+      "caption: ": queryData.bodySmall!,
+      "bodyText1: ": queryData.bodyLarge!,
+      "bodyText2: ": queryData.bodyMedium!,
     };
 
     return Column(

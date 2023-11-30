@@ -5,9 +5,9 @@ class SliverSnapHeader extends StatefulWidget {
   final PreferredSizeWidget child;
 
   const SliverSnapHeader({
-    Key? key,
+    super.key,
     required this.child,
-  }) : super(key: key);
+  });
 
   @override
   State<SliverSnapHeader> createState() => _SliverSnapHeaderState();

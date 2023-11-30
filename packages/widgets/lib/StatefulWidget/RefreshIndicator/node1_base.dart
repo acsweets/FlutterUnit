@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【onRefresh】 : 异步函数   【Future<void> Function()】"
 //    }
 class CustomRefreshIndicator extends StatefulWidget {
-  const CustomRefreshIndicator({Key? key}) : super(key: key);
+  const CustomRefreshIndicator({super.key});
 
   @override
   _CustomRefreshIndicatorState createState() => _CustomRefreshIndicatorState();

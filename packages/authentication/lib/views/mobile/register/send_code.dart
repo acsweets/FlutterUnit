@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 class CountDownWidget extends StatefulWidget {
   final Function(BuildContext context)? onPress;
 
-  const CountDownWidget({Key? key, this.onPress}) : super(key: key);
+  const CountDownWidget({super.key, this.onPress});
 
   @override
   _CountDownWidgetState createState() => _CountDownWidgetState();

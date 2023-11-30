@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "其他属性基本上同MaterialApp,详见之。",
 //    }
 class WidgetsAppDemo extends StatefulWidget {
-  const WidgetsAppDemo({Key? key}) : super(key: key);
+  const WidgetsAppDemo({super.key});
 
   @override
   _WidgetsAppDemoState createState() => _WidgetsAppDemoState();
@@ -100,7 +100,7 @@ class _WidgetsAppDemoState extends State<WidgetsAppDemo> {
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();

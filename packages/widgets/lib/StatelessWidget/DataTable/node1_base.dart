@@ -21,7 +21,7 @@ class _Bean {
 }
 
 class CustomDataTable extends StatelessWidget {
-  CustomDataTable({Key? key}) : super(key: key);
+  CustomDataTable({super.key});
 
   final List<_Bean> data = [
     _Bean(101, 'DataTable', 'StatelessWidget'),

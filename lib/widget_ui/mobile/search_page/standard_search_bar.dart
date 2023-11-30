@@ -57,7 +57,7 @@ Icons.arrow_back
                       },
                       decoration:  InputDecoration(
                           filled: true,
-                          fillColor: isDark?Color(0xff292929):Color(0xffF3F6F9),
+                          fillColor: isDark?const Color(0xff292929):const Color(0xffF3F6F9),
 
                           prefixIcon: const Icon(
                             Icons.search,
@@ -68,7 +68,7 @@ Icons.arrow_back
                             borderRadius: BorderRadius.all(Radius.circular(35 / 2)),
                           ),
                           hintText: "搜索组件",
-                          hintStyle: TextStyle(fontSize: 14)
+                          hintStyle: const TextStyle(fontSize: 14)
                           ),
                     ),
                   )),

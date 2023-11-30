@@ -10,8 +10,6 @@ import 'package:jwt_decoder/jwt_decoder.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:utils/utils.dart';
 
-import 'event.dart';
-import 'state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
 

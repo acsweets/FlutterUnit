@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //         "【flex】 : 剩余空间分配占比   【int】",
 //    }
 class ManySpacer extends StatefulWidget {
-  const ManySpacer({Key? key}) : super(key: key);
+  const ManySpacer({super.key});
 
   @override
   _ManySpacerState createState() => _ManySpacerState();

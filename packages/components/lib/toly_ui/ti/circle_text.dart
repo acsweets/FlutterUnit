@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CircleText extends StatelessWidget {
   const CircleText({
-    Key? key,
+    super.key,
     required this.text,
     this.size = 70,
     this.fontSize = 24,
@@ -10,7 +10,7 @@ class CircleText extends StatelessWidget {
     this.shadowColor,
     this.backgroundColor,
     this.roundColor,
-  }) : super(key: key);
+  });
 
   final String text; //图片
   final double size; //大小

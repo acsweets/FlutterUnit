@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "  onChanged时,回调true、null、false三种状态",
 //    }
 class CustomSwitch extends StatefulWidget {
-  const CustomSwitch({Key? key}) : super(key: key);
+  const CustomSwitch({super.key});
 
   @override
   _CustomSwitchState createState() => _CustomSwitchState();

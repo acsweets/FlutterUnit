@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class BadgeLabelDemo extends StatelessWidget {
-  const BadgeLabelDemo({Key? key}) : super(key: key);
+  const BadgeLabelDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

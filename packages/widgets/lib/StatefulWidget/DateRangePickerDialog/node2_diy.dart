@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'toly_date_picker.dart' as toly;
@@ -13,7 +12,7 @@ import 'toly_date_picker.dart' as toly;
 //      "subtitle": "修改 DateRangePickerDialog 源码，使得月份条目显示数值背景。",
 //    }
 class DiyDateRangePickerDialogDemo extends StatefulWidget {
-  const DiyDateRangePickerDialogDemo({Key? key}) : super(key: key);
+  const DiyDateRangePickerDialogDemo({super.key});
 
   @override
   _DiyDateRangePickerDialogDemoState createState() =>

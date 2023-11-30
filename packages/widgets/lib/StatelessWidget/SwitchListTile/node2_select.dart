@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【activeThumbImage】: 选中时圆圈图片   【ImageProvider】",
 //    }
 class SelectSwitchListTile extends StatefulWidget {
-  const SelectSwitchListTile({Key? key}) : super(key: key);
+  const SelectSwitchListTile({super.key});
 
   @override
   _SelectSwitchListTileState createState() => _SelectSwitchListTileState();

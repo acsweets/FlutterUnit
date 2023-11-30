@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【mainAxisAlignment】 : 主轴对齐   【MainAxisAlignment】",
 //    }
 class MainAxisAlignmentFlex extends StatelessWidget {
-  MainAxisAlignmentFlex({Key? key}) : super(key: key);
+  MainAxisAlignmentFlex({super.key});
 
   static TextStyle textStyle =
       const TextStyle(color: Colors.white, fontWeight: FontWeight.bold);

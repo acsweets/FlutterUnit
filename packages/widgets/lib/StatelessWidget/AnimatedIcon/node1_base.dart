@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【progress】 : 动画   【Animation<double>】",
 //    }
 class CustomAnimatedIcon extends StatefulWidget {
-  const CustomAnimatedIcon({Key? key}) : super(key: key);
+  const CustomAnimatedIcon({super.key});
 
   @override
   _CustomAnimatedIconState createState() => _CustomAnimatedIconState();

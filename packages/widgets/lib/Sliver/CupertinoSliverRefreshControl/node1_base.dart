@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "【builder】 : 指示器构造器   【RefreshControlIndicatorBuilder】",
 //    }
 class CupertinoSliverRefreshControlDemo extends StatefulWidget {
-  const CupertinoSliverRefreshControlDemo({Key? key}) : super(key: key);
+  const CupertinoSliverRefreshControlDemo({super.key});
 
   @override
   _CupertinoSliverRefreshControlDemoState createState() =>

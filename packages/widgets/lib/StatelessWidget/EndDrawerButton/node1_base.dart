@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class EndDrawerButtonDemo extends StatelessWidget {
-  const EndDrawerButtonDemo({Key? key}) : super(key: key);
+  const EndDrawerButtonDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

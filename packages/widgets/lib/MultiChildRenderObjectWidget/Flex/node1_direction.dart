@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【direction】 : 方向   【Axis】",
 //    }
 class DirectionFlex extends StatelessWidget {
-  DirectionFlex({Key? key}) : super(key: key);
+  DirectionFlex({super.key});
 
   static TextStyle textStyle =
       const TextStyle(color: Colors.white, fontWeight: FontWeight.bold);

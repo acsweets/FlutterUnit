@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class RepaintBoundaryDemo extends StatelessWidget{
-  const RepaintBoundaryDemo({Key? key}) : super(key: key);
+  const RepaintBoundaryDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class RepaintBoundaryDemo extends StatelessWidget{
 }
 
 class TempPlayBezier3Page extends StatefulWidget {
-  const TempPlayBezier3Page({Key? key}) : super(key: key);
+  const TempPlayBezier3Page({super.key});
 
   @override
   _TempPlayBezier3PageState createState() => _TempPlayBezier3PageState();

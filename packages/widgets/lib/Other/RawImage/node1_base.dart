@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/cupertino.dart';
@@ -21,7 +20,7 @@ import 'package:flutter/services.dart';
 //          "很多属性同Image,详见之.",
 //    }
 class RawImageDemo extends StatefulWidget {
-  const RawImageDemo({Key? key}) : super(key: key);
+  const RawImageDemo({super.key});
 
   @override
   _RawImageDemoState createState() => _RawImageDemoState();

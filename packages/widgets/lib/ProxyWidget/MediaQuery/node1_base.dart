@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class CustomMediaQuery extends StatelessWidget {
-  const CustomMediaQuery({Key? key}) : super(key: key);
+  const CustomMediaQuery({super.key});
 
   @override
   Widget build(BuildContext context) {

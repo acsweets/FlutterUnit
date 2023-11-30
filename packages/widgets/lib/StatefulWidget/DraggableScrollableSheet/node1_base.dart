@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class DraggableScrollableSheetDemo extends StatelessWidget {
-  const DraggableScrollableSheetDemo({Key? key}) : super(key: key);
+  const DraggableScrollableSheetDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class DraggableScrollableSheetDemo extends StatelessWidget {
 }
 
 class DraggableScrollableSheetPage extends StatelessWidget {
-  DraggableScrollableSheetPage({Key? key}) : super(key: key);
+  DraggableScrollableSheetPage({super.key});
 
   final List<Color> data = [
     Colors.orange[50]!,

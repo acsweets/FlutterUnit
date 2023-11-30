@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【strokeWidth】 : 线宽   【double】",
 //    }
 class CustomCircularProgressIndicator extends StatefulWidget {
-  const CustomCircularProgressIndicator({Key? key}) : super(key: key);
+  const CustomCircularProgressIndicator({super.key});
 
   @override
   _CustomCircularProgressIndicatorState createState() =>

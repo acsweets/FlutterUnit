@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 //          "【autofocus】 : 自动聚焦   【bool】",
 //    }
 class CursorTextField extends StatefulWidget {
-  const CursorTextField({Key? key}) : super(key: key);
+  const CursorTextField({super.key});
 
   @override
   _CursorTextFieldState createState() => _CursorTextFieldState();

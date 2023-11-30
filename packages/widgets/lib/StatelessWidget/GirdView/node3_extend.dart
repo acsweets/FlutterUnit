@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【shrinkWrap】 : 无边界时是否包裹  【bool】",
 //    }
 class ExtentGridView extends StatelessWidget {
-  ExtentGridView({Key? key}) : super(key: key);
+  ExtentGridView({super.key});
 
   final List<Color> data = List.generate(128, (i) => Color(0xFF00FFFF - 2 * i));
 

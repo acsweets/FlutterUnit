@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【type】 : 方向   【StepperType】",
 //    }
 class VerticalStepper extends StatefulWidget {
-  const VerticalStepper({Key? key}) : super(key: key);
+  const VerticalStepper({super.key});
 
   @override
   _VerticalStepperState createState() => _VerticalStepperState();

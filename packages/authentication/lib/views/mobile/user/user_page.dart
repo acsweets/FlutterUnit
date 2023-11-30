@@ -9,14 +9,13 @@ import 'package:components/toly_ui/toly_ui.dart';
 
 
 import '../../../authentication.dart';
-import 'page_item.dart';
 
 /// create by 张风捷特烈 on 2020/4/26
 /// contact me by email 1981462002@qq.com
 /// 说明:
 
 class UserPage extends StatelessWidget {
-  const UserPage({Key? key}) : super(key: key);
+  const UserPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +96,7 @@ class UserPage extends StatelessWidget {
     if (state is AuthSuccess) {
       return FeedbackWidget(
         onEnd: () {
-          Navigator.of(context).push(SlidePageRoute(child: UserAccountPage()));
+          Navigator.of(context).push(SlidePageRoute(child: const UserAccountPage()));
         },
         child: CircleImage(
           size: 80,

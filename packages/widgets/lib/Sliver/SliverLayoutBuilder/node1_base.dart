@@ -12,7 +12,7 @@ import 'package:flutter/rendering.dart';
 //      "subtitle": "【builder】 : 组件构造器   【SliverLayoutWidgetBuilder】",
 //    }
 class SliverLayoutBuilderDemo extends StatefulWidget {
-  const SliverLayoutBuilderDemo({Key? key}) : super(key: key);
+  const SliverLayoutBuilderDemo({super.key});
 
   @override
   _SliverLayoutBuilderDemoState createState() =>

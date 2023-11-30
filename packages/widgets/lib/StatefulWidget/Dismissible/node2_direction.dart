@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【crossAxisEndOffset】 : 偏移  【double】\n",
 //    }
 class DirectionDismissible extends StatefulWidget {
-  const DirectionDismissible({Key? key}) : super(key: key);
+  const DirectionDismissible({super.key});
 
   @override
   _CustomDirectionDismissibleState createState() =>
@@ -67,11 +67,11 @@ class _CustomDirectionDismissibleState extends State<DirectionDismissible> {
           0,
           0.9,
         ),
+        color: Colors.red,
         child: const Icon(
           Icons.close,
           color: Colors.white,
         ),
-        color: Colors.red,
       ),
       key: ValueKey(color),
       onDismissed: (d) {

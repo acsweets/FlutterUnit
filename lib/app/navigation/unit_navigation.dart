@@ -28,9 +28,9 @@ class UnitNavigation extends StatelessWidget {
     return BlocBuilder<AppBloc, AppState>(
       builder: (_, state) => LayoutBuilder(builder: (_, c) {
         if (c.maxWidth > 500) {
-          return UnitDeskNavigation();
+          return const UnitDeskNavigation();
         }
-        return UnitPhoneNavigation();
+        return const UnitPhoneNavigation();
       }),
     );
   }

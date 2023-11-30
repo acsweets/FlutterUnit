@@ -15,7 +15,7 @@ class SortPaper extends StatelessWidget{
 
     return CustomPaint(
       painter: DataPainter(data: numbers),
-      child: ConstrainedBox(constraints: BoxConstraints.expand()),
+      child: ConstrainedBox(constraints: const BoxConstraints.expand()),
     );
   }
 }

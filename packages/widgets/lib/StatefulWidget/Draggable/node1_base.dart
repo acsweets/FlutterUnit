@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
 //          "【axis】 : 拖动的轴   【Axis】",
 //    }
 class CustomDraggable extends StatelessWidget {
-  const CustomDraggable({Key? key}) : super(key: key);
+  const CustomDraggable({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,20 +24,20 @@ class CustomDraggable extends StatelessWidget {
         children: axis
             .map((e) => Draggable(
                   axis: e,
+              feedback: Container(
+                width: 30,
+                    height: 30,
+                    decoration: const BoxDecoration(
+                      color: Colors.red,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
                   child: Container(
                     width: 30,
                     height: 30,
                     alignment: Alignment.center,
                     decoration: const BoxDecoration(
                       color: Colors.blue,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-              feedback: Container(
-                width: 30,
-                    height: 30,
-                    decoration: const BoxDecoration(
-                      color: Colors.red,
                       shape: BoxShape.circle,
                     ),
                   ),

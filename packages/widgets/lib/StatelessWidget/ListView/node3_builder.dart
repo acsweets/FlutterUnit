@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 //          "【itemBuilder】 : 条目构造器   【IndexedWidgetBuilder】",
 //    }
 class BuilderListView extends StatelessWidget {
-  BuilderListView({Key? key}) : super(key: key);
+  BuilderListView({super.key});
 
   final List<Color> data = [
     Colors.purple[50]!,

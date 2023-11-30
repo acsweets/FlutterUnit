@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //    }
 
 class AboutListTileDemo extends StatelessWidget {
-  const AboutListTileDemo({Key? key}) : super(key: key);
+  const AboutListTileDemo({super.key});
 
   @override
   Widget build(BuildContext context) {

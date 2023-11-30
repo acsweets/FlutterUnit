@@ -9,11 +9,10 @@ class TextTyper extends StatefulWidget {
 
   const TextTyper(
       {required this.text,
-      Key? key,
+      super.key,
       this.textStyle =
           const TextStyle(fontWeight: FontWeight.w600, fontSize: 20.0),
-      this.duration = const Duration(milliseconds: 150)})
-      : super(key: key);
+      this.duration = const Duration(milliseconds: 150)});
 
   @override
   _TextTyperState createState() => _TextTyperState();

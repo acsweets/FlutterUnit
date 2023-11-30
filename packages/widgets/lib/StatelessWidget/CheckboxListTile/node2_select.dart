@@ -2,6 +2,7 @@
 /// create by 张风捷特烈 on 2020/4/25
 /// contact me by email 1981462002@qq.com
 /// 说明: 
+library;
 
 //    {
 //      "widgetId": 17,
@@ -12,7 +13,7 @@
 import 'package:flutter/material.dart';
 
 class SelectCheckBoxListTile extends StatefulWidget {
-  const SelectCheckBoxListTile({Key? key}) : super(key: key);
+  const SelectCheckBoxListTile({super.key});
 
   @override
   _SelectCheckBoxListTileState createState() => _SelectCheckBoxListTileState();

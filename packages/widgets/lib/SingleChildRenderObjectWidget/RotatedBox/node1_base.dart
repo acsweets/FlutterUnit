@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //          "【quarterTurns】 : 旋转多少个90°   【int】",
 //    }
 class CustomRotatedBox extends StatefulWidget {
-  const CustomRotatedBox({Key? key}) : super(key: key);
+  const CustomRotatedBox({super.key});
 
   @override
   _CustomRotatedBoxState createState() => _CustomRotatedBoxState();

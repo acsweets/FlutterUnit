@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //          "【maxWidth】 : 最大宽   【double】",
 //    }
 class CustomConstrainedBox extends StatefulWidget {
-  const CustomConstrainedBox({Key? key}) : super(key: key);
+  const CustomConstrainedBox({super.key});
 
   @override
   _CustomConstrainedBoxState createState() => _CustomConstrainedBoxState();

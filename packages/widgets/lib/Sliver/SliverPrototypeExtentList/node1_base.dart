@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 //          "【delegate】 : 孩子代理   【SliverChildDelegate】",
 //    }
 class SliverPrototypeExtentListDemo extends StatefulWidget {
-  const SliverPrototypeExtentListDemo({Key? key}) : super(key: key);
+  const SliverPrototypeExtentListDemo({super.key});
 
   @override
   _SliverPrototypeExtentListDemoState createState() =>
