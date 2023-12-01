@@ -73,8 +73,8 @@ class WidgetDao {
     //     ["%$name%",'%$info%', ...familyArg, ...starArg,]);
     return db.rawQuery(
         "SELECT * "
-            "FROM widget WHERE name like ?$familySql AND lever IN(?,?,?,?,?) ORDER BY lever DESC LIMIT ? OFFSET ?",
-        ["%$name%", ...familyArg, ...starArg, arguments.pageSize, arguments.offset]);
+            "FROM widget WHERE name like ?or info LIKE?$familySql AND lever IN(?,?,?,?,?) ORDER BY lever DESC LIMIT ? OFFSET ?",
+        ["%$name%","%$name%", ...familyArg, ...starArg, arguments.pageSize, arguments.offset]);
   }
 
   Future<int> total(WidgetFilter args) async{
